@@ -28,6 +28,8 @@ const state = {
   settingsPanelLine: "Z649",
   settingsLineDirection: "outbound",
   settingsLineDay: "weekday",
+  liveStopFilter: null,
+  liveLineFilter: null,
   settings: loadSettings()
 };
 

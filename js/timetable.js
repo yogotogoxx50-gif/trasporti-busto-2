@@ -137,25 +137,35 @@ function getReferenceTime(trip, referenceStops) {
 }
 
 function renderConnectionCell(trip, config) {
-  for (const [stopCode, connCfg] of Object.entries(config.connections || {})) {
+  const parts = [];
+  for (const [key, connCfg] of Object.entries(config.connections || {})) {
+    // Use explicit stopCode if provided (e.g. BS090_RE maps to stop BS090)
+    const stopCode = connCfg.stopCode || key;
     const arrMin = trip.stops?.[stopCode];
     if (arrMin === undefined || arrMin === null) continue;
     if (connCfg.slotKey) {
       const train = calcNextTrain(connCfg.slotKey, arrMin)[0];
-      if (train) return `<span class="conn-mini">${escapeHtml(connCfg.type)} ${minsToHHMM(train.departureMin)}</span>`;
+      if (train) parts.push(`<span class="conn-mini">${escapeHtml(train.line)} ${minsToHHMM(train.departureMin)} <small>+${train.waitMin}′</small></span>`);
+    } else {
+      parts.push(`<span class="conn-mini">${escapeHtml(connCfg.type)} ${minsToHHMM(arrMin)}</span>`);
     }
-    return `<span class="conn-mini">${escapeHtml(connCfg.type)} ${minsToHHMM(arrMin)}</span>`;
   }
-  return "-";
+  return parts.length ? parts.join(" ") : "-";
 }
 
 function shortStop(code) {
   return getStopName(code)
-    .replace("Busto G. ", "")
-    .replace("Busto Garolfo ", "")
-    .replace("Pregnana Milanese", "Pregnana")
-    .replace("Molino Dorino M1", "Molino M1")
-    .replace("Busto Arsizio", "Busto Ars.");
+    .replace(/^Busto G\.\s*/, "")
+    .replace(/^Busto A\.\s*/, "B.A. ")
+    .replace(/^Pregnana\s*/, "Pregn. ")
+    .replace(/^Villa Cortese\s*/, "V.C. ")
+    .replace(/^Castano P\.\s*/, "Cast. ")
+    .replace(/^Milano\s*/, "")
+    .replace(/^Legnano\s*/, "Legn. ")
+    .replace(/^Parabiago\s*/, "Parab. ")
+    .replace(/^S\. Giorgio\s*/, "S.G. ")
+    .replace(/^S\. Stefano T\.\s*/, "S.St. ")
+    .replace(/^Vighignolo\s*/, "Vigh. ");
 }
 
 function bindEvents(container) {

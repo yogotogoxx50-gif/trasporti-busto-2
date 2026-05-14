@@ -426,7 +426,28 @@ export const CFG = {
     PG102: { label: "Pregnana FS", type: "S5/S6", trainSlot: "PG102" },
     LG090: { label: "Legnano FS", type: "S5", trainSlot: "LG090" },
     PB090: { label: "Parabiago FS", type: "S5", trainSlot: "PB090" },
-    BS090: { label: "Busto Arsizio FS", type: "S5/RE", trainSlot: "BS090_S5" }
+    BS090: { label: "Busto Arsizio FS", type: "S5/RE", trainSlot: "BS090_S5", trainSlotRE: "BS090_RE" }
+  },
+
+  // --------------------------------------------------------------------------
+  // M1 metro frequenza stimata (da Molino Dorino)
+  // --------------------------------------------------------------------------
+  m1Frequency: {
+    peakMin: 4,
+    offPeakMin: 7,
+    peakHours: [[420, 570], [1020, 1170]], // 07:00-09:30, 17:00-19:30
+    note: "M1 ogni ~4 min (punta) / ~7 min (fuori punta)"
+  },
+
+  // --------------------------------------------------------------------------
+  // Link tempo reale stazioni (RFI iechub / rfi.it)
+  // --------------------------------------------------------------------------
+  stationLinks: {
+    PG102: { label: "Pregnana FS", url: "https://iechub.rfi.it/ArriviPartenze/ArrivalsDepartures/Monitor?placeId=381&arrivals=False" },
+    canegrate: { label: "Canegrate FS", url: "https://iechub.rfi.it/arrivipartenze/arrivalsdepartures/Monitor?placeId=858&arrivals=False" },
+    LG090: { label: "Legnano FS", url: "https://www.rfi.it/it/stazioni/legnano.html" },
+    PB090: { label: "Parabiago FS", url: "https://www.rfi.it/it/stazioni/parabiago.html" },
+    BS090: { label: "Busto Arsizio FS", url: "https://www.rfi.it/it/stazioni/busto-arsizio.html" }
   },
 
   // --------------------------------------------------------------------------
@@ -434,7 +455,8 @@ export const CFG = {
   // --------------------------------------------------------------------------
   canegrate: {
     travelToMilano: 25,
-    note: "Stima Canegrate → Cadorna via Trenord"
+    note: "Stima Canegrate → Cadorna via Trenord",
+    stationUrl: "https://iechub.rfi.it/arrivipartenze/arrivalsdepartures/Monitor?placeId=858&arrivals=False"
   }
 
 };

@@ -17,7 +17,36 @@ import {
 } from "./utils.js";
 
 import { calcNextTrain, buildCanegrateBlock } from "./trains.js";
-import { getStopName } from "./line-config.js";
+import { getStopName, STOP_NAMES } from "./line-config.js";
+
+// Cities ordered outward from Busto Garolfo for the stop filter dropdown
+const FILTER_CITY_ORDER = [
+  { prefix: "BT", label: "Busto Garolfo" },
+  { prefix: "VC", label: "Villa Cortese" },
+  { prefix: "DG", label: "Dairago" },
+  { prefix: "AC", label: "Arconate" },
+  { prefix: "OC", label: "Olcella" },
+  { prefix: "SG", label: "S. Giorgio su Legnano" },
+  { prefix: "LG", label: "Legnano" },
+  { prefix: "PB", label: "Parabiago" },
+  { prefix: "BS", label: "Busto Arsizio" },
+  { prefix: "CZ", label: "Casorezzo" },
+  { prefix: "OS", label: "Ossona" },
+  { prefix: "AL", label: "Arluno" },
+  { prefix: "RG", label: "Rogorotto" },
+  { prefix: "MN", label: "Mantegazza" },
+  { prefix: "PG", label: "Pregnana Milanese" },
+  { prefix: "CD", label: "Cornaredo" },
+  { prefix: "VH", label: "Vighignolo" },
+  { prefix: "MD", label: "Milano (Molino Dorino)" },
+  { prefix: "MG", label: "Magenta" },
+  { prefix: "CB", label: "Corbetta" },
+  { prefix: "TI", label: "S. Stefano Ticino" },
+  { prefix: "IN", label: "Inveruno" },
+  { prefix: "CG", label: "Cuggiono" },
+  { prefix: "BC", label: "Buscate" },
+  { prefix: "CT", label: "Castano Primo" }
+];
 
 let lastArgs = null;
 
@@ -36,6 +65,9 @@ export function renderLive(state, lineData, lineConfig, cfg, saveSettings) {
     ? "Da Repubblica, Molino Dorino, Pregnana FS e altri interscambi supportati."
     : "Fermate preferite con fallback automatico per ogni linea.";
 
+  const stopFilter = state.liveStopFilter || null;
+  const lineFilter = state.liveLineFilter || null;
+
   let html = `
     <section class="hero-panel">
       <div>
@@ -49,6 +81,8 @@ export function renderLive(state, lineData, lineConfig, cfg, saveSettings) {
       </div>
     </section>`;
 
+  html += renderFilterBar(lineConfig, cfg, stopFilter, lineFilter);
+
   if (isGlobalInactive(now, cfg)) {
     html += `<div class="banner banner-danger">Servizio sospeso: ${escapeHtml(cfg.globalInactivity.note)}</div>`;
   }
@@ -56,31 +90,102 @@ export function renderLive(state, lineData, lineConfig, cfg, saveSettings) {
   const cards = [];
   for (const lineId of lineOrder) {
     if (!lineConfig[lineId]?.showInLive) continue;
+    if (lineFilter && lineFilter !== lineId) continue;
     const hasService = hasServiceToday(lineId, dayType, lineConfig, lineData, now, cfg);
     const disrupted = isLineDisrupted(lineId, now, cfg);
     if (!hasService && !disrupted) continue;
     const card = direction === "return"
-      ? buildReturnCard(lineId, state, lineData, lineConfig, cfg, currentMin, dayType, disrupted)
-      : buildOutboundCard(lineId, state, lineData, lineConfig, cfg, currentMin, dayType, disrupted);
-    if (card) cards.push(card);
+      ? buildReturnCard(lineId, state, lineData, lineConfig, cfg, currentMin, dayType, disrupted, stopFilter)
+      : buildOutboundCard(lineId, state, lineData, lineConfig, cfg, currentMin, dayType, disrupted, stopFilter);
+    if (card) {
+      if (stopFilter && !card.hasTrips) continue;
+      cards.push(card);
+    }
   }
 
   if (cards.length === 0) {
-    html += `<div class="empty-state">Nessuna corsa utile trovata per questa modalità.</div>`;
+    const msg = (stopFilter || lineFilter)
+      ? "Nessuna corsa trovata con i filtri attivi."
+      : "Nessuna corsa utile trovata per questa modalità.";
+    html += `<div class="empty-state">${msg}</div>`;
   } else {
     cards.sort(compareCardsByDeparture);
-    const hero = cards.find(card => card.lineId === "Z649" && card.hasTrips);
-    if (hero) html += renderFeaturedCard(hero, direction, cfg, currentMin, state);
-    html += `<div class="section-title">Linee attive</div>`;
+    if (!stopFilter) {
+      const hero = cards.find(card => card.lineId === "Z649" && card.hasTrips);
+      if (hero) html += renderFeaturedCard(hero, direction, cfg, currentMin, state);
+    }
+    html += `<div class="section-title">${stopFilter ? `Partenze da ${escapeHtml(getStopName(stopFilter))}` : "Linee attive"}</div>`;
     html += cards.map(card => renderLineCard(card, direction, cfg, currentMin)).join("");
   }
 
-  html += renderRecentlyDepartedBlock(state, lineData, lineConfig, cfg, currentMin, dayType, direction);
+  if (!stopFilter) {
+    html += renderRecentlyDepartedBlock(state, lineData, lineConfig, cfg, currentMin, dayType, direction);
+  }
   html += renderCanegrateBlock(state, currentMin, cfg);
   html += `<div class="app-footer">Dati aggiornati al ${escapeHtml(cfg.lastUpdate)}. Coincidenze treno/metro stimate.</div>`;
 
   container.innerHTML = html;
   bindLiveEvents(container);
+}
+
+function renderFilterBar(lineConfig, cfg, stopFilter, lineFilter) {
+  const lineOrder = cfg.lineOrder || Object.keys(lineConfig);
+  const inputValue = stopFilter ? getStopName(stopFilter) : "";
+
+  // Build line pills
+  const linePills = [
+    `<button type="button" data-line-filter="" class="${!lineFilter ? "active" : ""}">Tutte</button>`,
+    ...lineOrder.map(id =>
+      `<button type="button" data-line-filter="${id}" class="${lineFilter === id ? "active" : ""}">${id}</button>`
+    )
+  ].join("");
+
+  // Active filter indicator
+  let activeInfo = "";
+  if (stopFilter || lineFilter) {
+    const parts = [];
+    if (stopFilter) parts.push(`📍 <strong>${escapeHtml(getStopName(stopFilter))}</strong>`);
+    if (lineFilter) parts.push(`🚌 <strong>${lineFilter}</strong>`);
+    activeInfo = `<div class="filter-active-info">
+      ${parts.join(" · ")}
+      <button type="button" class="text-btn" data-clear-filters>Azzera filtri</button>
+    </div>`;
+  }
+
+  return `<section class="filter-bar">
+    <div class="filter-group">
+      <span class="filter-label">📍 Fermata</span>
+      <div class="stop-search-wrapper">
+        <input type="text" class="stop-search-input" data-stop-search
+          placeholder="Cerca fermata..." autocomplete="off"
+          value="${escapeHtml(inputValue)}">
+        ${stopFilter ? '<button type="button" class="stop-search-clear" data-stop-search-clear>✕</button>' : ""}
+        <div class="stop-search-results" data-stop-results></div>
+      </div>
+    </div>
+    <div class="filter-group">
+      <span class="filter-label">🚌 Linea</span>
+      <div class="filter-pills">${linePills}</div>
+    </div>
+    ${activeInfo}
+  </section>`;
+}
+
+function buildSearchResults(query) {
+  if (!query || query.length < 1) return "";
+  const q = query.toLowerCase();
+  let html = "";
+  for (const { prefix, label } of FILTER_CITY_ORDER) {
+    const codes = Object.keys(STOP_NAMES)
+      .filter(c => c.startsWith(prefix) && (STOP_NAMES[c].toLowerCase().includes(q) || c.toLowerCase().includes(q)))
+      .sort();
+    if (!codes.length) continue;
+    html += `<div class="search-group-label">${escapeHtml(label)}</div>`;
+    for (const code of codes) {
+      html += `<button type="button" class="search-result-item" data-stop-pick="${code}">${escapeHtml(STOP_NAMES[code])}</button>`;
+    }
+  }
+  return html || `<div class="search-no-results">Nessuna fermata trovata</div>`;
 }
 
 function getUserFavorite(state, cfg, lineId, direction) {
@@ -98,43 +203,48 @@ function compareCardsByDeparture(a, b) {
   return a.lineId.localeCompare(b.lineId);
 }
 
-function buildOutboundCard(lineId, state, lineData, lineConfig, cfg, currentMin, dayType, disrupted) {
+function buildOutboundCard(lineId, state, lineData, lineConfig, cfg, currentMin, dayType, disrupted, stopFilter) {
   const config = lineConfig[lineId];
   const profile = getProfile(cfg, lineId);
   const scheduleKey = getScheduleKey(lineId, dayType, "outbound");
-  const trips = lineData[lineId]?.[scheduleKey] || [];
-  const preferred = getUserFavorite(state, cfg, lineId, "outbound");
-  const fallbacks = profile.outboundHomeStops || config.referenceStops || [];
+  let trips = lineData[lineId]?.[scheduleKey] || [];
+
+  // When stop filter is active, only keep trips that pass through the selected stop
+  if (stopFilter) {
+    trips = trips.filter(t => t.stops?.[stopFilter] !== undefined && t.stops?.[stopFilter] !== null);
+  }
+
+  const preferred = stopFilter || getUserFavorite(state, cfg, lineId, "outbound");
+  const fallbacks = stopFilter ? [] : (profile.outboundHomeStops || config.referenceStops || []);
   const nextTrips = getActiveTrips(trips, currentMin, 3, preferred, fallbacks);
   const trip = nextTrips[0] || null;
   const compactStops = getConfiguredStops(state, cfg, lineId, "compactStops", "outbound", profile.compactStops?.outbound || config.referenceStops || []);
   const detailStops = getConfiguredStops(state, cfg, lineId, "detailStops", "outbound", profile.detailStops?.outbound || compactStops);
 
   return {
-    lineId,
-    config,
-    direction: "outbound",
-    hasTrips: nextTrips.length > 0,
-    disrupted,
+    lineId, config, direction: "outbound",
+    hasTrips: nextTrips.length > 0, disrupted,
     validities: unique(trips.map(t => t.validity)),
-    nextTrips,
-    trip,
+    nextTrips, trip,
     fromStop: trip?._depStop || preferred || fallbacks[0],
     toStop: compactStops.at(-1),
-    compactStops,
-    detailStops,
-    scheduleKey
+    compactStops, detailStops, scheduleKey
   };
 }
 
-function buildReturnCard(lineId, state, lineData, lineConfig, cfg, currentMin, dayType, disrupted) {
+function buildReturnCard(lineId, state, lineData, lineConfig, cfg, currentMin, dayType, disrupted, stopFilter) {
   const config = lineConfig[lineId];
   const profile = getProfile(cfg, lineId);
   const scheduleKey = getScheduleKey(lineId, dayType, "return");
-  const trips = lineData[lineId]?.[scheduleKey] || [];
+  let trips = lineData[lineId]?.[scheduleKey] || [];
+
+  if (stopFilter) {
+    trips = trips.filter(t => t.stops?.[stopFilter] !== undefined && t.stops?.[stopFilter] !== null);
+  }
+
   const interchanges = profile.returnInterchanges || [];
-  const preferredInterchange = state.settings?.returnInterchanges?.[lineId] || interchanges[0] || null;
-  const nextTrips = getActiveTrips(trips, currentMin, 3, preferredInterchange, interchanges);
+  const preferredInterchange = stopFilter || state.settings?.returnInterchanges?.[lineId] || interchanges[0] || null;
+  const nextTrips = getActiveTrips(trips, currentMin, 3, preferredInterchange, stopFilter ? [] : interchanges);
   const trip = nextTrips[0] || null;
   const homeStops = [getUserFavorite(state, cfg, lineId, "return"), ...(profile.returnHomeStops || [])].filter(Boolean);
   const compactStops = getConfiguredStops(state, cfg, lineId, "compactStops", "return", profile.compactStops?.return || homeStops);
@@ -142,19 +252,13 @@ function buildReturnCard(lineId, state, lineData, lineConfig, cfg, currentMin, d
   const arrival = trip ? chooseArrivalAfter(trip, homeStops, trip._depMin) : null;
 
   return {
-    lineId,
-    config,
-    direction: "return",
-    hasTrips: nextTrips.length > 0,
-    disrupted,
+    lineId, config, direction: "return",
+    hasTrips: nextTrips.length > 0, disrupted,
     validities: unique(trips.map(t => t.validity)),
-    nextTrips,
-    trip,
+    nextTrips, trip,
     fromStop: trip?._depStop || preferredInterchange,
     toStop: arrival?.stopCode || homeStops[0],
-    compactStops,
-    detailStops,
-    scheduleKey,
+    compactStops, detailStops, scheduleKey,
     returnOrigins: profile.returnConnectionOrigins || [],
     arrival
   };
@@ -227,7 +331,7 @@ function renderLineCard(card, direction, cfg, currentMin) {
     ${compact}
     <div class="line-card-body">
       ${card.disrupted ? renderDisruption(card.lineId, cfg) : ""}
-      ${trip ? renderTripDetails(card, cfg) : `<div class="empty-mini">Nessuna corsa nelle prossime ore.</div>`}
+      ${trip ? renderTripDetails(card, cfg, currentMin) : `<div class="empty-mini">Nessuna corsa nelle prossime ore.</div>`}
       ${renderUpcomingTrips(card)}
     </div>
   </article>`;
@@ -256,7 +360,7 @@ function renderStopChips(trip, stops, size = "") {
   return chips ? `<div class="stop-chip-row">${chips}</div>` : "";
 }
 
-function renderTripDetails(card, cfg) {
+function renderTripDetails(card, cfg, currentMin) {
   const trip = card.trip;
   const timeline = card.detailStops
     .map(code => ({ code, minutes: trip.stops?.[code] }))
@@ -268,54 +372,127 @@ function renderTripDetails(card, cfg) {
     </div>`)
     .join("");
 
-  const connections = renderConnections(card, cfg);
+  const connections = renderConnections(card, cfg, currentMin);
   return `<div class="timeline">${timeline}</div>${connections}`;
 }
 
-function renderConnections(card, cfg) {
+function getM1FrequencyLabel(arrMin, cfg) {
+  const m1 = cfg.m1Frequency;
+  if (!m1) return "ogni ~5 min";
+  const isPeak = (m1.peakHours || []).some(([from, to]) => arrMin >= from && arrMin <= to);
+  return isPeak ? `ogni ~${m1.peakMin} min` : `ogni ~${m1.offPeakMin} min`;
+}
+
+function renderStationLink(slotKey, cfg) {
+  const link = cfg.stationLinks?.[slotKey];
+  if (!link) return "";
+  return ` <a href="${escapeHtml(link.url)}" target="_blank" rel="noopener" class="station-link" title="Orari tempo reale ${escapeHtml(link.label)}">🔴 LIVE</a>`;
+}
+
+function renderConnections(card, cfg, currentMin) {
   const trip = card.trip;
+
+  // ── RETURN: show how to reach the bus from various origins ──
   if (card.direction === "return") {
     const origins = card.returnOrigins
       .map(origin => {
-        const dep = trip.stops?.[origin.interchangeStop];
-        if (dep === undefined || dep === null) return "";
-        const leaveOrigin = dep - origin.minutesToInterchange;
-        const wait = trip._depMin - dep;
-        const state = getConnectionState(Math.max(0, wait), cfg);
+        const busAtInterchange = trip.stops?.[origin.interchangeStop];
+        if (busAtInterchange === undefined || busAtInterchange === null) return "";
+        const leaveOrigin = busAtInterchange - origin.minutesToInterchange;
+        // Connection quality based on how much time until user must leave
+        const marginMin = leaveOrigin - currentMin;
+        let connState;
+        if (marginMin < 0) connState = { label: "perso", css: "missed" };
+        else if (marginMin < 5) connState = { label: "stretta", css: "tight" };
+        else if (marginMin <= 15) connState = { label: "buona", css: "good" };
+        else connState = { label: "comoda", css: "calm" };
         return `<div class="connection-row">
-          <span>${escapeHtml(origin.label)} -> ${escapeHtml(getStopName(origin.interchangeStop))}</span>
-          <strong>${minsToHHMM(leaveOrigin)} -> bus ${minsToHHMM(trip._depMin)}</strong>
-          <em class="${state.css}">${state.label}</em>
+          <span>${escapeHtml(origin.label)} → ${escapeHtml(getStopName(origin.interchangeStop))}</span>
+          <strong>parti ${minsToHHMM(leaveOrigin)} → bus ${minsToHHMM(busAtInterchange)}</strong>
+          <em class="${connState.css}">${connState.label}</em>
         </div>`;
       })
+      .filter(Boolean)
       .join("");
-    return origins ? `<div class="connection-box"><h4>Coincidenze stimate</h4>${origins}</div>` : "";
+
+    // Add station links for return interchanges
+    let stationLinks = "";
+    const seenLinks = new Set();
+    for (const origin of card.returnOrigins || []) {
+      const interchange = cfg.interchanges?.[origin.interchangeStop];
+      if (interchange?.trainSlot && !seenLinks.has(interchange.trainSlot)) {
+        seenLinks.add(interchange.trainSlot);
+        const linkHtml = renderStationLink(interchange.trainSlot, cfg);
+        if (linkHtml) stationLinks += linkHtml;
+      }
+    }
+
+    return origins
+      ? `<div class="connection-box"><h4>Coincidenze stimate${stationLinks}</h4>${origins}</div>`
+      : "";
   }
 
+  // ── OUTBOUND: show train/metro connections at destination stops ──
   const rows = [];
-  for (const code of card.compactStops || []) {
+  const seen = new Set();
+  // Check BOTH detail and compact stops for connections (deduplicated)
+  const connectionStops = [...new Set([...(card.detailStops || []), ...(card.compactStops || [])])];
+
+  for (const code of connectionStops) {
     const arrMin = trip.stops?.[code];
     const interchange = cfg.interchanges?.[code];
     if (arrMin === undefined || arrMin === null || !interchange) continue;
+    if (seen.has(interchange.label)) continue;
+    seen.add(interchange.label);
+
     if (interchange.trainSlot) {
+      // Primary train connection (S5)
       const train = calcNextTrain(interchange.trainSlot, arrMin)[0];
       if (train) {
         const state = getConnectionState(train.waitMin, cfg);
         rows.push(`<div class="connection-row">
-          <span>${escapeHtml(interchange.label)} · ${escapeHtml(interchange.type)}</span>
+          <span>${escapeHtml(interchange.label)} · ${escapeHtml(train.line)}</span>
           <strong>${minsToHHMM(train.departureMin)} (+${train.waitMin} min)</strong>
           <em class="${state.css}">${state.label}</em>
         </div>`);
       }
+      // Secondary train connection (RE) if available
+      if (interchange.trainSlotRE) {
+        const trainRE = calcNextTrain(interchange.trainSlotRE, arrMin)[0];
+        if (trainRE) {
+          const stateRE = getConnectionState(trainRE.waitMin, cfg);
+          rows.push(`<div class="connection-row">
+            <span>${escapeHtml(interchange.label)} · ${escapeHtml(trainRE.line)}</span>
+            <strong>${minsToHHMM(trainRE.departureMin)} (+${trainRE.waitMin} min)</strong>
+            <em class="${stateRE.css}">${stateRE.label}</em>
+          </div>`);
+        }
+      }
     } else if (interchange.type === "M1") {
+      const freqLabel = getM1FrequencyLabel(arrMin, cfg);
       rows.push(`<div class="connection-row">
         <span>${escapeHtml(interchange.label)} · M1</span>
-        <strong>da ${minsToHHMM(arrMin)}</strong>
+        <strong>da ${minsToHHMM(arrMin)} · ${freqLabel}</strong>
         <em class="calm">stimata</em>
       </div>`);
     }
   }
-  return rows.length ? `<div class="connection-box"><h4>Coincidenze stimate</h4>${rows.join("")}</div>` : "";
+
+  if (!rows.length) return "";
+
+  // Collect station links for outbound connections
+  let stationLinks = "";
+  const seenLinks = new Set();
+  for (const code of connectionStops) {
+    const interchange = cfg.interchanges?.[code];
+    if (!interchange) continue;
+    if (interchange.trainSlot && !seenLinks.has(interchange.trainSlot)) {
+      seenLinks.add(interchange.trainSlot);
+      stationLinks += renderStationLink(interchange.trainSlot, cfg);
+    }
+  }
+
+  return `<div class="connection-box"><h4>Coincidenze stimate${stationLinks}</h4>${rows.join("")}</div>`;
 }
 
 function renderZ649DestinationEstimates(trip, cfg) {
@@ -375,25 +552,103 @@ function renderCanegrateBlock(state, currentMin, cfg) {
     <span>${escapeHtml(t.line)} da Canegrate</span>
     <strong>${minsToHHMM(t.departureMin)} · +${t.waitMin} min</strong>
   </div>`).join("");
+  const stationUrl = cfg.canegrate.stationUrl;
+  const liveLink = stationUrl ? ` <a href="${escapeHtml(stationUrl)}" target="_blank" rel="noopener" class="station-link" title="Orari tempo reale Canegrate FS">🔴 LIVE</a>` : "";
   return `<section class="alt-block">
-    <h3>Alternativa Canegrate FS</h3>
+    <h3>Alternativa Canegrate FS${liveLink}</h3>
     <p>${driveMin} min in auto. ${escapeHtml(cfg.canegrate.note)}</p>
     ${trains || `<div class="empty-mini">Nessun treno stimato.</div>`}
   </section>`;
 }
 
 function bindLiveEvents(container) {
+  // Direction toggle
   container.querySelectorAll("[data-dir]").forEach(button => {
+    if (button.closest("[data-timetable-direction]")) return;
     button.addEventListener("click", () => {
       const { state, lineData, lineConfig, cfg, saveSettings } = lastArgs;
       saveSettings({ liveDirection: button.dataset.dir });
       renderLive(state, lineData, lineConfig, cfg, saveSettings);
     });
   });
+
+  // Card expand/collapse
   container.querySelectorAll("[data-toggle-card]").forEach(button => {
     button.addEventListener("click", () => {
       const card = container.querySelector(`[data-card="${button.dataset.toggleCard}"]`);
       card?.classList.toggle("expanded");
     });
+  });
+
+  // Stop search input
+  const searchInput = container.querySelector("[data-stop-search]");
+  const resultsBox = container.querySelector("[data-stop-results]");
+  if (searchInput && resultsBox) {
+    searchInput.addEventListener("input", () => {
+      const q = searchInput.value.trim();
+      if (q.length >= 1) {
+        resultsBox.innerHTML = buildSearchResults(q);
+        resultsBox.classList.add("open");
+        // Bind pick events on results
+        resultsBox.querySelectorAll("[data-stop-pick]").forEach(btn => {
+          btn.addEventListener("click", () => {
+            const { state, lineData, lineConfig, cfg, saveSettings } = lastArgs;
+            state.liveStopFilter = btn.dataset.stopPick;
+            renderLive(state, lineData, lineConfig, cfg, saveSettings);
+          });
+        });
+      } else {
+        resultsBox.innerHTML = "";
+        resultsBox.classList.remove("open");
+      }
+    });
+    searchInput.addEventListener("focus", () => {
+      if (!searchInput.value && !lastArgs.state.liveStopFilter) {
+        // Show all stops on focus when empty
+        resultsBox.innerHTML = buildSearchResults(" ");
+        resultsBox.classList.add("open");
+        resultsBox.querySelectorAll("[data-stop-pick]").forEach(btn => {
+          btn.addEventListener("click", () => {
+            const { state, lineData, lineConfig, cfg, saveSettings } = lastArgs;
+            state.liveStopFilter = btn.dataset.stopPick;
+            renderLive(state, lineData, lineConfig, cfg, saveSettings);
+          });
+        });
+      } else if (searchInput.value) {
+        // If has a selected stop, clear text to allow new search
+        searchInput.value = "";
+        searchInput.dispatchEvent(new Event("input"));
+      }
+    });
+    // Close results on outside click
+    document.addEventListener("click", (e) => {
+      if (!e.target.closest(".stop-search-wrapper")) {
+        resultsBox.classList.remove("open");
+      }
+    }, { once: true });
+  }
+
+  // Clear stop search
+  container.querySelector("[data-stop-search-clear]")?.addEventListener("click", () => {
+    const { state, lineData, lineConfig, cfg, saveSettings } = lastArgs;
+    state.liveStopFilter = null;
+    renderLive(state, lineData, lineConfig, cfg, saveSettings);
+  });
+
+  // Line filter pills
+  container.querySelectorAll("[data-line-filter]").forEach(button => {
+    button.addEventListener("click", () => {
+      const { state, lineData, lineConfig, cfg, saveSettings } = lastArgs;
+      state.liveLineFilter = button.dataset.lineFilter || null;
+      renderLive(state, lineData, lineConfig, cfg, saveSettings);
+    });
+  });
+
+  // Clear all filters
+  container.querySelector("[data-clear-filters]")?.addEventListener("click", () => {
+    const { state, lineData, lineConfig, cfg, saveSettings } = lastArgs;
+    state.liveStopFilter = null;
+    state.liveLineFilter = null;
+    renderLive(state, lineData, lineConfig, cfg, saveSettings);
   });
 }

@@ -159,6 +159,184 @@ button {
   gap: 12px;
 }
 
+/* ── Filter Bar ──────────────────────────────────────────────────────── */
+
+.filter-bar {
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(29, 41, 61, 0.88);
+  box-shadow: var(--shadow);
+}
+
+.filter-group {
+  display: grid;
+  gap: 6px;
+}
+
+.filter-label {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.stop-search-wrapper {
+  position: relative;
+}
+
+.stop-search-input {
+  min-height: 42px;
+  width: 100%;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: #111827;
+  color: var(--text);
+  padding: 8px 36px 8px 10px;
+  font: inherit;
+  font-size: 0.88rem;
+  transition: border-color 0.2s;
+}
+
+.stop-search-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.stop-search-input::placeholder {
+  color: var(--quiet);
+}
+
+.stop-search-clear {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  color: var(--muted);
+  font-size: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+
+.stop-search-clear:hover {
+  background: rgba(239, 68, 68, 0.25);
+  color: #fecaca;
+}
+
+.stop-search-results {
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  max-height: 280px;
+  overflow-y: auto;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: #111827;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.5);
+  z-index: 20;
+}
+
+.stop-search-results.open {
+  display: block;
+}
+
+.search-group-label {
+  padding: 8px 12px 4px;
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  background: #111827;
+}
+
+.search-result-item {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  font-size: 0.84rem;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.12s;
+}
+
+.search-result-item:hover {
+  background: rgba(34, 211, 238, 0.1);
+}
+
+.search-no-results {
+  padding: 16px 12px;
+  color: var(--quiet);
+  font-size: 0.84rem;
+  text-align: center;
+}
+
+.filter-pills {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+
+.filter-pills button {
+  flex: 0 0 auto;
+  min-height: 34px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(16, 24, 40, 0.38);
+  color: var(--muted);
+  font-weight: 750;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-pills button.active {
+  border-color: rgba(34, 211, 238, 0.35);
+  background: rgba(34, 211, 238, 0.13);
+  color: var(--accent);
+}
+
+.filter-pills button:hover:not(.active) {
+  border-color: var(--line-strong);
+  background: rgba(34, 211, 238, 0.06);
+}
+
+.filter-active-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 12px;
+  border: 1px solid rgba(34, 211, 238, 0.2);
+  border-radius: var(--radius);
+  background: rgba(34, 211, 238, 0.06);
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+/* ── End Filter Bar ──────────────────────────────────────────────────── */
+
 .hero-panel,
 .panel,
 .line-card,
@@ -462,6 +640,47 @@ button {
 .connection-row em.long {
   background: rgba(245, 158, 11, 0.16);
   color: #fde68a;
+}
+
+.connection-row em.missed {
+  background: rgba(113, 128, 150, 0.22);
+  color: var(--quiet);
+}
+
+.station-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(239, 68, 68, 0.12);
+  color: #fca5a5;
+  font-size: 0.65rem;
+  font-weight: 850;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  transition: background 0.15s;
+  vertical-align: middle;
+}
+
+.station-link:hover {
+  background: rgba(239, 68, 68, 0.25);
+  color: #fecaca;
+}
+
+.connection-box h4 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.connection-row span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .destination-estimates {
