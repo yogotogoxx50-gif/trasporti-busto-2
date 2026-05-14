@@ -469,11 +469,9 @@ function renderConnections(card, cfg, currentMin) {
         }
       }
     } else if (interchange.type === "M1") {
-      const freqLabel = getM1FrequencyLabel(arrMin, cfg);
       rows.push(`<div class="connection-row">
-        <span>${escapeHtml(interchange.label)} · M1</span>
-        <strong>da ${minsToHHMM(arrMin)} · ${freqLabel}</strong>
-        <em class="calm">stimata</em>
+        <span>${escapeHtml(interchange.label)}</span>
+        <strong>M1</strong>
       </div>`);
     }
   }
@@ -534,13 +532,28 @@ function renderRecentlyDepartedBlock(state, lineData, lineConfig, cfg, currentMi
     const departed = getRecentlyDeparted(lineData[lineId]?.[key] || [], currentMin, 30, preferred, fallbacks);
     departed.forEach(t => recent.push({ lineId, depMin: t._depMin, stop: t._depStop, ago: currentMin - t._depMin }));
   }
+
+  // Aggiungi treno Canegrate perso (per l'auto) ma non ancora partito in stazione
+  const driveMin = Number(state.settings?.driveCanegrate || cfg.defaults.driveCanegrate);
+  const canegrateBlock = buildCanegrateBlock(driveMin, currentMin);
+  if (canegrateBlock.justMissedCarTrain) {
+    const t = canegrateBlock.justMissedCarTrain;
+    recent.push({
+      lineId: t.line,
+      depMin: t.departureMin,
+      stop: "canegrate_fs",
+      ago: currentMin - t.departureMin,
+      customText: `${minsToHHMM(t.departureMin)} (in stazione tra ${t.departureMin - currentMin} min)`
+    });
+  }
+
   recent.sort((a, b) => a.ago - b.ago);
   if (!recent.length) return "";
   return `<section class="recent-section">
     <h3>Partiti di recente</h3>
     ${recent.slice(0, 5).map(r => `<div class="recent-item">
-      <span>${r.lineId} · ${escapeHtml(getStopName(r.stop))}</span>
-      <strong>${r.ago} min fa</strong>
+      <span>${r.lineId} · ${r.stop === "canegrate_fs" ? "Canegrate FS" : escapeHtml(getStopName(r.stop))}</span>
+      <strong>${r.customText ? r.customText : `${r.ago} min fa`}</strong>
     </div>`).join("")}
   </section>`;
 }
@@ -548,16 +561,32 @@ function renderRecentlyDepartedBlock(state, lineData, lineConfig, cfg, currentMi
 function renderCanegrateBlock(state, currentMin, cfg) {
   const driveMin = Number(state.settings?.driveCanegrate || cfg.defaults.driveCanegrate);
   const block = buildCanegrateBlock(driveMin, currentMin);
-  const trains = block.trains.slice(0, 2).map(t => `<div class="recent-item">
-    <span>${escapeHtml(t.line)} da Canegrate</span>
-    <strong>${minsToHHMM(t.departureMin)} · +${t.waitMin} min</strong>
-  </div>`).join("");
+  const trains = block.trains;
+  
+  if (!trains.length) return "";
+
+  const firstTrain = trains[0];
+  const wait = block.canLeaveIn;
+  const urgency = getUrgencyState(wait);
+  
   const stationUrl = cfg.canegrate.stationUrl;
   const liveLink = stationUrl ? ` <a href="${escapeHtml(stationUrl)}" target="_blank" rel="noopener" class="station-link" title="Orari tempo reale Canegrate FS">🔴 LIVE</a>` : "";
-  return `<section class="alt-block">
-    <h3>Alternativa Canegrate FS${liveLink}</h3>
-    <p>${driveMin} min in auto. ${escapeHtml(cfg.canegrate.note)}</p>
-    ${trains || `<div class="empty-mini">Nessun treno stimato.</div>`}
+
+  const trainChips = trains.slice(0, 2).map(t => `<span class="stop-chip large">
+    <small>${escapeHtml(t.line)} da Canegrate</small>
+    <strong>${minsToHHMM(t.departureMin)}</strong>
+  </span>`).join("");
+
+  return `<section class="featured-card ${urgency.css}">
+    <div class="featured-top">
+      <span class="line-pill" style="background: #3b82f6; color: #fff;">${escapeHtml(firstTrain.line)}</span>
+      <span class="status-pill ${urgency.css}">${urgency.label}</span>
+    </div>
+    <h2 style="font-size: 3.5rem;">${minsToHHMM(firstTrain.departureMin)}</h2>
+    <p>Alternativa Canegrate FS${liveLink} · in auto ${driveMin} min · parti fra ${formatWait(wait)}</p>
+    <div class="stop-chip-row">
+      ${trainChips}
+    </div>
   </section>`;
 }
 

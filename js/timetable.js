@@ -146,7 +146,7 @@ function renderConnectionCell(trip, config) {
     if (connCfg.slotKey) {
       const train = calcNextTrain(connCfg.slotKey, arrMin)[0];
       if (train) parts.push(`<span class="conn-mini">${escapeHtml(train.line)} ${minsToHHMM(train.departureMin)} <small>+${train.waitMin}′</small></span>`);
-    } else {
+    } else if (connCfg.type !== "M1") {
       parts.push(`<span class="conn-mini">${escapeHtml(connCfg.type)} ${minsToHHMM(arrMin)}</span>`);
     }
   }

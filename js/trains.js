@@ -1,28 +1,29 @@
 // === Train Connection Slots ===
-// Orari verificati su Trenord/Moovit (maggio 2026)
-// S5: Treviglio → Milano Passante, ogni 30 min, 05:40–22:10 circa da Treviglio
-// Pregnana FS: treni ai minuti :17 e :47, primo utile 05:47, ultimo 23:47
+// Orari verificati su Trenord (maggio 2026)
+// Canegrate FS: treni ai minuti :08 e :38, ogni 30 min, identico tutti i giorni
+// Legnano FS:   treni ai minuti :12 e :42, ogni 30 min
+// Pregnana FS:  treni ai minuti :17 e :47, primo utile 05:47, ultimo 23:47
 
 const TRAIN_SLOTS = {
   "PG102": {
-    line: "S5/S6",
+    line: "S6",
     minutes: [17, 47],
     firstTrain: 347,   // 05:47
     lastTrain: 1427,    // 23:47
-    note: "S5/S6 dir. Milano Passante"
+    note: "S6 dir. Milano Passante"
   },
   "canegrate": {
-    line: "S5/S6",
-    minutes: [1, 16, 31, 46],
-    firstTrain: 301,    // 05:01
-    lastTrain: 1426,    // 23:46
-    note: "S5/S6 da Canegrate FS"
+    line: "S5",
+    minutes: [21, 51],
+    firstTrain: 351,    // 05:51
+    lastTrain: 1401,    // 23:21
+    note: "S5 da Canegrate FS dir. Milano"
   },
   "LG090": {
     line: "S5",
-    minutes: [3, 33],
-    firstTrain: 333,    // 05:33
-    lastTrain: 1413,    // 23:33
+    minutes: [12, 42],
+    firstTrain: 312,    // 05:12
+    lastTrain: 1362,    // 22:42
     note: "S5 dir. Milano Passante"
   },
   "PB090": {
@@ -119,20 +120,33 @@ export function formatConnection(conn) {
  */
 export function buildCanegrateBlock(driveMinutes, currentMin) {
   const arrivalAtStation = currentMin + driveMinutes;
-  const trains = calcNextTrain("canegrate", arrivalAtStation);
+  
+  // Trains still departing from the station in the future
+  const allFutureTrains = calcNextTrain("canegrate", currentMin);
+  
+  // Trains you can still realistically catch by driving there
+  const catchableTrains = calcNextTrain("canegrate", arrivalAtStation);
 
-  if (trains.length === 0) {
-    return { canLeaveIn: null, trains: [] };
+  let justMissedCarTrain = null;
+  if (allFutureTrains.length > 0 && catchableTrains.length > 0 && allFutureTrains[0].departureMin !== catchableTrains[0].departureMin) {
+    justMissedCarTrain = allFutureTrains[0];
+  } else if (allFutureTrains.length > 0 && catchableTrains.length === 0) {
+    justMissedCarTrain = allFutureTrains[0];
   }
 
-  const firstTrain = trains[0];
+  if (catchableTrains.length === 0) {
+    return { canLeaveIn: null, trains: [], justMissedCarTrain };
+  }
+
+  const firstTrain = catchableTrains[0];
   const leaveIn = firstTrain.departureMin - driveMinutes - currentMin;
 
   return {
     driveMinutes,
     canLeaveIn: leaveIn > 0 ? leaveIn : 0,
     arrivalAtStation,
-    trains,
+    trains: catchableTrains,
+    justMissedCarTrain,
     // Estimate arrival at Milano Centrale
     milanoArrival: firstTrain.departureMin + 25
   };
