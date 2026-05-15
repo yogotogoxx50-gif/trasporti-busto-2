@@ -116,7 +116,7 @@ export function renderLive(state, lineData, lineConfig, cfg, saveSettings) {
       if (hero) html += renderFeaturedCard(hero, direction, cfg, currentMin, state);
     }
     html += `<div class="section-title">${stopFilter ? `Partenze da ${escapeHtml(getStopName(stopFilter))}` : "Linee attive"}</div>`;
-    html += cards.map(card => renderLineCard(card, direction, cfg, currentMin)).join("");
+    html += cards.map(card => renderLineCard(card, direction, cfg, currentMin, state)).join("");
   }
 
   if (!stopFilter) {
@@ -302,10 +302,11 @@ function renderFeaturedCard(card, direction, cfg, currentMin, state) {
   </section>`;
 }
 
-function renderLineCard(card, direction, cfg, currentMin) {
+function renderLineCard(card, direction, cfg, currentMin, state) {
   const id = `live-${card.lineId}`;
   const isExpanded = false;
   const trip = card.trip;
+  const walkMin = Number(state?.settings?.walkRossini ?? cfg.defaults.walkRossini ?? 0);
   const wait = trip ? trip._depMin - currentMin : null;
   const urgencyClass = trip ? getUrgencyClass(wait) : "urgency-missed";
   const compact = trip ? renderStopChips(trip, card.compactStops) : "";
@@ -329,6 +330,7 @@ function renderLineCard(card, direction, cfg, currentMin) {
         <span class="urgency-dot ${urgencyClass}"></span>
       </div>
     </button>
+    ${renderTimeInfoRow(trip, wait, walkMin, direction)}
     ${compact}
     <div class="line-card-body">
       ${card.disrupted ? renderDisruption(card.lineId, cfg) : ""}
@@ -336,6 +338,30 @@ function renderLineCard(card, direction, cfg, currentMin) {
       ${renderUpcomingTrips(card)}
     </div>
   </article>`;
+}
+
+function renderTimeInfoRow(trip, wait, walkMin, direction) {
+  if (!trip) return "";
+  const depHHMM = minsToHHMM(trip._depMin);
+  const leaveCountdown = wait - walkMin;
+  const leaveAtHHMM = minsToHHMM(trip._depMin - walkMin);
+
+  return `
+    <div class="time-info-row">
+      <div class="time-block bus">
+        <div class="time-block-label bus">Orario Bus</div>
+        <div class="time-block-value bus">${depHHMM}</div>
+        <span class="time-block-pill bus">tra ${wait} min</span>
+      </div>
+      ${direction === 'outbound' ? `
+      <div class="time-block walk">
+        <div class="time-block-label walk">Uscire di casa</div>
+        <div class="time-block-value walk">tra ${leaveCountdown} min</div>
+        <span class="time-block-pill walk">a piedi</span>
+        <div class="time-block-detail">Uscire alle ${leaveAtHHMM} &middot; ${walkMin} min a piedi</div>
+      </div>` : ''}
+    </div>
+  `;
 }
 
 function renderValidity(validities) {
