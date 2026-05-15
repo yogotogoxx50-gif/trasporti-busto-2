@@ -532,6 +532,12 @@ button {
   border-radius: 999px;
 }
 
+.dep-stop-row { display: flex; align-items: baseline; gap: 6px; padding: 10px 14px 6px; flex-wrap: wrap; }
+.dep-stop-label { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--quiet); white-space: nowrap; }
+.dep-stop-name { font-size: 0.95rem; font-weight: 700; color: var(--text); }
+.dep-stop-dest { font-size: 0.82rem; color: var(--muted); }
+.dep-stop-pin { background: none; border: none; padding: 0 0 0 2px; cursor: pointer; font-size: 1rem; line-height: 1; vertical-align: middle; }
+
 .time-info-row { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); }
 .time-block { padding: 12px 14px; display: flex; flex-direction: column; gap: 3px; }
 .time-block.bus { border-right: 1px solid var(--line); }

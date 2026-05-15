@@ -19,6 +19,7 @@ import {
 import { calcNextTrain, buildCanegrateBlock } from "./trains.js";
 import { getStopName, STOP_NAMES } from "./line-config.js";
 import { openMap } from "./map.js";
+import { STOP_COORDINATES } from "./map-data.js";
 
 // Cities ordered outward from Busto Garolfo for the stop filter dropdown
 const FILTER_CITY_ORDER = [
@@ -286,9 +287,20 @@ function renderFeaturedCard(card, direction, cfg, currentMin, state) {
   const reachability = direction === "outbound" ? getReachabilityState(wait, walkMin) : busState;
   const urgency = busState.css === "missed" ? busState : reachability;
   const primaryStops = renderStopChips(trip, card.compactStops, "large");
-  const subtitle = direction === "return"
-    ? `Da ${getStopName(card.fromStop)} verso ${getStopName(card.toStop)}`
-    : `Da ${getStopName(card.fromStop)} verso ${card.config.destination}`;
+  const destination = direction === 'return' ? getStopName(card.toStop) : card.config.destination;
+  const fromStopName = getStopName(card.fromStop);
+  const hasMapPin = card.fromStop && card.fromStop.startsWith('BT') && typeof STOP_COORDINATES !== 'undefined' && !!STOP_COORDINATES[card.fromStop];
+  const pinHtml = hasMapPin
+    ? `<button type="button" class="map-trigger dep-stop-pin" data-stop-code="${card.fromStop}" title="Vedi sulla mappa" aria-label="Apri mappa fermata">📍</button>`
+    : '';
+
+  const depStopHtml = `
+    <div class="dep-stop-row" style="padding-left: 0; padding-right: 0; padding-top: 8px;">
+      <span class="dep-stop-label">PARTENZA DA</span>
+      <span class="dep-stop-name">${escapeHtml(fromStopName)}${pinHtml}</span>
+      <span class="dep-stop-dest">→ ${escapeHtml(destination)}</span>
+    </div>
+  `;
 
   const depHHMM = minsToHHMM(trip._depMin);
   const leaveCountdown = wait - walkMin;
@@ -308,7 +320,7 @@ function renderFeaturedCard(card, direction, cfg, currentMin, state) {
       <span class="line-pill">${card.lineId}</span>
       <span class="status-pill ${urgency.css}">${urgency.label}</span>
     </div>
-    <p style="margin-top: 8px; margin-bottom: 4px;">${subtitle}</p>
+    ${depStopHtml}
     <div class="time-info-row" style="border-top: none;">
       <div class="time-block bus">
         <div class="time-block-label bus">Orario Bus</div>
@@ -348,9 +360,8 @@ function renderLineCard(card, direction, cfg, currentMin, state) {
       <div class="line-meta">
         <strong>${nextDisplay}</strong>
         <span class="urgency-dot ${urgencyClass}"></span>
-      </div>
     </button>
-    ${renderTimeInfoRow(trip, wait, walkMin, direction)}
+    ${renderTimeInfoRow(trip, wait, walkMin, direction, card.fromStop, direction === 'return' ? getStopName(card.toStop) : card.config.destination)}
     ${compact}
     <div class="line-card-body">
       ${card.disrupted ? renderDisruption(card.lineId, cfg) : ""}
@@ -360,13 +371,24 @@ function renderLineCard(card, direction, cfg, currentMin, state) {
   </article>`;
 }
 
-function renderTimeInfoRow(trip, wait, walkMin, direction) {
+function renderTimeInfoRow(trip, wait, walkMin, direction, fromStop, destination) {
   if (!trip) return "";
   const depHHMM = minsToHHMM(trip._depMin);
   const leaveCountdown = wait - walkMin;
   const leaveAtHHMM = minsToHHMM(trip._depMin - walkMin);
 
+  const fromStopName = getStopName(fromStop);
+  const hasMapPin = fromStop && fromStop.startsWith('BT') && typeof STOP_COORDINATES !== 'undefined' && !!STOP_COORDINATES[fromStop];
+  const pinHtml = hasMapPin
+    ? `<button type="button" class="map-trigger dep-stop-pin" data-stop-code="${fromStop}" title="Vedi sulla mappa" aria-label="Apri mappa fermata">📍</button>`
+    : '';
+
   return `
+    <div class="dep-stop-row">
+      <span class="dep-stop-label">PARTENZA DA</span>
+      <span class="dep-stop-name">${escapeHtml(fromStopName)}${pinHtml}</span>
+      <span class="dep-stop-dest">→ ${escapeHtml(destination)}</span>
+    </div>
     <div class="time-info-row">
       <div class="time-block bus">
         <div class="time-block-label bus">Orario Bus</div>
@@ -398,8 +420,12 @@ function renderStopChips(trip, stops, size = "") {
   const chips = (stops || [])
     .map(code => {
       const mins = trip.stops?.[code];
+      const hasPin = STOP_COORDINATES?.[code];
+      const stopEl = hasPin
+        ? `<small class="map-trigger" data-stop-code="${code}" style="cursor:pointer" title="Vedi sulla mappa">${escapeHtml(getStopName(code))} 📍</small>`
+        : `<small>${escapeHtml(getStopName(code))}</small>`;
       return `<span class="stop-chip ${size}">
-        <small class="map-trigger" data-stop-code="${code}" style="cursor:pointer" title="Vedi sulla mappa">${escapeHtml(getStopName(code))} 📍</small>
+        ${stopEl}
         <strong>${mins !== undefined && mins !== null ? minsToHHMM(mins) : "-"}</strong>
       </span>`;
     })
@@ -412,11 +438,17 @@ function renderTripDetails(card, cfg, currentMin) {
   const timeline = card.detailStops
     .map(code => ({ code, minutes: trip.stops?.[code] }))
     .filter(s => s.minutes !== undefined && s.minutes !== null)
-    .map(s => `<div class="timeline-node">
-      <span></span>
-      <strong>${minsToHHMM(s.minutes)}</strong>
-      <small class="map-trigger" data-stop-code="${s.code}" style="cursor:pointer" title="Vedi sulla mappa">${escapeHtml(getStopName(s.code))} 📍</small>
-    </div>`)
+    .map(s => {
+      const hasPin = STOP_COORDINATES?.[s.code];
+      const stopEl = hasPin
+        ? `<small class="map-trigger" data-stop-code="${s.code}" style="cursor:pointer" title="Vedi sulla mappa">${escapeHtml(getStopName(s.code))} 📍</small>`
+        : `<small>${escapeHtml(getStopName(s.code))}</small>`;
+      return `<div class="timeline-node">
+        <span></span>
+        <strong>${minsToHHMM(s.minutes)}</strong>
+        ${stopEl}
+      </div>`;
+    })
     .join("");
 
   const connections = renderConnections(card, cfg, currentMin);
