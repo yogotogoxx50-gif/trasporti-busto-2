@@ -290,13 +290,33 @@ function renderFeaturedCard(card, direction, cfg, currentMin, state) {
     ? `Da ${getStopName(card.fromStop)} verso ${getStopName(card.toStop)}`
     : `Da ${getStopName(card.fromStop)} verso ${card.config.destination}`;
 
+  const depHHMM = minsToHHMM(trip._depMin);
+  const leaveCountdown = wait - walkMin;
+  const leaveAtHHMM = minsToHHMM(trip._depMin - walkMin);
+
+  const walkBlock = direction === 'outbound' ? `
+      <div class="time-block walk">
+        <div class="time-block-label walk">Uscire di casa</div>
+        <h2 style="color: var(--accent); margin: 0; font-size: clamp(2rem, 9vw, 3.5rem);">tra ${leaveCountdown} min</h2>
+        <span class="time-block-pill walk">a piedi</span>
+        <div class="time-block-detail">Uscire alle ${leaveAtHHMM} &middot; ${walkMin} min a piedi</div>
+      </div>
+  ` : '';
+
   return `<section class="featured-card ${urgency.css}">
     <div class="featured-top">
       <span class="line-pill">${card.lineId}</span>
       <span class="status-pill ${urgency.css}">${urgency.label}</span>
     </div>
-    <h2>${minsToHHMM(trip._depMin)}</h2>
-    <p>${subtitle} · fra ${formatWait(wait)}${direction === "outbound" ? ` · a piedi ${walkMin} min` : ""}</p>
+    <p style="margin-top: 8px; margin-bottom: 4px;">${subtitle}</p>
+    <div class="time-info-row" style="border-top: none;">
+      <div class="time-block bus">
+        <div class="time-block-label bus">Orario Bus</div>
+        <h2 style="margin: 0;">${depHHMM}</h2>
+        <span class="time-block-pill bus">tra ${wait} min</span>
+      </div>
+      ${walkBlock}
+    </div>
     ${primaryStops}
     ${direction === "outbound" && card.lineId === "Z649" ? renderZ649DestinationEstimates(trip, cfg) : ""}
   </section>`;
@@ -604,13 +624,28 @@ function renderCanegrateBlock(state, currentMin, cfg) {
     <strong>${minsToHHMM(t.departureMin)}</strong>
   </span>`).join("");
 
+  const depHHMM = minsToHHMM(firstTrain.departureMin);
+  const leaveAtHHMM = minsToHHMM(firstTrain.departureMin - driveMin);
+
   return `<section class="featured-card ${urgency.css}">
     <div class="featured-top">
       <span class="line-pill" style="background: #3b82f6; color: #fff;">${escapeHtml(firstTrain.line)}</span>
       <span class="status-pill ${urgency.css}">${urgency.label}</span>
     </div>
-    <h2 style="font-size: 3.5rem;">${minsToHHMM(firstTrain.departureMin)}</h2>
-    <p>Alternativa Canegrate FS${liveLink} · in auto ${driveMin} min · parti fra ${formatWait(wait)}</p>
+    <p style="margin-top: 8px; margin-bottom: 4px;">Alternativa Canegrate FS${liveLink}</p>
+    <div class="time-info-row" style="border-top: none;">
+      <div class="time-block bus">
+        <div class="time-block-label bus">Orario Treno</div>
+        <h2 style="margin: 0; font-size: 3.5rem;">${depHHMM}</h2>
+        <span class="time-block-pill bus">tra ${firstTrain.departureMin - currentMin} min</span>
+      </div>
+      <div class="time-block walk">
+        <div class="time-block-label walk">Uscire di casa</div>
+        <h2 style="color: var(--accent); margin: 0; font-size: 2.8rem;">tra ${wait} min</h2>
+        <span class="time-block-pill walk">in auto</span>
+        <div class="time-block-detail">Uscire alle ${leaveAtHHMM} &middot; in auto ${driveMin} min</div>
+      </div>
+    </div>
     <div class="stop-chip-row">
       ${trainChips}
     </div>
