@@ -102,6 +102,9 @@ export function openMap(targetStopCode = null) {
         <strong>${name}</strong>
         <small>${code}</small>
         <div class="line-tags">${lineTagsHtml || '<span style="color:#a8b3c7">Nessuna linea trovata</span>'}</div>
+        <a class="directions-btn" href="https://www.google.com/maps/dir/?api=1&destination=${coords[0]},${coords[1]}" target="_blank" rel="noopener">
+          🧭 Direzioni
+        </a>
       `);
       
       markers[code] = marker;

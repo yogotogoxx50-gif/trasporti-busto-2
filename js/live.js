@@ -146,7 +146,7 @@ function renderFilterBar(lineConfig, cfg, stopFilter, lineFilter) {
   let activeInfo = "";
   if (stopFilter || lineFilter) {
     const parts = [];
-    if (stopFilter) parts.push(`📍 <strong>${escapeHtml(getStopName(stopFilter))}</strong>`);
+    if (stopFilter) parts.push(`📍 <strong title="${escapeHtml(getStopName(stopFilter))} [${stopFilter}]">${escapeHtml(getStopName(stopFilter))}</strong>`);
     if (lineFilter) parts.push(`🚌 <strong>${lineFilter}</strong>`);
     activeInfo = `<div class="filter-active-info">
       ${parts.join(" · ")}
@@ -422,8 +422,8 @@ function renderStopChips(trip, stops, size = "") {
       const mins = trip.stops?.[code];
       const hasPin = STOP_COORDINATES?.[code];
       const stopEl = hasPin
-        ? `<small class="map-trigger" data-stop-code="${code}" style="cursor:pointer" title="Vedi sulla mappa">${escapeHtml(getStopName(code))} 📍</small>`
-        : `<small>${escapeHtml(getStopName(code))}</small>`;
+        ? `<small class="map-trigger" data-stop-code="${code}" style="cursor:pointer" title="${escapeHtml(getStopName(code))} [${code}] - Vedi sulla mappa">${escapeHtml(getStopName(code))} 📍</small>`
+        : `<small title="${escapeHtml(getStopName(code))} [${code}]">${escapeHtml(getStopName(code))}</small>`;
       return `<span class="stop-chip ${size}">
         ${stopEl}
         <strong>${mins !== undefined && mins !== null ? minsToHHMM(mins) : "-"}</strong>
@@ -441,8 +441,8 @@ function renderTripDetails(card, cfg, currentMin) {
     .map(s => {
       const hasPin = STOP_COORDINATES?.[s.code];
       const stopEl = hasPin
-        ? `<small class="map-trigger" data-stop-code="${s.code}" style="cursor:pointer" title="Vedi sulla mappa">${escapeHtml(getStopName(s.code))} 📍</small>`
-        : `<small>${escapeHtml(getStopName(s.code))}</small>`;
+        ? `<small class="map-trigger" data-stop-code="${s.code}" style="cursor:pointer" title="${escapeHtml(getStopName(s.code))} [${s.code}] - Vedi sulla mappa">${escapeHtml(getStopName(s.code))} 📍</small>`
+        : `<small title="${escapeHtml(getStopName(s.code))} [${s.code}]">${escapeHtml(getStopName(s.code))}</small>`;
       return `<div class="timeline-node">
         <span></span>
         <strong>${minsToHHMM(s.minutes)}</strong>

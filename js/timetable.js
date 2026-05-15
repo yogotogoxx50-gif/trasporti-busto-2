@@ -8,6 +8,8 @@ import {
 } from "./utils.js";
 import { calcNextTrain } from "./trains.js";
 import { getStopName } from "./line-config.js";
+import { STOP_COORDINATES } from "./map-data.js";
+import { openMap } from "./map.js";
 
 let lastArgs = null;
 
@@ -73,7 +75,13 @@ export function renderTimetable(state, lineData, lineConfig, cfg) {
         <thead>
           <tr>
             <th>Corsa</th>
-            ${stops.map(code => `<th title="${escapeHtml(getStopName(code))}">${escapeHtml(shortStop(code))}</th>`).join("")}
+            ${stops.map(code => {
+              const hasCoords = !!STOP_COORDINATES[code];
+              const label = escapeHtml(shortStop(code));
+              return hasCoords
+                ? `<th title="${escapeHtml(getStopName(code))} [${code}]" class="stop-link" data-stop-code="${code}">${label}</th>`
+                : `<th title="${escapeHtml(getStopName(code))} [${code}]">${label}</th>`;
+            }).join("")}
             <th>Conn.</th>
           </tr>
         </thead>
@@ -187,5 +195,8 @@ function bindEvents(container) {
       state.timetableDirection = button.dataset.dir;
       renderTimetable(state, lineData, lineConfig, cfg);
     });
+  });
+  container.querySelectorAll("th.stop-link[data-stop-code]").forEach(th => {
+    th.addEventListener("click", () => openMap(th.dataset.stopCode));
   });
 }
