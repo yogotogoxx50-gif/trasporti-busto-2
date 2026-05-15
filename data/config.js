@@ -83,7 +83,7 @@ export const CFG = {
   homeProfile: {
     label: "Casa",
     address: "Busto Garolfo",
-    note: "Fermata principale andata: BT703 (~2 min). Ritorno: BT947 (~2 min) o BT951 (~4 min). Z649 ritorno: BT956 (~8 min)."
+    //note: "Fermata principale andata: BT703 (~2 min). Ritorno: BT947 (~2 min) o BT951 (~4 min). Z649 ritorno: BT956 (~8 min)."
   },
 
   // Ordine di visualizzazione delle linee nella UI
