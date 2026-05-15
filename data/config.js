@@ -395,10 +395,10 @@ export const CFG = {
   m1_destinations: [
     { id: "molino", name: "Molino Dorino", minutesFromMolino: 0 },
     { id: "pagano", name: "Pagano / Buonarroti", minutesFromMolino: 6 },
-    { id: "cadorna", name: "Cadorna FNM", minutesFromMolino: 10 },
-    { id: "duomo", name: "Duomo", minutesFromMolino: 12 },
-    { id: "repubblica", name: "Repubblica", minutesFromMolino: 14 },
-    { id: "centrale", name: "Centrale FS", minutesFromMolino: 18 }
+    { id: "cadorna", name: "Cadorna FNM", minutesFromMolino: 33 },
+    { id: "duomo", name: "Duomo", minutesFromMolino: 35 },
+    { id: "repubblica", name: "Repubblica", minutesFromMolino: 40 },
+    { id: "centrale", name: "Centrale FS", minutesFromMolino: 38 }
   ],
 
   // --------------------------------------------------------------------------
@@ -407,7 +407,7 @@ export const CFG = {
   s5s6_destinations: [
     { name: "Bovisa FNM", minutesFromPregnana: 10 },
     { name: "P.ta Garibaldi", minutesFromPregnana: 20 },
-    { name: "Repubblica", minutesFromPregnana: 25 },
+    { name: "Repubblica", minutesFromPregnana: 27 },
     { name: "Dateo", minutesFromPregnana: 29 }
   ],
 

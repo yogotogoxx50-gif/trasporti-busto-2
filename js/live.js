@@ -578,7 +578,15 @@ function renderZ649DestinationEstimates(trip, cfg) {
   const parts = [];
   if (pg !== undefined) {
     const rep = cfg.s5s6_destinations.find(d => d.name === "Repubblica");
-    if (rep) parts.push(`Repubblica via Pregnana ~${minsToHHMM(pg + rep.minutesFromPregnana)}`);
+    if (rep) {
+      const nextTrains = calcNextTrain("PG102", pg, 1);
+      if (nextTrains.length > 0) {
+        const train = nextTrains[0];
+        parts.push(`Repubblica via Pregnana ~${minsToHHMM(train.departureMin + rep.minutesFromPregnana)}`);
+      } else {
+        parts.push(`Repubblica via Pregnana ~${minsToHHMM(pg + rep.minutesFromPregnana)}`);
+      }
+    }
   }
   if (md !== undefined) {
     const repM1 = cfg.m1_destinations.find(d => d.id === "repubblica");
