@@ -10,6 +10,7 @@ import { renderLive } from "./live.js";
 import { renderTimetable } from "./timetable.js";
 import { renderSettings, sanitizeSettings } from "./settings.js";
 import { getItalianDayName } from "./utils.js";
+import { initMap } from "./map.js";
 
 const LINE_DATA = {
   Z649: Z649_DATA,
@@ -96,6 +97,7 @@ function init() {
   setInterval(() => {
     if (state.currentTab === "live" || state.currentTab === "timetable") renderCurrentTab();
   }, 60000);
+  initMap();
   registerSW();
 }
 

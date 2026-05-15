@@ -18,6 +18,7 @@ import {
 
 import { calcNextTrain, buildCanegrateBlock } from "./trains.js";
 import { getStopName, STOP_NAMES } from "./line-config.js";
+import { openMap } from "./map.js";
 
 // Cities ordered outward from Busto Garolfo for the stop filter dropdown
 const FILTER_CITY_ORDER = [
@@ -352,7 +353,7 @@ function renderStopChips(trip, stops, size = "") {
     .map(code => {
       const mins = trip.stops?.[code];
       return `<span class="stop-chip ${size}">
-        <small>${escapeHtml(getStopName(code))}</small>
+        <small class="map-trigger" data-stop-code="${code}" style="cursor:pointer" title="Vedi sulla mappa">${escapeHtml(getStopName(code))} 📍</small>
         <strong>${mins !== undefined && mins !== null ? minsToHHMM(mins) : "-"}</strong>
       </span>`;
     })
@@ -368,7 +369,7 @@ function renderTripDetails(card, cfg, currentMin) {
     .map(s => `<div class="timeline-node">
       <span></span>
       <strong>${minsToHHMM(s.minutes)}</strong>
-      <small>${escapeHtml(getStopName(s.code))}</small>
+      <small class="map-trigger" data-stop-code="${s.code}" style="cursor:pointer" title="Vedi sulla mappa">${escapeHtml(getStopName(s.code))} 📍</small>
     </div>`)
     .join("");
 
@@ -591,6 +592,14 @@ function renderCanegrateBlock(state, currentMin, cfg) {
 }
 
 function bindLiveEvents(container) {
+  // Map triggers
+  container.querySelectorAll(".map-trigger").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      openMap(btn.dataset.stopCode);
+    });
+  });
+
   // Direction toggle
   container.querySelectorAll("[data-dir]").forEach(button => {
     if (button.closest("[data-timetable-direction]")) return;
