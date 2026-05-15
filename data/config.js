@@ -424,7 +424,7 @@ export const CFG = {
     MD111: { label: "Molino Dorino M1", type: "M1" },
     PG101: { label: "Pregnana FS", type: "S5/S6", trainSlot: "PG102" },
     PG102: { label: "Pregnana FS", type: "S5/S6", trainSlot: "PG102" },
-    LG090: { label: "Legnano FS", type: "S5", trainSlot: "LG090" },
+    LG090: { label: "Legnano FS", type: "S5", trainSlot: "LG090", trainSlotRE: "LG090_RE" },
     PB090: { label: "Parabiago FS", type: "S5", trainSlot: "PB090" },
     BS090: { label: "Busto Arsizio FS", type: "S5/RE", trainSlot: "BS090_S5", trainSlotRE: "BS090_RE" }
   },

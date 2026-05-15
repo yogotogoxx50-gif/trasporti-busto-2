@@ -7,45 +7,71 @@
 const TRAIN_SLOTS = {
   "PG102": {
     line: "S6",
-    minutes: [17, 47],
-    firstTrain: 347,   // 05:47
-    lastTrain: 1427,    // 23:47
-    note: "S6 dir. Milano Passante"
+    minutes: [15, 45],
+    firstTrain: 315,   // 05:15
+    lastTrain: 1425,    // 23:45
+    note: "dir. Milano Passante"
   },
   "canegrate": {
     line: "S5",
     minutes: [21, 51],
     firstTrain: 351,    // 05:51
     lastTrain: 1401,    // 23:21
-    note: "S5 da Canegrate FS dir. Milano"
+    note: "da Canegrate FS dir. Milano"
   },
   "LG090": {
     line: "S5",
     minutes: [12, 42],
     firstTrain: 312,    // 05:12
     lastTrain: 1362,    // 22:42
-    note: "S5 dir. Milano Passante"
+    note: "dir. Milano Passante"
   },
   "PB090": {
     line: "S5",
     minutes: [13, 43],
     firstTrain: 343,    // 05:43
     lastTrain: 1423,    // 23:43
-    note: "S5 dir. Milano Passante"
+    note: "dir. Milano Passante"
   },
   "BS090_S5": {
     line: "S5",
     minutes: [3, 33],
     firstTrain: 303,    // 05:03
     lastTrain: 1383,    // 23:03
-    note: "S5 dir. Milano Passante"
+    note: "dir. Milano Passante"
   },
   "BS090_RE": {
     line: "RE",
     minutes: [20, 50],
     firstTrain: 380,    // 06:20
     lastTrain: 1370,    // 22:50
-    note: "Regionale Espresso dir. Milano"
+    note: "dir. Milano"
+  },
+  "LG090_RE": {
+    fixedTrains: [
+      { departureMin: 362, line: "RE", note: "2511 dir. Milano P. Garibaldi" },
+      { departureMin: 432, line: "RE", note: "2513 dir. Milano P. Garibaldi" },
+      { departureMin: 447, line: "RE", note: "Luino → Milano P. Garibaldi" },
+      { departureMin: 473, line: "RE", note: "Domodossola → Milano P. Garibaldi" },
+      { departureMin: 482, line: "RE", note: "2515 dir. Milano P. Garibaldi" },
+      { departureMin: 515, line: "RE", note: "Varese → Milano P. Garibaldi" },
+      { departureMin: 542, line: "RE", note: "2517 dir. Milano P. Garibaldi" },
+      { departureMin: 602, line: "RE", note: "2519 dir. Milano P. Garibaldi" },
+      { departureMin: 662, line: "RE", note: "2521 dir. Milano P. Garibaldi" },
+      { departureMin: 722, line: "RE", note: "2523 dir. Milano P. Garibaldi" },
+      { departureMin: 782, line: "RE", note: "2525 dir. Milano P. Garibaldi" },
+      { departureMin: 842, line: "RE", note: "2527 dir. Milano P. Garibaldi" },
+      { departureMin: 902, line: "RE", note: "2529 dir. Milano P. Garibaldi" },
+      { departureMin: 962, line: "RE", note: "2531 dir. Milano P. Garibaldi" },
+      { departureMin: 1022, line: "RE", note: "2533 dir. Milano P. Garibaldi" },
+      { departureMin: 1082, line: "RE", note: "2535 dir. Milano P. Garibaldi" },
+      { departureMin: 1142, line: "RE", note: "2537 dir. Milano P. Garibaldi" },
+      { departureMin: 1172, line: "RE", note: "Varese → Milano P. Garibaldi" },
+      { departureMin: 1202, line: "RE", note: "2539 dir. Milano P. Garibaldi" },
+      { departureMin: 1262, line: "RE", note: "2541 dir. Milano P. Garibaldi" },
+      { departureMin: 1322, line: "RE", note: "2543 dir. Milano P. Garibaldi" },
+      { departureMin: 1397, line: "RE", note: "Varese → Milano P. Garibaldi" }
+    ]
   }
 };
 
@@ -61,29 +87,46 @@ export function calcNextTrain(stopKey, fromMinutes, count = 2) {
   if (!slot) return [];
 
   const results = [];
-  const hour = Math.floor(fromMinutes / 60);
 
-  // Check current hour and next hours
-  for (let h = hour; h < 24; h++) {
-    for (const m of slot.minutes) {
-      const depMin = h * 60 + m;
-      // Must be after bus arrival
-      if (depMin <= fromMinutes) continue;
-      // Must be within operating hours
-      if (slot.firstTrain && depMin < slot.firstTrain) continue;
-      if (slot.lastTrain && depMin > slot.lastTrain) continue;
+  // 1. Pattern-based trains (recurring)
+  if (slot.minutes) {
+    const hour = Math.floor(fromMinutes / 60);
+    for (let h = hour; h < 24; h++) {
+      for (const m of slot.minutes) {
+        const depMin = h * 60 + m;
+        // Must be after bus arrival
+        if (depMin <= fromMinutes) continue;
+        // Must be within operating hours
+        if (slot.firstTrain && depMin < slot.firstTrain) continue;
+        if (slot.lastTrain && depMin > slot.lastTrain) continue;
 
-      results.push({
-        line: slot.line,
-        departureMin: depMin,
-        waitMin: depMin - fromMinutes,
-        note: slot.note || ""
-      });
-      if (results.length >= count) return results;
+        results.push({
+          line: slot.line,
+          departureMin: depMin,
+          waitMin: depMin - fromMinutes,
+          note: slot.note || ""
+        });
+      }
     }
   }
 
-  return results;
+  // 2. Fixed specific trains
+  if (slot.fixedTrains) {
+    for (const f of slot.fixedTrains) {
+      if (f.departureMin <= fromMinutes) continue;
+      results.push({
+        line: f.line || slot.line || "Treno",
+        departureMin: f.departureMin,
+        waitMin: f.departureMin - fromMinutes,
+        note: f.note || slot.note || ""
+      });
+    }
+  }
+
+  // Sort all found trains by departure time
+  results.sort((a, b) => a.departureMin - b.departureMin);
+
+  return results.slice(0, count);
 }
 
 /**
@@ -110,7 +153,7 @@ export function getConnectionInfo(stopKey, busArrivalMin, connectionConfig) {
  */
 export function formatConnection(conn) {
   if (!conn) return "";
-  const dep = window.minsToHHMM ? window.minsToHHMM(conn.departure) : `${Math.floor(conn.departure/60)}:${String(conn.departure%60).padStart(2,'0')}`;
+  const dep = window.minsToHHMM ? window.minsToHHMM(conn.departure) : `${Math.floor(conn.departure / 60)}:${String(conn.departure % 60).padStart(2, '0')}`;
   if (conn.waitMin <= 0) return `${conn.type} ${dep}`;
   return `${conn.type} ${dep} (~${conn.waitMin}m)`;
 }
@@ -120,10 +163,10 @@ export function formatConnection(conn) {
  */
 export function buildCanegrateBlock(driveMinutes, currentMin) {
   const arrivalAtStation = currentMin + driveMinutes;
-  
+
   // Trains still departing from the station in the future
   const allFutureTrains = calcNextTrain("canegrate", currentMin);
-  
+
   // Trains you can still realistically catch by driving there
   const catchableTrains = calcNextTrain("canegrate", arrivalAtStation);
 

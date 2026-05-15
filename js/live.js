@@ -530,7 +530,7 @@ function renderConnections(card, cfg, currentMin) {
       if (train) {
         const state = getConnectionState(train.waitMin, cfg);
         rows.push(`<div class="connection-row">
-          <span>${escapeHtml(interchange.label)} · ${escapeHtml(train.line)}</span>
+          <span>${escapeHtml(interchange.label)} · ${escapeHtml(train.line)}${train.note ? ` <small>${escapeHtml(train.note)}</small>` : ""}</span>
           <strong>${minsToHHMM(train.departureMin)} (+${train.waitMin} min)</strong>
           <em class="${state.css}">${state.label}</em>
         </div>`);
@@ -541,7 +541,7 @@ function renderConnections(card, cfg, currentMin) {
         if (trainRE) {
           const stateRE = getConnectionState(trainRE.waitMin, cfg);
           rows.push(`<div class="connection-row">
-            <span>${escapeHtml(interchange.label)} · ${escapeHtml(trainRE.line)}</span>
+            <span>${escapeHtml(interchange.label)} · ${escapeHtml(trainRE.line)}${trainRE.note ? ` <small>${escapeHtml(trainRE.note)}</small>` : ""}</span>
             <strong>${minsToHHMM(trainRE.departureMin)} (+${trainRE.waitMin} min)</strong>
             <em class="${stateRE.css}">${stateRE.label}</em>
           </div>`);
