@@ -375,8 +375,8 @@ export const CFG = {
   // driveCanegrate = minuti in auto fino a Canegrate FS (~3.3 km)
   // --------------------------------------------------------------------------
   defaults: {
-    walkRossini: 3,
-    driveCanegrate: 10,
+    walkRossini: 6,
+    driveCanegrate: 16,
     liveDirection: "outbound",
     connectionTightMin: 4,
     connectionGoodMin: 12,
