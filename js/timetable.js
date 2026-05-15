@@ -31,9 +31,17 @@ export function renderTimetable(state, lineData, lineConfig, cfg) {
   }
 
   const scheduleKey = getScheduleKey(activeLine, dayType, direction);
-  const stops = getVisibleStops(state, cfg, activeLine, scheduleKey, direction, config.referenceStops || []);
+  const trips = [...(lineData[activeLine]?.[scheduleKey] || [])];
+
+  let stops;
+  if (state.showAllStops) {
+    stops = getAllStopsOrdered(trips);
+  } else {
+    stops = getVisibleStops(state, cfg, activeLine, scheduleKey, direction, config.referenceStops || []);
+  }
+
   const referenceStops = getReferenceStops(state, cfg, activeLine, direction, stops);
-  const trips = [...(lineData[activeLine]?.[scheduleKey] || [])]
+  const sortedTrips = trips
     .map(trip => ({ ...trip, _refMin: getReferenceTime(trip, referenceStops) }))
     .sort((a, b) => (a._refMin ?? Number.POSITIVE_INFINITY) - (b._refMin ?? Number.POSITIVE_INFINITY));
 
@@ -48,13 +56,16 @@ export function renderTimetable(state, lineData, lineConfig, cfg) {
       </div>
       <div class="line-tabs">
         ${(cfg.lineOrder || Object.keys(lineConfig)).map(lineId => `<button type="button" data-line="${lineId}" class="${lineId === activeLine ? "active" : ""}">${lineId}</button>`).join("")}
+        <button type="button" class="btn-premium ${state.showAllStops ? "active" : ""}" id="toggle-all-stops">
+          ${state.showAllStops ? "Solo le fermate preferite" : "Visualizza tutte le fermate"}
+        </button>
       </div>
       <div class="filter-row">
         ${["weekday", "saturday", "sunday"].map(dt => {
-          const key = getScheduleKey(activeLine, dt, direction);
-          const disabled = !(lineData[activeLine]?.[key]?.length);
-          return `<button type="button" data-day="${dt}" class="${dayType === dt ? "active" : ""}" ${disabled ? "disabled" : ""}>${getDayTypeLabel(dt)}</button>`;
-        }).join("")}
+    const key = getScheduleKey(activeLine, dt, direction);
+    const disabled = !(lineData[activeLine]?.[key]?.length);
+    return `<button type="button" data-day="${dt}" class="${dayType === dt ? "active" : ""}" ${disabled ? "disabled" : ""}>${getDayTypeLabel(dt)}</button>`;
+  }).join("")}
       </div>
       <div class="segmented wide" data-timetable-direction>
         <button type="button" data-dir="outbound" class="${direction === "outbound" ? "active" : ""}">Andata</button>
@@ -76,19 +87,19 @@ export function renderTimetable(state, lineData, lineConfig, cfg) {
           <tr>
             <th>Corsa</th>
             ${stops.map(code => {
-              const hasCoords = !!STOP_COORDINATES[code];
-              const label = escapeHtml(shortStop(code));
-              return hasCoords
-                ? `<th title="${escapeHtml(getStopName(code))} [${code}]" class="stop-link" data-stop-code="${code}">${label}</th>`
-                : `<th title="${escapeHtml(getStopName(code))} [${code}]">${label}</th>`;
-            }).join("")}
+    const hasCoords = !!STOP_COORDINATES[code];
+    const label = escapeHtml(shortStop(code));
+    return hasCoords
+      ? `<th title="${escapeHtml(getStopName(code))} [${code}]" class="stop-link" data-stop-code="${code}">${label}</th>`
+      : `<th title="${escapeHtml(getStopName(code))} [${code}]">${label}</th>`;
+  }).join("")}
             <th>Conn.</th>
           </tr>
         </thead>
         <tbody>`;
 
-  const nextIndex = trips.findIndex(t => (t._refMin ?? -1) >= currentMin);
-  trips.forEach((trip, index) => {
+  const nextIndex = sortedTrips.findIndex(t => (t._refMin ?? -1) >= currentMin);
+  sortedTrips.forEach((trip, index) => {
     const isPast = (trip._refMin ?? 0) < currentMin;
     const isCurrent = index === nextIndex && !isPast;
     const isShort = trip.flags?.includes("short");
@@ -98,9 +109,9 @@ export function renderTimetable(state, lineData, lineConfig, cfg) {
         ${isShort ? `<span class="badge muted">breve</span>` : ""}
       </td>
       ${stops.map(code => {
-        const value = trip.stops?.[code];
-        return `<td>${value !== undefined && value !== null ? minsToHHMM(value) : "-"}</td>`;
-      }).join("")}
+      const value = trip.stops?.[code];
+      return `<td>${value !== undefined && value !== null ? minsToHHMM(value) : "-"}</td>`;
+    }).join("")}
       <td>${renderConnectionCell(trip, config)}</td>
     </tr>`;
   });
@@ -199,4 +210,35 @@ function bindEvents(container) {
   container.querySelectorAll("th.stop-link[data-stop-code]").forEach(th => {
     th.addEventListener("click", () => openMap(th.dataset.stopCode));
   });
+  const premiumBtn = container.querySelector("#toggle-all-stops");
+  if (premiumBtn) {
+    premiumBtn.addEventListener("click", () => {
+      state.showAllStops = !state.showAllStops;
+      renderTimetable(state, lineData, lineConfig, cfg);
+    });
+  }
+}
+
+/**
+ * Merges all stops from all trips while trying to preserve their logical order.
+ */
+function getAllStopsOrdered(trips) {
+  if (!trips.length) return [];
+  const allStops = [];
+  trips.forEach(trip => {
+    const tripStops = Object.keys(trip.stops || {});
+    let lastInsertedIdx = -1;
+    tripStops.forEach(code => {
+      const existingIdx = allStops.indexOf(code);
+      if (existingIdx === -1) {
+        // Stop not in list yet, insert it after the last one we found from this trip
+        allStops.splice(lastInsertedIdx + 1, 0, code);
+        lastInsertedIdx++;
+      } else {
+        // Stop exists, update lastInsertedIdx to maintain sequence
+        lastInsertedIdx = existingIdx;
+      }
+    });
+  });
+  return allStops;
 }

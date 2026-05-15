@@ -1169,3 +1169,43 @@ th.stop-link:hover {
   background: rgba(34, 211, 238, 0.12) !important;
   text-decoration-color: rgba(34, 211, 238, 0.6);
 }
+
+/* ── Premium UI Elements ────────────────────────────────────────────── */
+
+.premium-row {
+  margin-top: 12px;
+}
+
+.btn-premium {
+  flex: 0 0 auto;
+  min-height: 38px;
+  padding: 0 14px;
+  border: 1px solid rgba(34, 211, 238, 0.25);
+  border-radius: var(--radius);
+  background: rgba(16, 24, 40, 0.45);
+  color: var(--accent);
+  font-weight: 800;
+  font-size: 0.82rem;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto; /* Push to the right if possible, or just stay in the scroll */
+}
+
+.btn-premium:hover {
+  background: rgba(34, 211, 238, 0.1);
+  border-color: var(--accent);
+}
+
+.btn-premium.active {
+  background: rgba(34, 211, 238, 0.2);
+  border-color: var(--accent);
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.15);
+}
+
+.btn-premium:active {
+  transform: scale(0.97);
+}
+
+

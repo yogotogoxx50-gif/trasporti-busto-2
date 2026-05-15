@@ -31,6 +31,7 @@ const state = {
   settingsLineDay: "weekday",
   liveStopFilter: null,
   liveLineFilter: null,
+  showAllStops: false,
   settings: loadSettings()
 };
 
