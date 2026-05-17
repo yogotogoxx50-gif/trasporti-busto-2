@@ -149,9 +149,9 @@ function reconcileChildren(parent, newFragment) {
     // newKey set but not found in oldKeyed: pure insertion.
 
     if (matchedOld) {
-      patchNode(matchedOld, newChild);
-      if (parent.childNodes[i] !== matchedOld) {
-        parent.insertBefore(matchedOld, parent.childNodes[i] || null);
+      const actualNode = patchNode(matchedOld, newChild) || matchedOld;
+      if (parent.childNodes[i] !== actualNode) {
+        parent.insertBefore(actualNode, parent.childNodes[i] || null);
       }
     } else {
       const refNode = parent.childNodes[i] || null;
@@ -205,6 +205,10 @@ function computeChildKeys(nodes) {
 
 /**
  * Patch an individual node: update attributes, classes, and content.
+ * Returns the node that now occupies oldNode's position (either oldNode
+ * itself when patched in place, or a fresh clone when oldNode was
+ * replaced). The caller uses the return value to keep parent.childNodes
+ * tracking in sync after a replace.
  */
 function patchNode(oldNode, newNode) {
   // Text nodes: just update content
@@ -212,7 +216,7 @@ function patchNode(oldNode, newNode) {
     if (oldNode.textContent !== newNode.textContent) {
       oldNode.textContent = newNode.textContent;
     }
-    return;
+    return oldNode;
   }
 
   // Comment nodes
@@ -220,17 +224,15 @@ function patchNode(oldNode, newNode) {
     if (oldNode.textContent !== newNode.textContent) {
       oldNode.textContent = newNode.textContent;
     }
-    return;
+    return oldNode;
   }
 
   // Different node types: replace entirely
   if (oldNode.nodeType !== newNode.nodeType || oldNode.nodeName !== newNode.nodeName) {
-    // Null-safe: oldNode may have been detached during a sibling
-    // replacement earlier in the same reconcileChildren pass. The
-    // enclosing reconcile will insert the new node at the correct slot.
-    if (!oldNode.parentNode) return;
-    oldNode.parentNode.replaceChild(newNode.cloneNode(true), oldNode);
-    return;
+    if (!oldNode.parentNode) return null;
+    const clone = newNode.cloneNode(true);
+    oldNode.parentNode.replaceChild(clone, oldNode);
+    return clone;
   }
 
   // Element nodes: update attributes then recurse on children
@@ -246,27 +248,28 @@ function patchNode(oldNode, newNode) {
       REPLACE_ON_PATCH.has(oldNode.nodeName) &&
       !getNodeKey(oldNode)
     ) {
-      if (!oldNode.parentNode) return;
-      oldNode.parentNode.replaceChild(newNode.cloneNode(true), oldNode);
-      return;
+      if (!oldNode.parentNode) return null;
+      const clone = newNode.cloneNode(true);
+      oldNode.parentNode.replaceChild(clone, oldNode);
+      return clone;
     }
 
     updateAttributes(oldNode, newNode);
 
     // Fast-path only for non-interactive leaf elements without `data-keep`.
-    // Using innerHTML on interactive leaves (button/input/etc.) destroys
-    // listeners attached programmatically; recurse instead so text-node
-    // patching leaves the element identity intact.
     if (isFastPathLeaf(oldNode) && isFastPathLeaf(newNode)) {
       if (oldNode.innerHTML !== newNode.innerHTML) {
         oldNode.innerHTML = newNode.innerHTML;
       }
-      return;
+      return oldNode;
     }
 
     // Recurse on children
     reconcileChildren(oldNode, newNode);
+    return oldNode;
   }
+
+  return oldNode;
 }
 
 /**
