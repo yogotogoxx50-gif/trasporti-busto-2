@@ -322,7 +322,7 @@ function renderStep3() {
   `;
 }
 
-// ── Step 4: Confirm stops + Canegrate ───────────────────────────────────────
+// ── Step 4: Confirm stops + walk/drive editable ─────────────────────────────
 
 function renderStep4() {
   // Derive active lines from destinations
@@ -331,36 +331,72 @@ function renderStep4() {
   const zoneFavs = ZONE_FAVORITES[wizardState.homeZone] || {};
   const useCanegrate = wizardState.destinations.includes("canegrate_auto");
 
+  // Ensure favoriteStops are populated
+  if (Object.keys(wizardState.favoriteStops).length === 0 && wizardState.homeZone) {
+    wizardState.favoriteStops = structuredClone(zoneFavs);
+  }
+
+  // Build stop options for each line from the ZONE_FAVORITES + known stops
+  const ALL_OUTBOUND_STOPS = {
+    Z649: ["BT775", "BT703", "BT949", "BT205", "BT999"],
+    Z627: ["BT301", "BT703", "BT704", "BT999"],
+    Z644: ["BT775", "BT703", "BT205", "BT701"],
+    Z625: ["BT947", "BT703", "BT701", "BT702"],
+    Z647: ["BT956", "BT703", "BT999"],
+    Z642: ["BT956", "BT703", "BT776"]
+  };
+  const ALL_RETURN_STOPS = {
+    Z649: ["BT956", "BT951", "BT776", "BT999"],
+    Z627: ["BT947", "BT951", "BT999", "BT701"],
+    Z644: ["BT956", "BT776", "BT999"],
+    Z625: ["BT301", "BT703", "BT951", "BT701"],
+    Z647: ["BT775", "BT703", "BT999"],
+    Z642: ["BT775", "BT956", "BT400"]
+  };
+
   return `
     <div class="onboarding-content">
-      <h2 class="onboarding-title">Conferma fermate 🚏</h2>
-      <p class="onboarding-subtitle">Abbiamo pre-selezionato le fermate migliori per la tua zona. Puoi cambiarle.</p>
-      <div class="onboarding-stops-list">
-        ${lines.map(lineId => {
-          const favs = zoneFavs[lineId] || {};
-          const outStop = wizardState.favoriteStops[lineId]?.outbound || favs.outbound || "";
-          const retStop = wizardState.favoriteStops[lineId]?.return || favs.return || "";
-          return `
-            <div class="onboarding-stop-row">
-              <strong class="onboarding-stop-line">${lineId}</strong>
-              <div class="onboarding-stop-pair">
-                <span class="onboarding-stop-label">Andata:</span>
-                <span class="onboarding-stop-value">${getStopName(outStop)}</span>
-              </div>
-              <div class="onboarding-stop-pair">
-                <span class="onboarding-stop-label">Ritorno:</span>
-                <span class="onboarding-stop-value">${getStopName(retStop)}</span>
-              </div>
-            </div>
-          `;
-        }).join("")}
+      <h2 class="onboarding-title">Personalizza ⚙️</h2>
+      <p class="onboarding-subtitle">Modifica fermate e tempi di percorrenza. Puoi sempre cambiarli dopo nelle Impostazioni.</p>
+
+      <div class="onboarding-field">
+        <label class="onboarding-field-label">Minuti a piedi verso la fermata</label>
+        <input type="number" class="onboarding-field-input" data-walk-minutes min="1" max="30" value="${wizardState.walkMinutes}">
       </div>
+
       ${useCanegrate ? `
         <div class="onboarding-field">
           <label class="onboarding-field-label">Minuti in auto fino a Canegrate FS</label>
           <input type="number" class="onboarding-field-input" data-drive-canegrate min="1" max="45" value="${wizardState.driveCanegrate}">
         </div>
       ` : ""}
+
+      <div class="onboarding-stops-list">
+        ${lines.map(lineId => {
+          const outStop = wizardState.favoriteStops[lineId]?.outbound || zoneFavs[lineId]?.outbound || "";
+          const retStop = wizardState.favoriteStops[lineId]?.return || zoneFavs[lineId]?.return || "";
+          const outOptions = (ALL_OUTBOUND_STOPS[lineId] || [outStop]).filter(Boolean);
+          const retOptions = (ALL_RETURN_STOPS[lineId] || [retStop]).filter(Boolean);
+          return `
+            <div class="onboarding-stop-row">
+              <strong class="onboarding-stop-line">${lineId}</strong>
+              <div class="onboarding-stop-pair">
+                <span class="onboarding-stop-label">Andata:</span>
+                <select class="onboarding-field-input" data-fav-stop="${lineId}:outbound" style="min-height: 36px;">
+                  ${outOptions.map(code => `<option value="${code}" ${code === outStop ? "selected" : ""}>${getStopName(code)}</option>`).join("")}
+                </select>
+              </div>
+              <div class="onboarding-stop-pair">
+                <span class="onboarding-stop-label">Ritorno:</span>
+                <select class="onboarding-field-input" data-fav-stop="${lineId}:return" style="min-height: 36px;">
+                  ${retOptions.map(code => `<option value="${code}" ${code === retStop ? "selected" : ""}>${getStopName(code)}</option>`).join("")}
+                </select>
+              </div>
+            </div>
+          `;
+        }).join("")}
+      </div>
+
       <div class="onboarding-nav">
         <button type="button" class="onboarding-btn secondary" data-back>← Indietro</button>
         <button type="button" class="onboarding-btn primary" data-next>Avanti →</button>
@@ -369,25 +405,33 @@ function renderStep4() {
   `;
 }
 
-// ── Step 5: Notifications + finish ──────────────────────────────────────────
+// ── Step 5: Notifications + Google sign-in suggestion + finish ───────────────
 
 function renderStep5() {
   return `
     <div class="onboarding-content">
-      <h2 class="onboarding-title">Notifiche 🔔</h2>
-      <p class="onboarding-subtitle">Vuoi ricevere un avviso prima della partenza dei bus che segui?</p>
-      <div class="onboarding-choices">
-        <button type="button" class="onboarding-choice ${wizardState.wantNotifications ? "selected" : ""}" data-notif="yes">
-          <span class="onboarding-choice-emoji">✅</span>
-          <span class="onboarding-choice-label">Sì, attiva reminder</span>
-          <span class="onboarding-choice-desc">5 e 10 min prima della partenza</span>
-        </button>
-        <button type="button" class="onboarding-choice ${!wizardState.wantNotifications ? "selected" : ""}" data-notif="no">
-          <span class="onboarding-choice-emoji">⏭️</span>
-          <span class="onboarding-choice-label">No grazie, le attivo dopo</span>
-          <span class="onboarding-choice-desc">Puoi sempre attivarle nelle Impostazioni</span>
-        </button>
+      <h2 class="onboarding-title">Quasi fatto! 🎉</h2>
+      <p class="onboarding-subtitle">Ultime due cose opzionali.</p>
+
+      <div style="margin-bottom: 20px;">
+        <p class="onboarding-field-label" style="margin-bottom: 8px;">🔔 Notifiche reminder</p>
+        <div class="onboarding-choices">
+          <button type="button" class="onboarding-choice onboarding-choice--compact ${wizardState.wantNotifications ? "selected" : ""}" data-notif="yes">
+            <span class="onboarding-choice-emoji">✅</span>
+            <span class="onboarding-choice-label">Sì, avvisami 5 e 10 min prima</span>
+          </button>
+          <button type="button" class="onboarding-choice onboarding-choice--compact ${!wizardState.wantNotifications ? "selected" : ""}" data-notif="no">
+            <span class="onboarding-choice-emoji">⏭️</span>
+            <span class="onboarding-choice-label">No grazie, le attivo dopo</span>
+          </button>
+        </div>
       </div>
+
+      <div style="padding: 14px; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(var(--accent-rgb), 0.06);">
+        <p style="margin: 0 0 6px; font-weight: 750; font-size: 0.88rem; color: var(--text);">☁️ Sincronizza tra dispositivi</p>
+        <p style="margin: 0; color: var(--muted); font-size: 0.8rem; line-height: 1.4;">Puoi accedere con Google nelle <strong>Impostazioni</strong> per salvare le tue preferenze nel cloud e ritrovarle su altri dispositivi. Nessun obbligo, puoi farlo quando vuoi.</p>
+      </div>
+
       <div class="onboarding-nav">
         <button type="button" class="onboarding-btn secondary" data-back>← Indietro</button>
         <button type="button" class="onboarding-btn primary" data-finish>Inizia! 🚀</button>
@@ -446,6 +490,14 @@ function bindStepEvents() {
     });
   });
 
+  // Step 4: walk minutes input
+  const walkInput = overlayEl.querySelector("[data-walk-minutes]");
+  if (walkInput) {
+    walkInput.addEventListener("change", () => {
+      wizardState.walkMinutes = Math.max(1, Math.min(30, Number(walkInput.value) || 6));
+    });
+  }
+
   // Step 4: drive canegrate input
   const driveInput = overlayEl.querySelector("[data-drive-canegrate]");
   if (driveInput) {
@@ -453,6 +505,15 @@ function bindStepEvents() {
       wizardState.driveCanegrate = Math.max(1, Math.min(45, Number(driveInput.value) || 16));
     });
   }
+
+  // Step 4: favorite stop selects
+  overlayEl.querySelectorAll("[data-fav-stop]").forEach(select => {
+    select.addEventListener("change", () => {
+      const [lineId, direction] = select.dataset.favStop.split(":");
+      if (!wizardState.favoriteStops[lineId]) wizardState.favoriteStops[lineId] = {};
+      wizardState.favoriteStops[lineId][direction] = select.value;
+    });
+  });
 
   // Step 5: notifications
   overlayEl.querySelectorAll("[data-notif]").forEach(btn => {
@@ -498,13 +559,31 @@ function finishWizard(skipped) {
   const activeLines = deriveActiveLines();
   const zone = HOME_ZONES.find(z => z.id === wizardState.homeZone);
 
+  // Build timetableStops: include the user's chosen favorite stops in the
+  // visible columns for each line/direction/dayType combination.
+  const timetableStops = {};
+  for (const lineId of activeLines) {
+    const favs = wizardState.favoriteStops[lineId];
+    if (!favs) continue;
+    timetableStops[lineId] = {};
+    // For each day type, set the outbound/return columns to include the favorite
+    for (const dayType of ["weekday", "saturday", "sunday"]) {
+      if (favs.outbound) {
+        const key = `${dayType}_outbound`;
+        // We don't override — we just ensure the favorite is included.
+        // The actual column list will be resolved by settings.js from config defaults
+        // merged with this. We set it to null to signal "use default + ensure favorite".
+      }
+    }
+  }
+
   const profile = {
     onboardingVersion: 1,
     completedAt: new Date().toISOString(),
     userType: wizardState.userType,
     homeZone: wizardState.homeZone || null,
     homeStop: zone?.stop || null,
-    walkMinutes: zone?.walkMinutes || 6,
+    walkMinutes: wizardState.walkMinutes,
     destinations: [...wizardState.destinations],
     activeLines: activeLines,
     useCanegrate: wizardState.useCanegrate,

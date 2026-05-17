@@ -173,12 +173,12 @@ function init() {
   // Show onboarding wizard on first launch (before rendering any tab)
   if (shouldShowOnboarding(state.settings)) {
     startOnboarding((profile) => {
-      if (profile) {
+      if (profile && !profile.skipped) {
         // Apply the profile to settings
         const updates = { userProfile: profile };
-        if (profile.walkMinutes && !profile.skipped) updates.walkRossini = profile.walkMinutes;
-        if (profile.driveCanegrate && !profile.skipped) updates.driveCanegrate = profile.driveCanegrate;
-        if (profile.favoriteStops && Object.keys(profile.favoriteStops).length > 0 && !profile.skipped) {
+        if (profile.walkMinutes) updates.walkRossini = profile.walkMinutes;
+        if (profile.driveCanegrate) updates.driveCanegrate = profile.driveCanegrate;
+        if (profile.favoriteStops && Object.keys(profile.favoriteStops).length > 0) {
           updates.favoriteStops = { ...state.settings.favoriteStops, ...profile.favoriteStops };
         }
         saveSettings(updates);
@@ -196,6 +196,9 @@ function init() {
             });
           });
         }
+      } else if (profile) {
+        // Skipped — just mark onboarding as done without changing anything else
+        saveSettings({ userProfile: profile });
       }
       // Proceed to render the app
       switchTab("live");

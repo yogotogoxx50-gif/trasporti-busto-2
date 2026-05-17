@@ -126,11 +126,26 @@ function getVisibleStops(state, cfg, lineId, scheduleKey, direction, fallback) {
   const fromSettings = state.settings?.timetableStops?.[lineId]?.[scheduleKey]
     || state.settings?.timetableStops?.[lineId]?.[direction];
   if (fromSettings?.length) return fromSettings;
-  return cfg.stopProfiles?.[lineId]?.timetableStops?.[scheduleKey]
+  const defaults = cfg.stopProfiles?.[lineId]?.timetableStops?.[scheduleKey]
     || cfg.stopProfiles?.[lineId]?.timetableStops?.[direction]
     || cfg.displayStopsOverrides?.[lineId]?.[scheduleKey]
     || cfg.displayStopsOverrides?.[lineId]?.[direction]
     || fallback;
+  // If the user has a favorite stop that differs from the first column,
+  // substitute it so the timetable reflects their chosen departure point.
+  const userFav = state.settings?.favoriteStops?.[lineId]?.[direction];
+  const cfgFav = cfg.favoriteStops?.[lineId]?.[direction];
+  if (userFav && userFav !== cfgFav && defaults?.length > 0) {
+    const result = [...defaults];
+    // Replace the config's default home stop (first column) with the user's choice
+    if (cfgFav && result.includes(cfgFav) && !result.includes(userFav)) {
+      result[result.indexOf(cfgFav)] = userFav;
+    } else if (!result.includes(userFav)) {
+      result[0] = userFav;
+    }
+    return result;
+  }
+  return defaults;
 }
 
 function getReferenceStops(state, cfg, lineId, direction, visibleStops) {

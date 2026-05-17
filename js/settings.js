@@ -287,14 +287,16 @@ function bindEvents(container) {
   });
   container.querySelector("[data-restart-onboarding]")?.addEventListener("click", () => {
     startOnboarding((profile) => {
-      if (profile) {
+      if (profile && !profile.skipped) {
         const updates = { userProfile: profile };
-        if (profile.walkMinutes && !profile.skipped) updates.walkRossini = profile.walkMinutes;
-        if (profile.driveCanegrate && !profile.skipped) updates.driveCanegrate = profile.driveCanegrate;
-        if (profile.favoriteStops && Object.keys(profile.favoriteStops).length > 0 && !profile.skipped) {
+        if (profile.walkMinutes) updates.walkRossini = profile.walkMinutes;
+        if (profile.driveCanegrate) updates.driveCanegrate = profile.driveCanegrate;
+        if (profile.favoriteStops && Object.keys(profile.favoriteStops).length > 0) {
           updates.favoriteStops = { ...state.settings.favoriteStops, ...profile.favoriteStops };
         }
         saveFn(updates);
+      } else if (profile) {
+        saveFn({ userProfile: profile });
       }
       renderSettings(state, saveFn, cfg, lineData, lineConfig);
     });

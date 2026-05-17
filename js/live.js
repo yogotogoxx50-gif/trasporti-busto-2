@@ -738,7 +738,6 @@ function bindLiveEvents(container) {
     button.addEventListener("click", () => {
       const { state, lineData, lineConfig, cfg, saveSettings } = lastArgs;
       saveSettings({ liveDirection: button.dataset.dir });
-      renderLive(state, lineData, lineConfig, cfg, saveSettings);
     });
   });
 
