@@ -235,6 +235,22 @@ function patchNode(oldNode, newNode) {
 
   // Element nodes: update attributes then recurse on children
   if (oldNode.nodeType === Node.ELEMENT_NODE) {
+    // Always replace BUTTON/A/LABEL elements without explicit keys.
+    // These accumulate listeners across renders because bind*Events
+    // re-runs after every patchDOM. By replacing with a fresh clone,
+    // we guarantee no listener buildup that would cause the click
+    // explosion freeze on repeated tab/segment toggles.
+    // Inputs/selects/textareas are PRESERVED so focus/typed value
+    // survive re-renders.
+    if (
+      REPLACE_ON_PATCH.has(oldNode.nodeName) &&
+      !getNodeKey(oldNode)
+    ) {
+      if (!oldNode.parentNode) return;
+      oldNode.parentNode.replaceChild(newNode.cloneNode(true), oldNode);
+      return;
+    }
+
     updateAttributes(oldNode, newNode);
 
     // Fast-path only for non-interactive leaf elements without `data-keep`.
@@ -252,6 +268,18 @@ function patchNode(oldNode, newNode) {
     reconcileChildren(oldNode, newNode);
   }
 }
+
+/**
+ * Element types that should be replaced (cloned) on every patch instead
+ * of reused. This breaks the listener-accumulation cycle: bind*Events
+ * re-attaches a click listener every render, and reusing the same node
+ * would mean N listeners on the Nth render → exponential handler
+ * invocation that freezes the browser.
+ *
+ * INPUT/SELECT/TEXTAREA are intentionally NOT in this set because they
+ * carry user-typed state (focus, selection range, current value).
+ */
+const REPLACE_ON_PATCH = new Set(["BUTTON", "A", "LABEL"]);
 
 /**
  * Tags whose listeners and DOM identity must be preserved across patches.
