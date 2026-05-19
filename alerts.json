@@ -1,44 +1,12 @@
 {
-  "lastUpdated": "2026-05-18T10:56:07.657Z",
+  "lastUpdated": "2026-05-19T10:30:35.956Z",
   "windowDays": 14,
   "alerts": [
-    {
-      "source": "trenord",
-      "type": "strike",
-      "title": "sciopero nazionale.",
-      "description": "sciopero nazionale.",
-      "startDate": null,
-      "endDate": null,
-      "affectedServices": [
-        "Trenord",
-        "ATM",
-        "Movibus"
-      ],
-      "severity": "high",
-      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
-      "guaranteedBands": "06:00-09:00, 18:00-21:00",
-      "id": "trenord-unknown-sciopero-nazionale-"
-    },
-    {
-      "source": "trenord",
-      "type": "strike",
-      "title": "Sciopero Nazionale Trasporti 17-18 Maggio",
-      "description": "sciopero Nazionale di tutti i settori pubblici e privati che, per il settore ferroviario, si effettuerà dalle ore 21.00 del 17 maggio alle ore 20:59 del 18 maggio 2026 e che potrà generare ripercussioni",
-      "startDate": "2026-05-17T19:00:00.000Z",
-      "endDate": "2026-05-18T18:59:00.000Z",
-      "affectedServices": [
-        "Trenord"
-      ],
-      "severity": "high",
-      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
-      "guaranteedBands": "06:00-09:00, 18:00-21:00",
-      "id": "trenord-2026-05-18-sciopero-nazionale-di-tutti-i-settori-pu"
-    },
     {
       "source": "atm",
       "type": "disruption",
       "title": "47, 76, Q76, 321, 322, 323, 327, 433 e NM1: nuovo capolinea sul piazzale di Bisceglie",
-      "description": "È terminata la riqualificazione dell’autostazione di Bisceglie. Dalle 10 di lunedì 11 maggio queste linee cambiano la posizione dei capolinea sul piazzale. BUS 47, 321 E 322 I bus partono e arrivano al primo marciapiede. BUS 76, Q76, 323 E 327 I bus partono e arrivano al secondo marciapiede. BUS NM1 E 433 I bus partono e arrivano al terzo marciapiede.",
+      "description": "È terminata la riqualificazione dell’autostazione di Bisceglie. Dalle 10 di lunedì 11 maggio queste linee cambiano la posizione dei capolinea sul piazzale. Bus 47, 321 e 322 I bus partono e arrivano al primo marciapiede. Bus 76, Q76, 323 e 327 I bus partono e arrivano al secondo marciapiede. Bus NM1 e 433 I bus partono e arrivano al terzo marciapiede.",
       "startDate": "2026-05-08T16:34:17.000Z",
       "endDate": null,
       "affectedServices": [
@@ -82,8 +50,8 @@
     {
       "source": "atm",
       "type": "works",
-      "title": "Bus 48, 78 e Q78: fermata spostata",
-      "description": "Sono in programma lavori stradali in via Monte Rosa. La fermata via Silva via Monte Rosa dei bus 48 (verso Lotto M1 M5), 78 (verso Bisceglie M1) e Q78 (verso San Siro) è sospesa dalle 9 di martedì 19 maggio. Usate la fermata di via Silva via Monte Rosa, dove ferma la linea 68.",
+      "title": "Bus 48, 78 e Q78: fermate spostate",
+      "description": "Lavori stradali in via Monte Rosa - linee 48, 78 e Q78. La fermata via Silva via Monte Rosa dei bus 48 ( verso Lotto M1 M5 ), 78 ( verso Bisceglie M1 ) e Q78 ( verso San Siro ) è sospesa dalle 9 di martedì 19 maggio. Usate la fermata di via Silva via Monte Rosa, dove ferma la linea 68. Interventi agli alberi in via Diomede - linea 78 La fermata via Diomede/via Trenno verso via Govone è sospesa dalle 9 alle 16 di lunedì 25 maggio. Usate le fermate prima e dopo: via Ippodromo/Diomede via Diomede/v",
       "startDate": "2026-05-14T15:02:16.000Z",
       "endDate": null,
       "affectedServices": [
@@ -92,7 +60,7 @@
       "severity": "low",
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus48,78eQ78fermataspostata.aspx",
       "guaranteedBands": null,
-      "id": "atm-2026-05-14-bus-48-78-e-q78-fermata-spostata"
+      "id": "atm-2026-05-14-bus-48-78-e-q78-fermate-spostate"
     },
     {
       "source": "atm",
