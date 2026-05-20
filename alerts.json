@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-19T10:30:35.956Z",
+  "lastUpdated": "2026-05-20T10:17:02.318Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -31,21 +31,6 @@
       "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/RadioItaliaLive26.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-05-12-radio-italia-live-al-concerto-con-i-mezz"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Bus 49: deviazione",
-      "description": "Sono in programma lavori stradali in via Inganni. Le vetture cambiano percorso e fermate dalle 20 alle 6 da lunedì 18 a sabato 23 maggio. I bus verso San Cristoforo M4 saltano queste fermate: Inganni M1 Via Inganni/via Passero Via Inganni/via Rondine Via Inganni/via Lucarino Via Inganni/via Val Bavona. Fanno servizio come al solito da San Cristoforo fino alla fermata via Saint Bon/via Forze Armate. Da qui girano e fermano in via Zurigo 2 e 22, in via Bisceglie 76 e dopo via Bensi, in via Lorente",
-      "startDate": "2026-05-12T12:41:10.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus49lavoriinganni.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-05-12-bus-49-deviazione"
     },
     {
       "source": "atm",
