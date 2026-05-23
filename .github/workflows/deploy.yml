@@ -31,6 +31,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Inject Firebase API Key
+        run: |
+          sed -i 's/__FIREBASE_API_KEY__/${{ secrets.FIREBASE_API_KEY }}/g' js/firebase-sync.js
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 

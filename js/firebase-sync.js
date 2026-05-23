@@ -38,7 +38,7 @@ export function initFirebase() {
   }
 
   const firebaseConfig = {
-    apiKey: "AIzaSyDhDzZ0syW0MZXdOhrLKVJ8UPCHkVC7G30",
+    apiKey: "__FIREBASE_API_KEY__",
     authDomain: "trasporti-busto-proj.firebaseapp.com",
     projectId: "trasporti-busto-proj",
     storageBucket: "trasporti-busto-proj.firebasestorage.app",
