@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-25T11:03:39.564Z",
+  "lastUpdated": "2026-05-26T10:40:04.387Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -20,7 +20,7 @@
     {
       "source": "atm",
       "type": "strike",
-      "title": "SCIOPERO GENERALE NAZIONALE 29 MAGGIO",
+      "title": "SCIOPERO NAZIONALE 29 MAGGIO",
       "description": "Venerdì 29 maggio il sindacato CUB e altre organizzazioni sindacali autonome e di base hanno proclamato uno sciopero generale nazionale che potrebbe avere conseguenze sul servizio delle nostre linee. Linee ATM Le nostre linee potrebbero non essere garantite dalle 8:45 alle 15 e dopo le 18 , fino al termine del servizio. Funicolare Como-Brunate Il servizio potrebbe non essere garantito dalle 8:30 alle 16:30 e dopo le 19:30, fino al termine del servizio. Motivazioni dei sindacati che hanno proclam",
       "startDate": "2026-05-28T22:00:00.000Z",
       "endDate": "2026-05-28T22:00:00.000Z",
@@ -32,21 +32,6 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Scioperogeneralenazionalevenerdì29maggio.aspx",
       "guaranteedBands": "inizio servizio-08:45, 15:00-18:00",
       "id": "atm-2026-05-24-sciopero-generale-nazionale-venerd-29-ma"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Bus 48, 78 e Q78: fermate spostate",
-      "description": "Lavori stradali in via Monte Rosa - linee 48, 78 e Q78. La fermata via Silva via Monte Rosa dei bus 48 ( verso Lotto M1 M5 ), 78 ( verso Bisceglie M1 ) e Q78 ( verso San Siro ) è sospesa dalle 9 di martedì 19 maggio. Usate la fermata di via Silva via Monte Rosa, dove ferma la linea 68. Interventi agli alberi in via Diomede - linea 78 La fermata via Diomede/via Trenno verso via Govone è sospesa dalle 9 alle 16 di lunedì 25 maggio. Usate le fermate prima e dopo: via Ippodromo/Diomede via Diomede/v",
-      "startDate": "2026-05-14T15:02:16.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus48,78eQ78fermataspostata.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-05-14-bus-48-78-e-q78-fermate-spostate"
     },
     {
       "source": "atm",
@@ -67,7 +52,7 @@
       "source": "atm",
       "type": "disruption",
       "title": "Bus 61 e 84: deviazione",
-      "description": "È prevista la chiusura al traffico di un tratto di corso Europa. Le vetture cambiano percorso e fermate mercoledì 27 maggio, dalle 7 alle 18. Verso Duomo (linea 61) e Corvetto (linea 84), i bus deviano e saltano la fermata San Babila M1 M4. Fanno il solito percorso fino a via Visconti di Modrone. Poi non passano da via Borgogna: continuano su Visconti di Modrone, passano da largo Augusto e via Cavallotti. Riprendono il percorso consueto da corso Europa. Verso Murani (linea 61) e Porta Volta (lin",
+      "description": "È prevista la chiusura al traffico di un tratto di corso Europa. Le vetture cambiano percorso e fermate: mercoledì 27 maggio, dalle 7 alle 18 sabato 13 giugno, dalle 7 alle 17 Verso Duomo (linea 61) e Corvetto (linea 84), i bus deviano e saltano la fermata San Babila M1 M4. Fanno il solito percorso fino a via Visconti di Modrone. Poi non passano da via Borgogna: continuano su Visconti di Modrone, passano da largo Augusto e via Cavallotti. Riprendono il percorso consueto da corso Europa. Verso Mu",
       "startDate": "2026-05-21T14:45:45.000Z",
       "endDate": null,
       "affectedServices": [
@@ -77,6 +62,21 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus61e84deviazione.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-05-21-bus-61-e-84-deviazione"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bus 50, 96, NM1 e NM2: fermata sospesa",
+      "description": "Sabato 30 maggio è in programma la posa di una piattaforma aerea in piazzale Cadorna. Bus 50 e 96 La fermata Cadorna M1 M2 verso Cairoli (bus 50) e verso Cadorna (bus 96) è sospesa dalle 7 alle 17. Dopo le 17 usate la fermata provvisoria in via Carducci, prima del numero civico 1. Bus NM1 e NM2 La fermata Cadorna M1 M2 verso Molino Dorino (bus NM1) e verso Cascina Gobba (bus NM2) è sospesa dalle 7 alle 17 . Usate le fermate via Meravigli (bus NM1) o Cairoli (bus NM2). Dopo le 17 usate la fermata",
+      "startDate": "2026-05-25T12:56:21.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus50,96,NM1eNM2fermatasospesa.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-05-25-bus-50-96-nm1-e-nm2-fermata-sospesa"
     }
   ]
 }
