@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-26T10:40:04.387Z",
+  "lastUpdated": "2026-05-27T10:45:32.140Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -52,7 +52,7 @@
       "source": "atm",
       "type": "disruption",
       "title": "Bus 61 e 84: deviazione",
-      "description": "È prevista la chiusura al traffico di un tratto di corso Europa. Le vetture cambiano percorso e fermate: mercoledì 27 maggio, dalle 7 alle 18 sabato 13 giugno, dalle 7 alle 17 Verso Duomo (linea 61) e Corvetto (linea 84), i bus deviano e saltano la fermata San Babila M1 M4. Fanno il solito percorso fino a via Visconti di Modrone. Poi non passano da via Borgogna: continuano su Visconti di Modrone, passano da largo Augusto e via Cavallotti. Riprendono il percorso consueto da corso Europa. Verso Mu",
+      "description": "Mercoledì 27 maggio, dalle 7 alle 18, chiude al traffico di un tratto di corso Europa. Verso Duomo (linea 61) e Corvetto (linea 84), i bus deviano e saltano la fermata San Babila M1 M4. Fanno il solito percorso fino a via Visconti di Modrone. Poi non passano da via Borgogna: continuano su Visconti di Modrone, passano da largo Augusto e via Cavallotti. Riprendono il percorso consueto da corso Europa. Verso Murani (linea 61) e Porta Volta (linea 84) il percorso non cambia.",
       "startDate": "2026-05-21T14:45:45.000Z",
       "endDate": null,
       "affectedServices": [
@@ -77,6 +77,34 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus50,96,NM1eNM2fermatasospesa.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-05-25-bus-50-96-nm1-e-nm2-fermata-sospesa"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bus 201 e 328: deviazione",
+      "description": "È in programma la chiusura di viale Lombardia a Rozzano. Domenica 7 giugno i bus cambiano percorso. Bus 201 Verso Rozzano (via Alberelle), i bus saltano le fermate di viale Lombardia. Partono dal capolinea di via Milano (Rozzano) e arrivano fino a viale Lombardia. Poi deviano: passano per via Torino, via Gramsci, via Roma, viale Lazio, via Cabrini e viale Romagna. Da qui tornano su viale Romagna e da viale Lazio riprendono il percorso di sempre. Verso Rozzano (via Milano) il percorso non cambia.",
+      "startDate": "2026-05-26T14:10:01.000Z",
+      "endDate": null,
+      "affectedServices": [],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus201e328deviazione265.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-05-26-bus-201-e-328-deviazione"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 327: cambiamenti al servizio",
+      "description": "Ci sono lavori stradali in via Buonarroti nel Comune di Trezzano sul Naviglio. I bus cambiano percorso e fermate dalle 9:30 di mercoledì 27 maggio per circa 3 mesi . I bus verso Trezzano sul Naviglio (via Morona e Zanoletti) deviano da via Dante/via Bramante a via Marconi/via Malibran. Saltano la fermata di via Buonarroti/via Piero della Francesca. Quando deviano fermano in via Galilei, di fronte al numero civico 63. Verso Milano Bisceglie M1 il percorso non cambia.",
+      "startDate": "2026-05-26T15:24:37.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus327cambiamentialserviziodddd.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-05-26-bus-327-cambiamenti-al-servizio"
     }
   ]
 }
