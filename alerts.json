@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-27T10:45:32.140Z",
+  "lastUpdated": "2026-05-28T10:43:37.860Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -51,21 +51,6 @@
     {
       "source": "atm",
       "type": "disruption",
-      "title": "Bus 61 e 84: deviazione",
-      "description": "Mercoledì 27 maggio, dalle 7 alle 18, chiude al traffico di un tratto di corso Europa. Verso Duomo (linea 61) e Corvetto (linea 84), i bus deviano e saltano la fermata San Babila M1 M4. Fanno il solito percorso fino a via Visconti di Modrone. Poi non passano da via Borgogna: continuano su Visconti di Modrone, passano da largo Augusto e via Cavallotti. Riprendono il percorso consueto da corso Europa. Verso Murani (linea 61) e Porta Volta (linea 84) il percorso non cambia.",
-      "startDate": "2026-05-21T14:45:45.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus61e84deviazione.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-05-21-bus-61-e-84-deviazione"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
       "title": "Bus 50, 96, NM1 e NM2: fermata sospesa",
       "description": "Sabato 30 maggio è in programma la posa di una piattaforma aerea in piazzale Cadorna. Bus 50 e 96 La fermata Cadorna M1 M2 verso Cairoli (bus 50) e verso Cadorna (bus 96) è sospesa dalle 7 alle 17. Dopo le 17 usate la fermata provvisoria in via Carducci, prima del numero civico 1. Bus NM1 e NM2 La fermata Cadorna M1 M2 verso Molino Dorino (bus NM1) e verso Cascina Gobba (bus NM2) è sospesa dalle 7 alle 17 . Usate le fermate via Meravigli (bus NM1) o Cairoli (bus NM2). Dopo le 17 usate la fermata",
       "startDate": "2026-05-25T12:56:21.000Z",
@@ -105,6 +90,36 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus327cambiamentialserviziodddd.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-05-26-bus-327-cambiamenti-al-servizio"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Ponte del 2 giugno: orari e servizi",
+      "description": "Metropolitane Lunedì 1° giugno. Orario del sabato. Martedì 2 giugno. Orario festivo. Bus, tram e filobus Lunedì 1° giugno. Orario del sabato. Fanno eccezione le linee 140, 709, 926 e 928 che seguono l’orario del lunedì-venerdì. La linea 923 segue questo orario. Martedì 2 giugno. Orario festivo. I bus 171, 172, 174, 175, 176 fanno servizio dalle 8 alle 13. Rete notturna Sono in servizio tutte le notti come al solito le linee NM1, NM2, NM3, NM4, N25, N26 e 90/91. Le linee N15, N24, N27, N42, N54, ",
+      "startDate": "2026-05-28T09:00:50.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Pontedel2giugnoorarieservizi.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-05-28-ponte-del-2-giugno-orari-e-servizi"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Concerti a San Siro: guida a parcheggi, metropolitane e percorsi pedonali",
+      "description": "Insieme al Comune di Milano abbiamo programmato un servizio straordinario per raggiungere lo stadio San Siro con i mezzi pubblici in occasione di questi concerti: Tiziano Ferro 6 e 7 giugno Eros Ramazzotti 9 giugno Irama 11 giugno Geolier 13 giugno Achille Lauro 15 giugno Iron Maiden 17 giugno Ligabue 20 giugno Tedua 24 giugno Gabry Ponte 27 giugno Sfera Ebbasta 8 e 9 luglio Max Pezzali 11 e 12 luglio Bruno Mars 14 e 15 luglio The Weeknd 24, 25 e 26 luglio In queste serate le metropolitane M1 e ",
+      "startDate": "2026-05-28T09:21:09.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/ConcertiSanSiro26.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-05-28-concerti-a-san-siro-guida-a-parcheggi-me"
     }
   ]
 }
