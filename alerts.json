@@ -1,7 +1,24 @@
 {
-  "lastUpdated": "2026-05-28T10:43:37.860Z",
+  "lastUpdated": "2026-05-29T10:37:45.242Z",
   "windowDays": 14,
   "alerts": [
+    {
+      "source": "trenord",
+      "type": "strike",
+      "title": "sciopero nazionale.",
+      "description": "sciopero nazionale.",
+      "startDate": null,
+      "endDate": null,
+      "affectedServices": [
+        "Trenord",
+        "ATM",
+        "Movibus"
+      ],
+      "severity": "high",
+      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
+      "guaranteedBands": "06:00-09:00, 18:00-21:00",
+      "id": "trenord-unknown-sciopero-nazionale-"
+    },
     {
       "source": "trenord",
       "type": "strike",
@@ -16,37 +33,6 @@
       "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
       "guaranteedBands": "06:00-09:00, 18:00-21:00",
       "id": "trenord-2026-05-29-sciopero-nazionale-di-tutti-i-settori-pu"
-    },
-    {
-      "source": "atm",
-      "type": "strike",
-      "title": "SCIOPERO NAZIONALE 29 MAGGIO",
-      "description": "Venerdì 29 maggio il sindacato CUB e altre organizzazioni sindacali autonome e di base hanno proclamato uno sciopero generale nazionale che potrebbe avere conseguenze sul servizio delle nostre linee. Linee ATM Le nostre linee potrebbero non essere garantite dalle 8:45 alle 15 e dopo le 18 , fino al termine del servizio. Funicolare Como-Brunate Il servizio potrebbe non essere garantito dalle 8:30 alle 16:30 e dopo le 19:30, fino al termine del servizio. Motivazioni dei sindacati che hanno proclam",
-      "startDate": "2026-05-28T22:00:00.000Z",
-      "endDate": "2026-05-28T22:00:00.000Z",
-      "affectedServices": [
-        "ATM",
-        "Funicolare Como-Brunate"
-      ],
-      "severity": "high",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Scioperogeneralenazionalevenerdì29maggio.aspx",
-      "guaranteedBands": "inizio servizio-08:45, 15:00-18:00",
-      "id": "atm-2026-05-24-sciopero-generale-nazionale-venerd-29-ma"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
-      "title": "Mi Ami Festival: come arrivare con i mezzi pubblici",
-      "description": "English version Venerdì 22 e sabato 23 maggio la metropolitana M4 è potenziata e aperta fino a tarda notte. In questa pagina trovate tutte le informazioni per raggiungere il Mi Ami Festival con i mezzi pubblici. Come raggiungere l’Idroscalo - Mappa di tutte le metropolitane Con la metropolitana M4, scendete alla stazione di Linate. Poi seguite il percorso pedonale Con il bus 973 (parte da piazza Cinque Giornate e incontra M4 a Forlanini, Repetti e Linate) fino alla fermata di via Novegro Per rie",
-      "startDate": "2026-05-20T12:12:51.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/MiAmi2026.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-05-20-mi-ami-festival-come-arrivare-con-i-mezz"
     },
     {
       "source": "atm",
@@ -95,7 +81,7 @@
       "source": "atm",
       "type": "disruption",
       "title": "Ponte del 2 giugno: orari e servizi",
-      "description": "Metropolitane Lunedì 1° giugno. Orario del sabato. Martedì 2 giugno. Orario festivo. Bus, tram e filobus Lunedì 1° giugno. Orario del sabato. Fanno eccezione le linee 140, 709, 926 e 928 che seguono l’orario del lunedì-venerdì. La linea 923 segue questo orario. Martedì 2 giugno. Orario festivo. I bus 171, 172, 174, 175, 176 fanno servizio dalle 8 alle 13. Rete notturna Sono in servizio tutte le notti come al solito le linee NM1, NM2, NM3, NM4, N25, N26 e 90/91. Le linee N15, N24, N27, N42, N54, ",
+      "description": "Metropolitane Lunedì 1° giugno. Orario del sabato. Martedì 2 giugno. Orario festivo. Artigiano in Fiera / Anteprima estate : domenica 31 e martedì 2 la linea M1 è potenziata rispetto a un normale giorno festivo da e verso Rho Fieramilano Bus, tram e filobus Lunedì 1° giugno. Orario del sabato. Fanno eccezione le linee 140, 709, 926 e 928 che seguono l’orario del lunedì-venerdì. La linea 923 segue questo orario. Martedì 2 giugno. Orario festivo. I bus 171, 172, 174, 175, 176 fanno servizio dalle ",
       "startDate": "2026-05-28T09:00:50.000Z",
       "endDate": null,
       "affectedServices": [
@@ -110,7 +96,7 @@
       "source": "atm",
       "type": "disruption",
       "title": "Concerti a San Siro: guida a parcheggi, metropolitane e percorsi pedonali",
-      "description": "Insieme al Comune di Milano abbiamo programmato un servizio straordinario per raggiungere lo stadio San Siro con i mezzi pubblici in occasione di questi concerti: Tiziano Ferro 6 e 7 giugno Eros Ramazzotti 9 giugno Irama 11 giugno Geolier 13 giugno Achille Lauro 15 giugno Iron Maiden 17 giugno Ligabue 20 giugno Tedua 24 giugno Gabry Ponte 27 giugno Sfera Ebbasta 8 e 9 luglio Max Pezzali 11 e 12 luglio Bruno Mars 14 e 15 luglio The Weeknd 24, 25 e 26 luglio In queste serate le metropolitane M1 e ",
+      "description": "English version Insieme al Comune di Milano abbiamo programmato un servizio straordinario per raggiungere lo stadio San Siro con i mezzi pubblici in occasione di questi concerti: Tiziano Ferro 6 e 7 giugno Eros Ramazzotti 9 giugno Irama 11 giugno Geolier 13 giugno Achille Lauro 15 giugno Iron Maiden 17 giugno Ligabue 20 giugno Tedua 24 giugno Gabry Ponte 27 giugno Sfera Ebbasta 8 e 9 luglio Max Pezzali 11 e 12 luglio Bruno Mars 14 e 15 luglio The Weeknd 24, 25 e 26 luglio In queste serate le met",
       "startDate": "2026-05-28T09:21:09.000Z",
       "endDate": null,
       "affectedServices": [
@@ -120,6 +106,21 @@
       "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/ConcertiSanSiro26.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-05-28-concerti-a-san-siro-guida-a-parcheggi-me"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Concerti all’Ippodromo La Maura: guida a parcheggi, metropolitane e percorsi pedonali",
+      "description": "English version Insieme al Comune di Milano abbiamo programmato un servizio straordinario per raggiungere l’Ippodromo La Maura con i mezzi pubblici in occasione di questi concerti: Cesare Cremonini 10 giugno Foo Fighters 5 luglio System of a Down 6 luglio Bad Bunny 17 e 18 luglio In queste serate le metropolitane M1 e M5 sono potenziate e aperte fino a tarda notte. Chiudono più tardi anche alcuni parcheggi in corrispondenza delle stazioni. In questa pagina trovate gli orari e le indicazioni per ",
+      "startDate": "2026-05-28T09:54:08.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/ConcertiLaMaura26.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-05-28-concerti-all-ippodromo-la-maura-guida-a-"
     }
   ]
 }
