@@ -1,39 +1,7 @@
 {
-  "lastUpdated": "2026-05-29T10:37:45.242Z",
+  "lastUpdated": "2026-05-30T09:08:23.369Z",
   "windowDays": 14,
   "alerts": [
-    {
-      "source": "trenord",
-      "type": "strike",
-      "title": "sciopero nazionale.",
-      "description": "sciopero nazionale.",
-      "startDate": null,
-      "endDate": null,
-      "affectedServices": [
-        "Trenord",
-        "ATM",
-        "Movibus"
-      ],
-      "severity": "high",
-      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
-      "guaranteedBands": "06:00-09:00, 18:00-21:00",
-      "id": "trenord-unknown-sciopero-nazionale-"
-    },
-    {
-      "source": "trenord",
-      "type": "strike",
-      "title": "Sciopero Nazionale 28-29 Maggio",
-      "description": "sciopero Nazionale di tutti i settori pubblici e privati che, per il settore ferroviario, si effettuerà dalle ore 21.00 del 28 maggio alle ore 21:00 del 29 maggio 2026 e che potrà generare ripercuss",
-      "startDate": "2026-05-28T19:00:00.000Z",
-      "endDate": "2026-05-29T19:00:00.000Z",
-      "affectedServices": [
-        "Trenord"
-      ],
-      "severity": "high",
-      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
-      "guaranteedBands": "06:00-09:00, 18:00-21:00",
-      "id": "trenord-2026-05-29-sciopero-nazionale-di-tutti-i-settori-pu"
-    },
     {
       "source": "atm",
       "type": "disruption",
@@ -121,6 +89,21 @@
       "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/ConcertiLaMaura26.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-05-28-concerti-all-ippodromo-la-maura-guida-a-"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Tram 9 e 19: fermata sospesa",
+      "description": "È previsto un evento in viale Piave. Sabato 20 giugno, dalle 12 alle 14:30 , la fermata viale Piave verso Centrale (tram 9) e verso Lambrate (tram 19) è sospesa. Usate le fermate prima e dopo: Tricolore M4 Porta Venezia M1 (tram 9) via Bixio (tram 19)",
+      "startDate": "2026-05-29T15:32:47.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram9e19fermatasospesa29_5.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-05-29-tram-9-e-19-fermata-sospesa"
     }
   ]
 }
