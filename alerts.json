@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-31T09:40:59.332Z",
+  "lastUpdated": "2026-06-01T12:28:20.767Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -34,7 +34,7 @@
       "source": "atm",
       "type": "disruption",
       "title": "Ponte del 2 giugno: orari e servizi",
-      "description": "Metropolitane Lunedì 1° giugno. Orario del sabato. Martedì 2 giugno. Orario festivo. Artigiano in Fiera / Anteprima estate : domenica 31 e martedì 2 la linea M1 è potenziata rispetto a un normale giorno festivo da e verso Rho Fieramilano Bus, tram e filobus Lunedì 1° giugno. Orario del sabato. Fanno eccezione le linee 140, 709, 926 e 928 che seguono l’orario del lunedì-venerdì. La linea 923 segue questo orario. Martedì 2 giugno. Orario festivo. I bus 171, 172, 174, 175, 176 fanno servizio dalle ",
+      "description": "English Metropolitane Lunedì 1° giugno. Orario del sabato. Martedì 2 giugno. Orario festivo. Artigiano in Fiera / Anteprima estate : domenica 31 e martedì 2 la linea M1 è potenziata rispetto a un normale giorno festivo da e verso Rho Fieramilano Bus, tram e filobus Lunedì 1° giugno. Orario del sabato. Fanno eccezione le linee 140, 709, 926 e 928 che seguono l’orario del lunedì-venerdì. La linea 923 segue questo orario. Martedì 2 giugno. Orario festivo. I bus 171, 172, 174, 175, 176 fanno servizi",
       "startDate": "2026-05-28T09:00:50.000Z",
       "endDate": null,
       "affectedServices": [
@@ -89,6 +89,21 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram9e19fermatasospesa29_5.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-05-29-tram-9-e-19-fermata-sospesa"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 47, 95 e 98: fermata sospesa",
+      "description": "Ci sono lavori stradali in via Rita da Cascia. La fermata di via S. Rita/via Bari verso Bisceglie M1 (Bus 47), verso Rogoredo M3 (Bus 95) verso Famagosta M2 (Bus 98) è sospesa. Usate le fermate prima e dopo: - Piazza Ohm - Via S. Rita/via Miani",
+      "startDate": "2026-06-01T10:01:13.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus47,95e98fermatasospesa.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-06-01-bus-47-95-e-98-fermata-sospesa"
     }
   ]
 }
