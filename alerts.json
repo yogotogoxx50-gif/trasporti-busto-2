@@ -1,49 +1,19 @@
 {
-  "lastUpdated": "2026-06-02T11:10:52.713Z",
+  "lastUpdated": "2026-06-03T11:49:49.179Z",
   "windowDays": 14,
   "alerts": [
     {
       "source": "atm",
-      "type": "disruption",
-      "title": "Bus 201 e 328: deviazione",
-      "description": "È in programma la chiusura di viale Lombardia a Rozzano. Domenica 7 giugno i bus cambiano percorso. Bus 201 Verso Rozzano (via Alberelle), i bus saltano le fermate di viale Lombardia. Partono dal capolinea di via Milano (Rozzano) e arrivano fino a viale Lombardia. Poi deviano: passano per via Torino, via Gramsci, via Roma, viale Lazio, via Cabrini e viale Romagna. Da qui tornano su viale Romagna e da viale Lazio riprendono il percorso di sempre. Verso Rozzano (via Milano) il percorso non cambia.",
-      "startDate": "2026-05-26T14:10:01.000Z",
+      "type": "works",
+      "title": "Linee 4, 7, 31 e 86: cambiamenti del servizio dall’8 giugno",
+      "description": "Continuano i lavori del Comune di Milano e di MM per la costruzione della metrotranvia nord. Nei prossimi giorni parte una nuova fase dei lavori per collegare i binari in viale Fulvio Testi con i nuovi binari posati in via Santa Monica ( per saperne di più ). Aggiorneremo questa pagina con i cambiamenti legati alle prossime fasi dei lavori. Tram 4. Da lunedì 8 a venerdì 12 giugno, dopo le 20:30 I tram fanno servizio tra Cairoli e la fermata Ca Granda M5 . Da qui, invece di girare a sinistra vers",
+      "startDate": "2026-06-02T11:59:43.000Z",
       "endDate": null,
       "affectedServices": [],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus201e328deviazione265.aspx",
+      "severity": "high",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Linee4,7,31e86cambiamentidelserviziodall’8giugno626.aspx",
       "guaranteedBands": null,
-      "id": "atm-2026-05-26-bus-201-e-328-deviazione"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Bus 327: cambiamenti al servizio",
-      "description": "Ci sono lavori stradali in via Buonarroti nel Comune di Trezzano sul Naviglio. I bus cambiano percorso e fermate dalle 9:30 di mercoledì 27 maggio per circa 3 mesi . I bus verso Trezzano sul Naviglio (via Morona e Zanoletti) deviano da via Dante/via Bramante a via Marconi/via Malibran. Saltano la fermata di via Buonarroti/via Piero della Francesca. Quando deviano fermano in via Galilei, di fronte al numero civico 63. Verso Milano Bisceglie M1 il percorso non cambia.",
-      "startDate": "2026-05-26T15:24:37.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus327cambiamentialserviziodddd.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-05-26-bus-327-cambiamenti-al-servizio"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
-      "title": "Ponte del 2 giugno: orari e servizi",
-      "description": "English Metropolitane Lunedì 1° giugno. Orario del sabato. Martedì 2 giugno. Orario festivo. Artigiano in Fiera / Anteprima estate : domenica 31 e martedì 2 la linea M1 è potenziata rispetto a un normale giorno festivo da e verso Rho Fieramilano Bus, tram e filobus Lunedì 1° giugno. Orario del sabato. Fanno eccezione le linee 140, 709, 926 e 928 che seguono l’orario del lunedì-venerdì. La linea 923 segue questo orario. Martedì 2 giugno. Orario festivo. I bus 171, 172, 174, 175, 176 fanno servizi",
-      "startDate": "2026-05-28T09:00:50.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Pontedel2giugnoorarieservizi.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-05-28-ponte-del-2-giugno-orari-e-servizi"
+      "id": "atm-2026-06-02-linee-4-7-31-e-86-cambiamenti-del-serviz"
     },
     {
       "source": "atm",
