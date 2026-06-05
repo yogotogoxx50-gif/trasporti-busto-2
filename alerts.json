@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-04T10:32:37.511Z",
+  "lastUpdated": "2026-06-05T10:39:47.674Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -16,19 +16,64 @@
       "id": "atm-2026-06-02-linee-4-7-31-e-86-cambiamenti-del-serviz"
     },
     {
-      "source": "atm",
-      "type": "disruption",
-      "title": "Concerti a San Siro: guida a parcheggi, metropolitane e percorsi pedonali",
-      "description": "English version Insieme al Comune di Milano abbiamo programmato un servizio straordinario per raggiungere lo stadio San Siro con i mezzi pubblici in occasione di questi concerti: Tiziano Ferro 6 e 7 giugno Eros Ramazzotti 9 giugno Irama 11 giugno Geolier 13 giugno Achille Lauro 15 giugno Iron Maiden 17 giugno Ligabue 20 giugno Tedua 24 giugno Gabry Ponte 27 giugno Sfera Ebbasta 8 e 9 luglio Max Pezzali 11 e 12 luglio Bruno Mars 14 e 15 luglio The Weeknd 24, 25 e 26 luglio In queste serate le met",
-      "startDate": "2026-05-28T09:21:09.000Z",
-      "endDate": null,
+      "source": "trenord",
+      "type": "strike",
+      "title": "Sciopero Nazionale 11-12 giugno",
+      "description": "Sciopero Nazionale 11-12 giugno 2026",
+      "startDate": "2026-06-10T22:00:00.000Z",
+      "endDate": "2026-06-11T22:00:00.000Z",
       "affectedServices": [
-        "M1"
+        "Trenord"
       ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/ConcertiSanSiro26.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-05-28-concerti-a-san-siro-guida-a-parcheggi-me"
+      "severity": "high",
+      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
+      "guaranteedBands": "06:00-09:00, 18:00-21:00",
+      "id": "trenord-2026-06-12-sciopero-nazionale-11-12-giugno-2026"
+    },
+    {
+      "source": "trenord",
+      "type": "strike",
+      "title": "Sciopero Nazionale 11-12 giugno",
+      "description": "Sciopero Nazionale 11-12 giugno 2026\" />",
+      "startDate": "2026-06-10T22:00:00.000Z",
+      "endDate": "2026-06-11T22:00:00.000Z",
+      "affectedServices": [
+        "Trenord"
+      ],
+      "severity": "high",
+      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
+      "guaranteedBands": "06:00-09:00, 18:00-21:00",
+      "id": "trenord-2026-06-12-sciopero-nazionale-11-12-giugno-2026-"
+    },
+    {
+      "source": "trenord",
+      "type": "strike",
+      "title": "Sciopero Nazionale 11-12 giugno",
+      "description": "sciopero/&text=Sciopero Nazionale 11-12 giugno 2026%0aMaggiori dettagli saranno disponibili sul sito o seguendo gli aggiornamenti sulla circolazione dei treni in “real-time” tramite la nostra App.\" href=\"",
+      "startDate": "2026-06-10T22:00:00.000Z",
+      "endDate": "2026-06-11T22:00:00.000Z",
+      "affectedServices": [
+        "Trenord"
+      ],
+      "severity": "high",
+      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
+      "guaranteedBands": "06:00-09:00, 18:00-21:00",
+      "id": "trenord-2026-06-12-sciopero-text-sciopero-nazionale-11-12-g"
+    },
+    {
+      "source": "trenord",
+      "type": "strike",
+      "title": "Sciopero Nazionale 11-12 giugno",
+      "description": "Sciopero Nazionale 11-12 giugno 2026&body=Maggiori dettagli saranno disponibili sul sito o seguendo gli aggiornamenti sulla circolazione dei treni in “real-time” tramite la nostra App.%0ahttps://www.trenord.i",
+      "startDate": "2026-06-10T22:00:00.000Z",
+      "endDate": "2026-06-11T22:00:00.000Z",
+      "affectedServices": [
+        "Trenord"
+      ],
+      "severity": "high",
+      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
+      "guaranteedBands": "06:00-09:00, 18:00-21:00",
+      "id": "trenord-2026-06-12-sciopero-nazionale-11-12-giugno-2026-bod"
     },
     {
       "source": "atm",
