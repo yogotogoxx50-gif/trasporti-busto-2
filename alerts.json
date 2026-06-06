@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-05T10:39:47.674Z",
+  "lastUpdated": "2026-06-06T09:17:15.948Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -78,32 +78,17 @@
     {
       "source": "atm",
       "type": "disruption",
-      "title": "Concerti all’Ippodromo La Maura: guida a parcheggi, metropolitane e percorsi pedonali",
-      "description": "English version Insieme al Comune di Milano abbiamo programmato un servizio straordinario per raggiungere l’Ippodromo La Maura con i mezzi pubblici in occasione di questi concerti: Cesare Cremonini 10 giugno Foo Fighters 5 luglio System of a Down 6 luglio Bad Bunny 17 e 18 luglio In queste serate le metropolitane M1 e M5 sono potenziate e aperte fino a tarda notte. Chiudono più tardi anche alcuni parcheggi in corrispondenza delle stazioni. In questa pagina trovate gli orari e le indicazioni per ",
-      "startDate": "2026-05-28T09:54:08.000Z",
+      "title": "Concerti a San Siro: guida a parcheggi, metropolitane e percorsi pedonali",
+      "description": "English Insieme al Comune di Milano abbiamo programmato un servizio straordinario per raggiungere lo stadio San Siro con i mezzi pubblici in occasione di questi concerti: Tiziano Ferro 6 e 7 giugno Eros Ramazzotti 9 giugno Irama 11 giugno Geolier 13 giugno Achille Lauro 15 giugno Iron Maiden 17 giugno Ligabue 20 giugno Tedua 24 giugno Gabry Ponte 27 giugno Sfera Ebbasta 8 e 9 luglio Max Pezzali 11 e 12 luglio Bruno Mars 14 e 15 luglio The Weeknd 24, 25 e 26 luglio In queste serate le metropolita",
+      "startDate": "2026-05-28T09:21:09.000Z",
       "endDate": null,
       "affectedServices": [
         "M1"
       ],
       "severity": "low",
-      "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/ConcertiLaMaura26.aspx",
+      "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/ConcertiSanSiro26.aspx",
       "guaranteedBands": null,
-      "id": "atm-2026-05-28-concerti-all-ippodromo-la-maura-guida-a-"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
-      "title": "Tram 9 e 19: fermata sospesa",
-      "description": "È previsto un evento in viale Piave. Sabato 20 giugno, dalle 12 alle 14:30 , la fermata viale Piave verso Centrale (tram 9) e verso Lambrate (tram 19) è sospesa. Usate le fermate prima e dopo: Tricolore M4 Porta Venezia M1 (tram 9) via Bixio (tram 19)",
-      "startDate": "2026-05-29T15:32:47.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram9e19fermatasospesa29_5.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-05-29-tram-9-e-19-fermata-sospesa"
+      "id": "atm-2026-05-28-concerti-a-san-siro-guida-a-parcheggi-me"
     },
     {
       "source": "atm",
@@ -119,6 +104,21 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus47,95e98fermatasospesa.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-06-01-bus-47-95-e-98-fermata-sospesa"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Party Like a Deejay: M1, M2 e M5 chiudono più tardi, deviano i tram 1 e 10",
+      "description": "English Sabato 6 e domenica 7 giugno c’è Party Like a Deejay all’Arco della Pace. In questa pagina trovate gli orari delle metropolitane e i cambiamenti del servizio delle nostre linee. Al parco Sempione con la metropolitana Per raggiungere la festa usate le stazioni di Cadorna, Lanza, Cairoli o Domodossola : qui trovate la mappa di tutte le linee. M1, M2, M5 e alcuni parcheggi ATM chiudono più tardi M1 : sabato 6 e domenica 7 giugno i treni restano in servizio anche dopo il normale orario di ch",
+      "startDate": "2026-06-05T12:27:20.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/PartyLikeaDeejayM1,M2eM5chiudonopiùtardi,devianoitram1e10626.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-06-05-party-like-a-deejay-m1-m2-e-m5-chiudono-"
     }
   ]
 }
