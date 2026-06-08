@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-07T09:55:02.220Z",
+  "lastUpdated": "2026-06-08T11:48:24.592Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -79,7 +79,7 @@
       "source": "atm",
       "type": "disruption",
       "title": "Concerti a San Siro: guida a parcheggi, metropolitane e percorsi pedonali",
-      "description": "English Insieme al Comune di Milano abbiamo programmato un servizio straordinario per raggiungere lo stadio San Siro con i mezzi pubblici in occasione di questi concerti: Tiziano Ferro 6 e 7 giugno Eros Ramazzotti 9 giugno Irama 11 giugno Geolier 13 giugno Achille Lauro 15 giugno Iron Maiden 17 giugno Ligabue 20 giugno Tedua 24 giugno Gabry Ponte 27 giugno Sfera Ebbasta 8 e 9 luglio Max Pezzali 11 e 12 luglio Bruno Mars 14 e 15 luglio The Weeknd 24, 25 e 26 luglio In queste serate le metropolita",
+      "description": "English Insieme al Comune di Milano abbiamo programmato un servizio straordinario per raggiungere lo stadio San Siro con i mezzi pubblici in occasione di questi concerti: Eros Ramazzotti 9 giugno Irama 11 giugno Geolier 13 giugno Achille Lauro 15 giugno Iron Maiden 17 giugno Ligabue 20 giugno Tedua 24 giugno Gabry Ponte 27 giugno Sfera Ebbasta 8 e 9 luglio Max Pezzali 11 e 12 luglio Bruno Mars 14 e 15 luglio The Weeknd 24, 25 e 26 luglio In queste serate le metropolitane M1 e M5 sono potenziate ",
       "startDate": "2026-05-28T09:21:09.000Z",
       "endDate": null,
       "affectedServices": [
@@ -93,32 +93,17 @@
     {
       "source": "atm",
       "type": "works",
-      "title": "Bus 47, 95 e 98: fermata sospesa",
-      "description": "Ci sono lavori stradali in via Rita da Cascia. La fermata di via S. Rita/via Bari verso Bisceglie M1 (Bus 47), verso Rogoredo M3 (Bus 95) verso Famagosta M2 (Bus 98) è sospesa. Usate le fermate prima e dopo: - Piazza Ohm - Via S. Rita/via Miani",
-      "startDate": "2026-06-01T10:01:13.000Z",
+      "title": "Bus 63: fermata sospesa",
+      "description": "Sono in programma lavori stradali in via Cividale del Friuli. Lunedì 15 giugno, dopo le 20, i bus verso De Angeli M1 deviano e saltano la fermata Via Bagarotti/via Valsesia. Usate la fermata dopo, via Forze Armate/via Cividale.",
+      "startDate": "2026-06-08T10:43:52.000Z",
       "endDate": null,
       "affectedServices": [
         "M1"
       ],
       "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus47,95e98fermatasospesa.aspx",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus63fermatasospesa626.aspx",
       "guaranteedBands": null,
-      "id": "atm-2026-06-01-bus-47-95-e-98-fermata-sospesa"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Party Like a Deejay: M1, M2 e M5 chiudono più tardi, deviano i tram 1 e 10",
-      "description": "English Sabato 6 e domenica 7 giugno c’è Party Like a Deejay all’Arco della Pace. In questa pagina trovate gli orari delle metropolitane e i cambiamenti del servizio delle nostre linee. Al parco Sempione con la metropolitana Per raggiungere la festa usate le stazioni di Cadorna, Lanza, Cairoli o Domodossola : qui trovate la mappa di tutte le linee. M1, M2, M5 e alcuni parcheggi ATM chiudono più tardi M1 : sabato 6 e domenica 7 giugno i treni restano in servizio anche dopo il normale orario di ch",
-      "startDate": "2026-06-05T12:27:20.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/PartyLikeaDeejayM1,M2eM5chiudonopiùtardi,devianoitram1e10626.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-06-05-party-like-a-deejay-m1-m2-e-m5-chiudono-"
+      "id": "atm-2026-06-08-bus-63-fermata-sospesa"
     }
   ]
 }
