@@ -1,7 +1,24 @@
 {
-  "lastUpdated": "2026-06-08T11:48:24.592Z",
+  "lastUpdated": "2026-06-09T10:26:29.334Z",
   "windowDays": 14,
   "alerts": [
+    {
+      "source": "trenord",
+      "type": "strike",
+      "title": "sciopero nazionale.",
+      "description": "sciopero nazionale.",
+      "startDate": null,
+      "endDate": null,
+      "affectedServices": [
+        "Trenord",
+        "ATM",
+        "Movibus"
+      ],
+      "severity": "high",
+      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
+      "guaranteedBands": "06:00-09:00, 18:00-21:00",
+      "id": "trenord-unknown-sciopero-nazionale-"
+    },
     {
       "source": "atm",
       "type": "works",
@@ -104,6 +121,21 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus63fermatasospesa626.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-06-08-bus-63-fermata-sospesa"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 433: cambia percorso e fermate",
+      "description": "Lavori stradali in via Sella Nova a Milano Lunedì 15 e martedì 16 giugno dalle 20:45 a fine servizio , i bus, solo verso Bisceglie M1, deviano e saltano le fermate di via Sella Nuova dopo via delle Forze Armate e via Viterbo dopo via Colombi. Quando deviano fermano in via delle Forze Armate dopo via Sella Nuova e dopo via Creta alle stesse fermate della linea 67.",
+      "startDate": "2026-06-08T17:39:19.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus433cambiapercorsoefermate.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-06-08-bus-433-cambia-percorso-e-fermate"
     }
   ]
 }
