@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-09T10:26:29.334Z",
+  "lastUpdated": "2026-06-10T10:47:28.275Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -18,19 +18,6 @@
       "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
       "guaranteedBands": "06:00-09:00, 18:00-21:00",
       "id": "trenord-unknown-sciopero-nazionale-"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Linee 4, 7, 31 e 86: cambiamenti del servizio dall’8 giugno",
-      "description": "Continuano i lavori del Comune di Milano e di MM per la costruzione della metrotranvia nord. Nei prossimi giorni parte una nuova fase dei lavori per collegare i binari in viale Fulvio Testi con i nuovi binari posati in via Santa Monica ( per saperne di più ). Aggiorneremo questa pagina con i cambiamenti legati alle prossime fasi dei lavori. Tram 4. Da lunedì 8 a venerdì 12 giugno, dopo le 20:30 I tram fanno servizio tra Cairoli e la fermata Ca Granda M5 . Da qui, invece di girare a sinistra vers",
-      "startDate": "2026-06-02T11:59:43.000Z",
-      "endDate": null,
-      "affectedServices": [],
-      "severity": "high",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Linee4,7,31e86cambiamentidelserviziodall’8giugno626.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-06-02-linee-4-7-31-e-86-cambiamenti-del-serviz"
     },
     {
       "source": "trenord",
@@ -124,18 +111,33 @@
     },
     {
       "source": "atm",
-      "type": "works",
-      "title": "Bus 433: cambia percorso e fermate",
-      "description": "Lavori stradali in via Sella Nova a Milano Lunedì 15 e martedì 16 giugno dalle 20:45 a fine servizio , i bus, solo verso Bisceglie M1, deviano e saltano le fermate di via Sella Nuova dopo via delle Forze Armate e via Viterbo dopo via Colombi. Quando deviano fermano in via delle Forze Armate dopo via Sella Nuova e dopo via Creta alle stesse fermate della linea 67.",
-      "startDate": "2026-06-08T17:39:19.000Z",
+      "type": "disruption",
+      "title": "Bus 61: deviazione",
+      "description": "È prevista la chiusura al traffico di un tratto di corso Monforte. Dalle 9 di lunedì 22 giugno, i bus verso Duomo deviano e saltano le fermate tra Tricolore M4 e San Babila M1 M4. Passano e fermano in viale Bianca Maria e via Mascagni. Non fanno le fermate di via S. Damiano.",
+      "startDate": "2026-06-09T10:29:21.000Z",
       "endDate": null,
       "affectedServices": [
         "M1"
       ],
       "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus433cambiapercorsoefermate.aspx",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus61deviazione626.aspx",
       "guaranteedBands": null,
-      "id": "atm-2026-06-08-bus-433-cambia-percorso-e-fermate"
+      "id": "atm-2026-06-09-bus-61-deviazione"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 63 e NM1: deviazione",
+      "description": "Ci sono lavori stradali in via Sella Nuova. I bus cambiano percorso e fermate l unedì 15 e martedì 16 giugno, dalle 20:45 alle 5. I bus, verso Bisceglie M1 (linea 63) e Cairoli M 1 (linea NM1) deviano e saltano le fermate di via Sella Nuova dopo via delle Forze Armate e via Viterbo/via Lucca. Quando deviano fermano in via delle Forze Armate dopo via Sella Nuova e dopo via Creta (dove ferma il bus 67). Verso Muggiano e il Quartiere degli Olmi i bus non cambiano percorso.",
+      "startDate": "2026-06-09T16:29:40.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus63nm1deviazzzz.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-06-09-bus-63-e-nm1-deviazione"
     }
   ]
 }
