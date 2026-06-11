@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-10T10:47:28.275Z",
+  "lastUpdated": "2026-06-11T11:17:04.561Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -81,21 +81,6 @@
     },
     {
       "source": "atm",
-      "type": "disruption",
-      "title": "Concerti a San Siro: guida a parcheggi, metropolitane e percorsi pedonali",
-      "description": "English Insieme al Comune di Milano abbiamo programmato un servizio straordinario per raggiungere lo stadio San Siro con i mezzi pubblici in occasione di questi concerti: Eros Ramazzotti 9 giugno Irama 11 giugno Geolier 13 giugno Achille Lauro 15 giugno Iron Maiden 17 giugno Ligabue 20 giugno Tedua 24 giugno Gabry Ponte 27 giugno Sfera Ebbasta 8 e 9 luglio Max Pezzali 11 e 12 luglio Bruno Mars 14 e 15 luglio The Weeknd 24, 25 e 26 luglio In queste serate le metropolitane M1 e M5 sono potenziate ",
-      "startDate": "2026-05-28T09:21:09.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/ConcertiSanSiro26.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-05-28-concerti-a-san-siro-guida-a-parcheggi-me"
-    },
-    {
-      "source": "atm",
       "type": "works",
       "title": "Bus 63: fermata sospesa",
       "description": "Sono in programma lavori stradali in via Cividale del Friuli. Lunedì 15 giugno, dopo le 20, i bus verso De Angeli M1 deviano e saltano la fermata Via Bagarotti/via Valsesia. Usate la fermata dopo, via Forze Armate/via Cividale.",
@@ -138,6 +123,19 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus63nm1deviazzzz.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-06-09-bus-63-e-nm1-deviazione"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bus 201: devia a Rozzano",
+      "description": "Sabato 20 giugno è in programma la chiusura al traffico di via delle Mimose e via delle Magnolie. Dalle 13 fino al termine del servizio , solo verso via Milano , i bus deviano e saltano le fermate in viale Don Lonni e via delle Mimose. Dopo la fermata di via Cabrini, girano e fermano in viale Lombardia. Riprendono il solito percorso dalla fermata di via Roma/via Gramsci.",
+      "startDate": "2026-06-10T15:30:25.000Z",
+      "endDate": null,
+      "affectedServices": [],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus201deviaaRozzano.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-06-10-bus-201-devia-a-rozzano"
     }
   ]
 }
