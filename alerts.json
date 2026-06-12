@@ -1,84 +1,7 @@
 {
-  "lastUpdated": "2026-06-11T11:17:04.561Z",
+  "lastUpdated": "2026-06-12T10:55:56.737Z",
   "windowDays": 14,
   "alerts": [
-    {
-      "source": "trenord",
-      "type": "strike",
-      "title": "sciopero nazionale.",
-      "description": "sciopero nazionale.",
-      "startDate": null,
-      "endDate": null,
-      "affectedServices": [
-        "Trenord",
-        "ATM",
-        "Movibus"
-      ],
-      "severity": "high",
-      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
-      "guaranteedBands": "06:00-09:00, 18:00-21:00",
-      "id": "trenord-unknown-sciopero-nazionale-"
-    },
-    {
-      "source": "trenord",
-      "type": "strike",
-      "title": "Sciopero Nazionale 11-12 giugno",
-      "description": "Sciopero Nazionale 11-12 giugno 2026",
-      "startDate": "2026-06-10T22:00:00.000Z",
-      "endDate": "2026-06-11T22:00:00.000Z",
-      "affectedServices": [
-        "Trenord"
-      ],
-      "severity": "high",
-      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
-      "guaranteedBands": "06:00-09:00, 18:00-21:00",
-      "id": "trenord-2026-06-12-sciopero-nazionale-11-12-giugno-2026"
-    },
-    {
-      "source": "trenord",
-      "type": "strike",
-      "title": "Sciopero Nazionale 11-12 giugno",
-      "description": "Sciopero Nazionale 11-12 giugno 2026\" />",
-      "startDate": "2026-06-10T22:00:00.000Z",
-      "endDate": "2026-06-11T22:00:00.000Z",
-      "affectedServices": [
-        "Trenord"
-      ],
-      "severity": "high",
-      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
-      "guaranteedBands": "06:00-09:00, 18:00-21:00",
-      "id": "trenord-2026-06-12-sciopero-nazionale-11-12-giugno-2026-"
-    },
-    {
-      "source": "trenord",
-      "type": "strike",
-      "title": "Sciopero Nazionale 11-12 giugno",
-      "description": "sciopero/&text=Sciopero Nazionale 11-12 giugno 2026%0aMaggiori dettagli saranno disponibili sul sito o seguendo gli aggiornamenti sulla circolazione dei treni in “real-time” tramite la nostra App.\" href=\"",
-      "startDate": "2026-06-10T22:00:00.000Z",
-      "endDate": "2026-06-11T22:00:00.000Z",
-      "affectedServices": [
-        "Trenord"
-      ],
-      "severity": "high",
-      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
-      "guaranteedBands": "06:00-09:00, 18:00-21:00",
-      "id": "trenord-2026-06-12-sciopero-text-sciopero-nazionale-11-12-g"
-    },
-    {
-      "source": "trenord",
-      "type": "strike",
-      "title": "Sciopero Nazionale 11-12 giugno",
-      "description": "Sciopero Nazionale 11-12 giugno 2026&body=Maggiori dettagli saranno disponibili sul sito o seguendo gli aggiornamenti sulla circolazione dei treni in “real-time” tramite la nostra App.%0ahttps://www.trenord.i",
-      "startDate": "2026-06-10T22:00:00.000Z",
-      "endDate": "2026-06-11T22:00:00.000Z",
-      "affectedServices": [
-        "Trenord"
-      ],
-      "severity": "high",
-      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
-      "guaranteedBands": "06:00-09:00, 18:00-21:00",
-      "id": "trenord-2026-06-12-sciopero-nazionale-11-12-giugno-2026-bod"
-    },
     {
       "source": "atm",
       "type": "works",
@@ -136,6 +59,36 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus201deviaaRozzano.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-06-10-bus-201-devia-a-rozzano"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Filarmonica della Scala: sabato 13 giugno la stazione Duomo chiude dalle 18:30",
+      "description": "Sabato sera c’è il concerto della Filarmonica della Scala in piazza Duomo. M1 e M3 saltano Duomo dalle 18:30 La stazione chiude su disposizione delle autorità di pubblica sicurezza per permettere l’arrivo del pubblico. La stazione riapre domenica mattina. Per raggiungere piazza Duomo scendete nelle stazioni vicine di Cordusio, Cairoli, San Babila, Montenapoleone o Missori. Per cambiare linea usate Centrale, Loreto o Cadorna. (mappa delle linee) L’ATM Point di Duomo chiude alle 17:30 In alternati",
+      "startDate": "2026-06-11T12:07:30.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/FilarmonicadellaScalasabato13giugnolastazioneDuomochiudedalle1830.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-06-11-filarmonica-della-scala-sabato-13-giugno"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bad Omens e Halsey al Parco della Musica: come arrivare con i mezzi pubblici",
+      "description": "Nelle serate dei concerti la metropolitana M4 è potenziata e aperta fino a tarda notte. L’ingresso del Parco della Musica è in via Enzo Jannacci a Segrate. I concerti in programma Bad Omens 16 giugno Halsey 24 giugno Da Milano e ritorno - Mappa di tutte le metropolitane Con la metropolitana M4, scendete alla stazione di Linate. Poi seguite il percorso pedonale Con il bus 973 (parte da piazza Cinque Giornate e incontra M4 a Forlanini, Repetti e Linate) fino alla fermata di via Novegro Per rientra",
+      "startDate": "2026-06-12T10:28:41.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/ParcodellaMusica2026.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-06-12-bad-omens-e-halsey-al-parco-della-musica"
     }
   ]
 }
