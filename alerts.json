@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-06-13T09:49:37.287Z",
+  "lastUpdated": "2026-06-14T10:18:43.331Z",
   "windowDays": 14,
   "alerts": [
     {
       "source": "atm",
       "type": "works",
-      "title": "Linee 4, 7 e 86: cambiamenti del servizio dall’8 giugno",
-      "description": "Continuano i lavori del Comune di Milano e di MM per la costruzione della metrotranvia nord. Nei prossimi giorni parte una nuova fase dei lavori per collegare i binari in viale Fulvio Testi con i nuovi binari posati in via Santa Monica ( per saperne di più ). Aggiorneremo questa pagina con i cambiamenti legati alle prossime fasi dei lavori. Tram 4 I tram fanno servizio tra il capolinea di Cairoli M1 e la fermata dell'Ospedale Niguarda. Tra Niguarda e Parco Nord usate i bus B4 . Maggiori informaz",
+      "title": "Linea 86: cambiamenti fino a dicembre",
+      "description": "Continuano i lavori del Comune di Milano e di MM per la costruzione della metrotranvia nord ( per saperne di più ). Fino a dicembre, da inizio a fine servizio I bus fanno servizio tra Crescenzago e la fermata Ca’ Granda M5 (capolinea sulla corsia laterale verso la periferia). Da qui ripartono e girano in via Pianell, verso Crescenzago. Fermate sospese viale Testi / via Pianell viale Testi / via Santa Marcellina (capolinea) Il bus 86 è potenziato tra il Quartiere Adriano e le metropolitane Per la",
       "startDate": "2026-06-02T11:59:43.000Z",
       "endDate": null,
       "affectedServices": [
         "M1"
       ],
-      "severity": "high",
+      "severity": "low",
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Linee4,7,31e86cambiamentidelserviziodall’8giugno626.aspx",
       "guaranteedBands": null,
-      "id": "atm-2026-06-02-linee-4-7-e-86-cambiamenti-del-servizio-"
+      "id": "atm-2026-06-02-linea-86-cambiamenti-fino-a-dicembre"
     },
     {
       "source": "atm",
@@ -74,21 +74,6 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus201deviaaRozzano.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-06-10-bus-201-devia-a-rozzano"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
-      "title": "Filarmonica della Scala: sabato 13 giugno la stazione Duomo chiude dalle 18:30",
-      "description": "Sabato sera c’è il concerto della Filarmonica della Scala in piazza Duomo. M1 e M3 saltano Duomo dalle 18:30 La stazione chiude su disposizione delle autorità di pubblica sicurezza per permettere l’arrivo del pubblico. La stazione riapre domenica mattina. Per raggiungere piazza Duomo scendete nelle stazioni vicine di Cordusio, Cairoli, San Babila, Montenapoleone o Missori. Per cambiare linea usate Centrale, Loreto o Cadorna. (mappa delle linee) L’ATM Point di Duomo chiude alle 17:30 In alternati",
-      "startDate": "2026-06-11T12:07:30.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/FilarmonicadellaScalasabato13giugnolastazioneDuomochiudedalle1830.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-06-11-filarmonica-della-scala-sabato-13-giugno"
     },
     {
       "source": "atm",
