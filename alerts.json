@@ -1,52 +1,7 @@
 {
-  "lastUpdated": "2026-06-15T12:56:35.478Z",
+  "lastUpdated": "2026-06-16T12:01:41.868Z",
   "windowDays": 14,
   "alerts": [
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Linea 86: cambiamenti fino a dicembre",
-      "description": "Continuano i lavori del Comune di Milano e di MM per la costruzione della metrotranvia nord ( per saperne di più ). Fino a dicembre, da inizio a fine servizio I bus fanno servizio tra Crescenzago e la fermata Ca’ Granda M5 (capolinea sulla corsia laterale verso la periferia). Da qui ripartono e girano in via Pianell, verso Crescenzago. Fermate sospese viale Testi / via Pianell viale Testi / via Santa Marcellina (capolinea) Il bus 86 è potenziato tra il Quartiere Adriano e le metropolitane Per la",
-      "startDate": "2026-06-02T11:59:43.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Linee4,7,31e86cambiamentidelserviziodall’8giugno626.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-06-02-linea-86-cambiamenti-fino-a-dicembre"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
-      "title": "Bus 61: deviazione",
-      "description": "È prevista la chiusura al traffico di un tratto di corso Monforte. Dalle 9 di lunedì 22 giugno, i bus verso Duomo deviano e saltano le fermate tra Tricolore M4 e San Babila M1 M4. Passano e fermano in viale Bianca Maria e via Mascagni. Non fanno le fermate di via S. Damiano.",
-      "startDate": "2026-06-09T10:29:21.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus61deviazione626.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-06-09-bus-61-deviazione"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Bus 63 e NM1: deviazione",
-      "description": "Ci sono lavori stradali in via Sella Nuova. I bus cambiano percorso e fermate l unedì 15 e martedì 16 giugno, dalle 20:45 alle 5. I bus, verso Bisceglie M1 (linea 63) e Cairoli M 1 (linea NM1) deviano e saltano le fermate di via Sella Nuova dopo via delle Forze Armate e via Viterbo/via Lucca. Quando deviano fermano in via delle Forze Armate dopo via Sella Nuova e dopo via Creta (dove ferma il bus 67). Verso Muggiano e il Quartiere degli Olmi i bus non cambiano percorso.",
-      "startDate": "2026-06-09T16:29:40.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus63nm1deviazzzz.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-06-09-bus-63-e-nm1-deviazione"
-    },
     {
       "source": "atm",
       "type": "disruption",
