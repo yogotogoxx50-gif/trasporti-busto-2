@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T12:01:41.868Z",
+  "lastUpdated": "2026-06-17T11:26:45.742Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -44,6 +44,21 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus61,NM1,NM3eNM4deviazioni.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-06-15-bus-61-84-nm1-nm3-e-nm4-deviazioni"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 63 e 64: fermata sospesa",
+      "description": "Sono in programma lavori stradali in via Primaticcio. Dalle 20:15 del 18 alle 5 del 19 giugno , la fermata via Primaticcio/via Forze Armate, verso Muggiano (bus 63) e verso Lorenteggio (bus 64), è sospesa. Usate le fermate prima o dopo: piazzale Perrucchetti Primaticcio M1",
+      "startDate": "2026-06-16T16:34:50.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus63e64fermatasospesa.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-06-16-bus-63-e-64-fermata-sospesa"
     }
   ]
 }
