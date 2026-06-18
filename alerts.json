@@ -1,19 +1,21 @@
 {
-  "lastUpdated": "2026-06-17T11:26:45.742Z",
+  "lastUpdated": "2026-06-18T11:03:59.336Z",
   "windowDays": 14,
   "alerts": [
     {
       "source": "atm",
-      "type": "disruption",
-      "title": "Bus 201: devia a Rozzano",
-      "description": "Sabato 20 giugno è in programma la chiusura al traffico di via delle Mimose e via delle Magnolie. Dalle 13 fino al termine del servizio , solo verso via Milano , i bus deviano e saltano le fermate in viale Don Lonni e via delle Mimose. Dopo la fermata di via Cabrini, girano e fermano in viale Lombardia. Riprendono il solito percorso dalla fermata di via Roma/via Gramsci.",
-      "startDate": "2026-06-10T15:30:25.000Z",
+      "type": "works",
+      "title": "Bus 61 e NM4: deviazione",
+      "description": "È prevista la chiusura al traffico di un tratto di corso Monforte per lavori stradali. Dalle 9 di lunedì 22 giugno, i bus verso Duomo deviano e saltano le fermate tra Tricolore M4 e San Babila M1 M4. Passano e fermano in viale Bianca Maria e via Mascagni. Non fanno le fermate di via San Damiano. I bus della linea NM4 non cambiano le fermate.",
+      "startDate": "2026-06-09T10:29:21.000Z",
       "endDate": null,
-      "affectedServices": [],
+      "affectedServices": [
+        "M1"
+      ],
       "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus201deviaaRozzano.aspx",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus61deviazione626.aspx",
       "guaranteedBands": null,
-      "id": "atm-2026-06-10-bus-201-devia-a-rozzano"
+      "id": "atm-2026-06-09-bus-61-e-nm4-deviazione"
     },
     {
       "source": "atm",
@@ -59,6 +61,21 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus63e64fermatasospesa.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-06-16-bus-63-e-64-fermata-sospesa"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 68, 78, Q78, 90 e NM1: deviazione",
+      "description": "Sono in programma lavori stradali in piazzale Lotto. Le linee cambiano percorso e fermate dal 18 giugno. Dalle 20 del 18 alle 20 del 19 giugno Bus 68, 78, Q78, NM1 Verso via Bergognone (linea 68), verso via Govone (linea 78) e Sesto FS (linea NM1) deviano da via Diomede a piazzale Lotto senza saltare fermate. Quando deviano i bus, in tutte le direzioni, passano in via Diomede, via Gignese, via Gavirate, p.le Segesta, via Monreale, p.le Zavattari e v.le Migliara. Dalle 20 del 19 giugno fino al te",
+      "startDate": "2026-06-17T16:11:53.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus68,78,Q78,90eNM1deviazione.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-06-17-bus-68-78-q78-90-e-nm1-deviazione"
     }
   ]
 }
