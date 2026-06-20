@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-19T11:12:08.342Z",
+  "lastUpdated": "2026-06-20T09:57:19.949Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -50,8 +50,8 @@
     {
       "source": "atm",
       "type": "works",
-      "title": "Bus 68, 78, Q78, 90 e NM1: deviazione",
-      "description": "Sono in programma lavori stradali in piazzale Lotto. Le linee cambiano percorso e fermate dal 18 giugno. Dalle 20 del 18 alle 20 del 19 giugno Bus 68, 78, Q78, NM1 Verso via Bergognone (linea 68), verso via Govone (linea 78) e Sesto FS (linea NM1) deviano da via Diomede a piazzale Lotto senza saltare fermate. Quando deviano i bus, in tutte le direzioni, passano in via Diomede, via Gignese, via Gavirate, p.le Segesta, via Monreale, p.le Zavattari e v.le Migliara. Dalle 20 del 19 giugno fino al te",
+      "title": "Bus 68, 78, Q78 e NM1: deviazione",
+      "description": "Sono in corso lavori stradali in piazzale Lotto. Dalle 20 del 19 giugno fino al termine dei lavori Bus 68. Verso Bonola M1 devia e salta le fermate da via Silva/via Albani a via Diomede/via Cassino. Bus 78 e Q78. Verso Bisceglie M1 devia e salta le fermate da via Silva/via Monte Rosa a via Diomede/via Cassino. Bus NM1. Verso Molino Dorino M1 devia e salta la fermata Lotto M1 M5. Quando deviano i bus, in tutte le direzioni, passano in via Tempesta, p.le Zavattari, via Vodice, p.za Monte Falterona",
       "startDate": "2026-06-17T16:11:53.000Z",
       "endDate": null,
       "affectedServices": [
@@ -60,7 +60,7 @@
       "severity": "low",
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus68,78,Q78,90eNM1deviazione.aspx",
       "guaranteedBands": null,
-      "id": "atm-2026-06-17-bus-68-78-q78-90-e-nm1-deviazione"
+      "id": "atm-2026-06-17-bus-68-78-q78-e-nm1-deviazione"
     }
   ]
 }
