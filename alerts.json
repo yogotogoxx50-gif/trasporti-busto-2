@@ -1,7 +1,23 @@
 {
-  "lastUpdated": "2026-06-21T10:24:22.688Z",
+  "lastUpdated": "2026-06-22T12:41:34.421Z",
   "windowDays": 14,
   "alerts": [
+    {
+      "source": "atm",
+      "type": "strike",
+      "title": "Sciopero Confial Trasporti 26 Giugno",
+      "description": "Venerdì 26 giugno il sindacato Confial trasporti ha proclamato uno sciopero che potrebbe avere conseguenze sul servizio delle nostre linee. Linee ATM Le nostre linee potrebbero non essere garantite dalle 8:45 alle 15 e dopo le 18 , fino al termine del servizio. Funicolare Como-Brunate Il servizio potrebbe non essere garantito dalle 8:30 alle 16:30 e dopo le 19:30 , fino al termine del servizio. Motivazioni del sindacato che ha proclamato lo sciopero Lo sciopero è stato proclamato per molteplici ",
+      "startDate": "2026-06-25T22:00:00.000Z",
+      "endDate": "2026-06-25T22:00:00.000Z",
+      "affectedServices": [
+        "ATM",
+        "Funicolare Como-Brunate"
+      ],
+      "severity": "high",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/ScioperoannunciatodaConfialtrasportivenerdì26giugno.aspx",
+      "guaranteedBands": "inizio servizio-08:45, 15:00-18:00",
+      "id": "atm-2026-06-21-sciopero-annunciato-da-confial-trasporti"
+    },
     {
       "source": "atm",
       "type": "works",
@@ -16,36 +32,6 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus61deviazione626.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-06-09-bus-61-e-nm4-deviazione"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
-      "title": "Bad Omens e Halsey al Parco della Musica: come arrivare con i mezzi pubblici",
-      "description": "English Nelle serate dei concerti di Bad Omens (16 giugno) e Halsey (24 giugno), la metropolitana M4 è potenziata e aperta fino a tarda notte. L’ingresso del Parco della Musica è in via Enzo Jannacci a Segrate. Da Milano e ritorno - Mappa di tutte le metropolitane Con la metropolitana M4, scendete alla stazione di Linate. Poi seguite il percorso pedonale Con il bus 973 (parte da piazza Cinque Giornate e incontra M4 a Forlanini, Repetti e Linate) fino alla fermata di via Novegro Per rientrare a f",
-      "startDate": "2026-06-12T10:28:41.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/ParcodellaMusica2026.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-06-12-bad-omens-e-halsey-al-parco-della-musica"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
-      "title": "Bus 61, 84, NM1, NM3 e NM4: deviazioni",
-      "description": "È prevista la chiusura al traffico di un tratto di corso Europa. Dalle 7 del 27 fino alle 17 del 28 giugno , i bus cambiano percorso e non fermano a San Babila. Bus 61 Solo verso Duomo , i bus deviano e saltano la fermata San Babila. Quando deviano, fermano in via Visconti di Modrone (dove ferma la 96). Riprendono il solito percorso dalla fermata di via Larga. Altri cambiamenti a questa pagina . Bus NM1 Solo verso Molino Dorino , i bus deviano e saltano la fermata San Babila. Quando deviano, fer",
-      "startDate": "2026-06-15T10:45:56.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus61,NM1,NM3eNM4deviazioni.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-06-15-bus-61-84-nm1-nm3-e-nm4-deviazioni"
     },
     {
       "source": "atm",
