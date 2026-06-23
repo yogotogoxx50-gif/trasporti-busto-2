@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-22T12:41:34.421Z",
+  "lastUpdated": "2026-06-23T10:27:18.613Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -32,6 +32,21 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus61deviazione626.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-06-09-bus-61-e-nm4-deviazione"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Halsey al Parco della Musica: come arrivare con i mezzi pubblici",
+      "description": "English In occasione del concerto di Halsey (il 24 giugno), la metropolitana M4 è potenziata e aperta fino a tarda notte. L’ingresso del Parco della Musica è in via Enzo Jannacci a Segrate. Da Milano e ritorno - Mappa di tutte le metropolitane Con la metropolitana M4, scendete alla stazione di Linate. Poi seguite il percorso pedonale Con il bus 973 (parte da piazza Cinque Giornate e incontra M4 a Forlanini, Repetti e Linate) fino alla fermata di via Novegro Per rientrare a fine concerto: M4 chiu",
+      "startDate": "2026-06-12T10:28:41.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/ParcodellaMusica2026.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-06-12-halsey-al-parco-della-musica-come-arriva"
     },
     {
       "source": "atm",
