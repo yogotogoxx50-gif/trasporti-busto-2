@@ -1,7 +1,20 @@
 {
-  "lastUpdated": "2026-06-24T10:12:17.262Z",
+  "lastUpdated": "2026-06-25T10:09:59.631Z",
   "windowDays": 14,
   "alerts": [
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Tram 31: dal 1° luglio sono sospese le corse notturne per Lagosta",
+      "description": "Continuano i lavori del Comune di Milano e di MM per la costruzione della metrotranvia nord. Aggiorneremo questa pagina con i cambiamenti legati alle prossime fasi dei lavori. Dal 1° luglio, dopo mezzanotte, fino al termine dei lavori in viale Fulvio Testi Il tram 31 è sospeso tra piazzale Lagosta e Testi/Santa Marcellina. Tra Ca’ Granda e Marche considerate il tram 5.",
+      "startDate": "2026-06-25T08:17:54.000Z",
+      "endDate": null,
+      "affectedServices": [],
+      "severity": "high",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram31dal1°lugliosonosospeselecorsenotturneperLagosta.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-06-25-tram-31-dal-1-luglio-sono-sospese-le-cor"
+    },
     {
       "source": "atm",
       "type": "strike",
@@ -51,8 +64,8 @@
     {
       "source": "atm",
       "type": "works",
-      "title": "Bus 68, 78, Q78 e NM1: deviazione",
-      "description": "Sono in corso lavori stradali in piazzale Lotto. Dalle 20 del 19 giugno fino al termine dei lavori Bus 68. Verso Bonola M1 devia e salta le fermate da via Silva/via Albani a via Diomede/via Cassino. Bus 78 e Q78. Verso Bisceglie M1 devia e salta le fermate da via Silva/via Monte Rosa a via Diomede/via Cassino. Bus NM1. Verso Molino Dorino M1 devia e salta la fermata Lotto M1 M5. Quando deviano i bus, in tutte le direzioni, passano in via Tempesta, p.le Zavattari, via Vodice, p.za Monte Falterona",
+      "title": "Bus 68, 78, Q78, 98 e NM1: deviazione",
+      "description": "Sono in corso lavori stradali in piazzale Lotto. Bus 68 Verso Bonola M1 devia e salta le fermate da via Silva/via Albani a via Diomede/via Cassino. Bus 78 e Q78 Verso Bisceglie M1 devia e salta le fermate da via Silva/via Monte Rosa a via Diomede/via Cassino. Bus NM1 Verso Molino Dorino M1 devia e salta la fermata Lotto M1 M5. Verso Bonola, Bisceglie e Molino Dorino , i bus passano in via Tempesta, piazzale Zavattari, via Vodice, piazza Monte Falterona, via Albertinelli, via Gavirate, via Gignes",
       "startDate": "2026-06-17T16:11:53.000Z",
       "endDate": null,
       "affectedServices": [
@@ -61,7 +74,7 @@
       "severity": "low",
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus68,78,Q78,90eNM1deviazione.aspx",
       "guaranteedBands": null,
-      "id": "atm-2026-06-17-bus-68-78-q78-e-nm1-deviazione"
+      "id": "atm-2026-06-17-bus-68-78-q78-98-e-nm1-deviazione"
     }
   ]
 }
