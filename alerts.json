@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-26T10:12:21.398Z",
+  "lastUpdated": "2026-06-27T09:21:11.401Z",
   "windowDays": 14,
   "alerts": [
     {
       "source": "atm",
       "type": "works",
       "title": "Tram 31: dal 1° luglio sono sospese le corse notturne per Lagosta",
-      "description": "Continuano i lavori del Comune di Milano e di MM per la costruzione della metrotranvia nord. Aggiorneremo questa pagina con i cambiamenti legati alle prossime fasi dei lavori. Dal 1° luglio, dopo mezzanotte, fino al termine dei lavori in viale Fulvio Testi Il tram 31 è sospeso tra piazzale Lagosta e Testi/Santa Marcellina. Tra Ca’ Granda e Marche considerate il tram 5.",
+      "description": "English Continuano i lavori del Comune di Milano e di MM per la costruzione della metrotranvia nord. Aggiorneremo questa pagina con i cambiamenti legati alle prossime fasi dei lavori. Dal 1° luglio, dopo mezzanotte, fino al termine dei lavori in viale Fulvio Testi Il tram 31 è sospeso tra piazzale Lagosta e Testi/Santa Marcellina. Tra Ca’ Granda e Marche considerate il tram 5.",
       "startDate": "2026-06-25T08:17:54.000Z",
       "endDate": null,
       "affectedServices": [],
@@ -33,21 +33,6 @@
     {
       "source": "atm",
       "type": "disruption",
-      "title": "Halsey al Parco della Musica: come arrivare con i mezzi pubblici",
-      "description": "English In occasione del concerto di Halsey (il 24 giugno), la metropolitana M4 è potenziata e aperta fino a tarda notte. L’ingresso del Parco della Musica è in via Enzo Jannacci a Segrate. Da Milano e ritorno - Mappa di tutte le metropolitane Con la metropolitana M4, scendete alla stazione di Linate. Poi seguite il percorso pedonale Con il bus 973 (parte da piazza Cinque Giornate e incontra M4 a Forlanini, Repetti e Linate) fino alla fermata di via Novegro Per rientrare a fine concerto: M4 chiu",
-      "startDate": "2026-06-12T10:28:41.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/ParcodellaMusica2026.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-06-12-halsey-al-parco-della-musica-come-arriva"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
       "title": "Bus 61, 84, NM1, NM3 e NM4: deviazioni",
       "description": "È prevista la chiusura al traffico di un tratto di corso Europa. Dalle 7 del 18 fino alle 17 del 19 luglio , i bus cambiano percorso e non fermano a San Babila. Bus 61 Solo verso Duomo , i bus deviano e saltano la fermata San Babila. Quando deviano, fermano in via Visconti di Modrone (dove ferma la 96). Riprendono il solito percorso dalla fermata di via Larga. Altri cambiamenti a questa pagina . Bus NM1 Solo verso Molino Dorino , i bus deviano e saltano la fermata San Babila. Quando deviano, fer",
       "startDate": "2026-06-15T10:45:56.000Z",
@@ -64,7 +49,7 @@
       "source": "atm",
       "type": "works",
       "title": "Bus 68, 78, Q78, 98 e NM1: deviazioni",
-      "description": "In questa pagina trovate tutti i cambiamenti al servizio delle linee 68, 78/Q78, 98 e NM1. Bus 68, 78/Q78 e NM1 - Lavori in piazzale Lotto Ci sono lavori stradali in piazzale Lotto. I bus verso via Bergognone (linea 68), via Govone (linea 78) e Sesto FS (linea NM1) deviano da via Diomede a piazzale Lotto, senza saltare fermate, che restano servite come al solito. Passano da via Gavirate, piazzale Segesta, via Monreale, piazzale Zavattari e viale Migliara. Bus 68, 78/Q78 e 98 - Solo nelle giornat",
+      "description": "English In questa pagina trovate tutti i cambiamenti al servizio delle linee 68, 78/Q78, 98 e NM1. Bus 68, 78/Q78 e NM1 - Lavori in piazzale Lotto Ci sono lavori stradali in piazzale Lotto. I bus verso via Bergognone (linea 68), via Govone (linea 78) e Sesto FS (linea NM1) deviano da via Diomede a piazzale Lotto, senza saltare fermate, che restano servite come al solito. Passano da via Gavirate, piazzale Segesta, via Monreale, piazzale Zavattari e viale Migliara. Bus 68, 78/Q78 e 98 - Solo nelle",
       "startDate": "2026-06-17T16:11:53.000Z",
       "endDate": null,
       "affectedServices": [
