@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-28T09:51:22.713Z",
+  "lastUpdated": "2026-06-29T11:52:01.548Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -19,7 +19,7 @@
       "source": "atm",
       "type": "works",
       "title": "Orari di luglio e agosto",
-      "description": "Quando cambiano gli orari Le linee M1, M2 e M3 cambiano orari dal 4 luglio Le linee M4 e M5 cambiano orari dal 3 agosto Bus, tram e filobus cambiano orari dal 27 giugno In questa pagina trovate maggiori informazioni sulle diverse linee. Le metropolitane M1, M2 e M3 seguono l’orario estivo dal 4 luglio al 6 settembre Seguono l’orario dei sabati anche dal lunedì al venerdì: M1 e M3 , dal 3 al 21 agosto M2 , dal 1° al 30 agosto (cambiamenti del servizio per lavori) M4 e M5 , dal 3 al 28 agosto I tr",
+      "description": "English Quando cambiano gli orari Bus, tram e filobus hanno cambiato orari dal 27 giugno Le linee M1, M2 e M3 cambiano orari dal 4 luglio Le linee M4 e M5 cambiano orari dal 3 agosto In questa pagina trovate maggiori informazioni sulle diverse linee. Le metropolitane M1, M2 e M3 seguono l’orario estivo dal 4 luglio al 6 settembre Seguono l’orario dei sabati anche dal lunedì al venerdì: M1 e M3 , dal 3 al 21 agosto M2 , dal 1° al 30 agosto (cambiamenti del servizio per lavori) M4 e M5 , dal 3 al ",
       "startDate": "2026-06-25T14:10:54.000Z",
       "endDate": "2026-09-06T23:59:59.000Z",
       "affectedServices": [
@@ -29,21 +29,6 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Oraridiluglioeagosto.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-06-25-orari-di-luglio-e-agosto"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
-      "title": "Bus 61, 84, NM1, NM3 e NM4: deviazioni",
-      "description": "È prevista la chiusura al traffico di un tratto di corso Europa. Dalle 7 del 18 fino alle 17 del 19 luglio , i bus cambiano percorso e non fermano a San Babila. Bus 61 Solo verso Duomo , i bus deviano e saltano la fermata San Babila. Quando deviano, fermano in via Visconti di Modrone (dove ferma la 96). Riprendono il solito percorso dalla fermata di via Larga. Altri cambiamenti a questa pagina . Bus NM1 Solo verso Molino Dorino , i bus deviano e saltano la fermata San Babila. Quando deviano, fer",
-      "startDate": "2026-06-15T10:45:56.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus61,NM1,NM3eNM4deviazioni.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-06-15-bus-61-84-nm1-nm3-e-nm4-deviazioni"
     },
     {
       "source": "atm",
