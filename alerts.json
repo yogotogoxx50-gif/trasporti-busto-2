@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-06-30T10:23:21.057Z",
+  "lastUpdated": "2026-07-01T10:36:29.320Z",
   "windowDays": 14,
   "alerts": [
     {
       "source": "atm",
       "type": "works",
-      "title": "Tram 31: dal 1° luglio sono sospese le corse notturne per Lagosta",
-      "description": "English Continuano i lavori del Comune di Milano e di MM per la costruzione della metrotranvia nord. Aggiorneremo questa pagina con i cambiamenti legati alle prossime fasi dei lavori. Dal 1° luglio, dopo mezzanotte, fino al termine dei lavori in viale Fulvio Testi Il tram 31 è sospeso tra piazzale Lagosta e Testi/Santa Marcellina. Tra Ca’ Granda e Marche considerate il tram 5.",
+      "title": "Tram 31: sono sospese le corse notturne per Lagosta",
+      "description": "English Continuano i lavori del Comune di Milano e di MM per la costruzione della metrotranvia nord. Aggiorneremo questa pagina con i cambiamenti legati alle prossime fasi dei lavori. Tutti i giorni dopo mezzanotte, fino al termine dei lavori in viale Fulvio Testi Il tram 31 è sospeso tra piazzale Lagosta e Testi/Santa Marcellina. Tra Ca’ Granda e Marche considerate il tram 5.",
       "startDate": "2026-06-25T08:17:54.000Z",
       "endDate": null,
       "affectedServices": [],
       "severity": "high",
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram31dal1°lugliosonosospeselecorsenotturneperLagosta.aspx",
       "guaranteedBands": null,
-      "id": "atm-2026-06-25-tram-31-dal-1-luglio-sono-sospese-le-cor"
+      "id": "atm-2026-06-25-tram-31-sono-sospese-le-corse-notturne-p"
     },
     {
       "source": "atm",
@@ -48,15 +48,30 @@
     {
       "source": "atm",
       "type": "works",
-      "title": "Tram 4: dal 1° luglio cambia la deviazione",
-      "description": "English Continuano i lavori del Comune di Milano e di MM per costruire la nuova metrotranvia a nord della città. I tram della linea 4 sono deviati. Con l’inizio di una nuova fase del cantiere, dal 1° luglio cambia la deviazione. Il 4 è sostituito dal bus B4 tra Niguarda e Parco Nord. Non passa da via Donatelli, via Graziano Imperatore e via Ornato (Parco Nord) – mappa del percorso Da Cairoli i tram fanno normale servizio fino alla fermata dell’ospedale Niguarda. Poi deviano in viale Ca’ Granda (",
+      "title": "Tram 4: cambiamenti del servizio",
+      "description": "English Continuano i lavori del Comune di Milano e di MM per costruire la nuova metrotranvia a nord della città. I tram della linea 4 sono deviati. Il 4 è sostituito dal bus B4 tra Niguarda e Parco Nord. Non passa da via Donatelli, via Graziano Imperatore e via Ornato (Parco Nord) – mappa del percorso I tram fanno servizio tra Cairoli e la fermata Ca’ Granda M5. Da qui, invece di girare a sinistra verso Bignami, girano a destra e fanno le fermate del 7 fino a piazzale Lagosta. Fermate del bus B4",
       "startDate": "2026-06-26T07:19:47.000Z",
       "endDate": null,
       "affectedServices": [],
       "severity": "low",
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram4dal1°lugliocambialadeviazione.aspx",
       "guaranteedBands": null,
-      "id": "atm-2026-06-26-tram-4-dal-1-luglio-cambia-la-deviazione"
+      "id": "atm-2026-06-26-tram-4-cambiamenti-del-servizio"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 322 e 323: fermata spostata",
+      "description": "Ci sono lavori in via Libertà a Cesano Boscone. La fermata via Libertà, verso Bisceglie M1, è sospesa. Usate la fermata provvisoria più indietro, in via Libertà, dopo via Trento.",
+      "startDate": "2026-06-30T14:17:31.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus322e323fermataspostata30_6.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-06-30-bus-322-e-323-fermata-spostata"
     }
   ]
 }
