@@ -1,20 +1,7 @@
 {
-  "lastUpdated": "2026-07-01T10:36:29.320Z",
+  "lastUpdated": "2026-07-02T09:50:43.631Z",
   "windowDays": 14,
   "alerts": [
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Tram 31: sono sospese le corse notturne per Lagosta",
-      "description": "English Continuano i lavori del Comune di Milano e di MM per la costruzione della metrotranvia nord. Aggiorneremo questa pagina con i cambiamenti legati alle prossime fasi dei lavori. Tutti i giorni dopo mezzanotte, fino al termine dei lavori in viale Fulvio Testi Il tram 31 è sospeso tra piazzale Lagosta e Testi/Santa Marcellina. Tra Ca’ Granda e Marche considerate il tram 5.",
-      "startDate": "2026-06-25T08:17:54.000Z",
-      "endDate": null,
-      "affectedServices": [],
-      "severity": "high",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram31dal1°lugliosonosospeselecorsenotturneperLagosta.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-06-25-tram-31-sono-sospese-le-corse-notturne-p"
-    },
     {
       "source": "atm",
       "type": "works",
@@ -33,17 +20,15 @@
     {
       "source": "atm",
       "type": "works",
-      "title": "Bus 68, 78, Q78, 98 e NM1: deviazioni",
-      "description": "English In questa pagina trovate tutti i cambiamenti al servizio delle linee 68, 78/Q78, 98 e NM1. Bus 68, 78/Q78 e NM1 - Lavori in piazzale Lotto Ci sono lavori stradali in piazzale Lotto. I bus verso via Bergognone (linea 68), via Govone (linea 78) e Sesto FS (linea NM1) deviano da via Diomede a piazzale Lotto, senza saltare fermate, che restano servite come al solito. Passano da via Gavirate, piazzale Segesta, via Monreale, piazzale Zavattari e viale Migliara. Bus 68, 78/Q78 e 98 - Solo nelle",
-      "startDate": "2026-06-17T16:11:53.000Z",
+      "title": "Tram 31: sono sospese le corse notturne per Lagosta",
+      "description": "English Continuano i lavori del Comune di Milano e di MM per la costruzione della metrotranvia nord. Aggiorneremo questa pagina con i cambiamenti legati alle prossime fasi dei lavori. Fino al termine dei lavori in viale Fulvio Testi I tram verso Bicocca saltano la fermata Testi/Santa Marcellina (prima di via Santa Monica). Usate quella di fronte, in viale Testi prima di via Smith. Dopo la mezzanotte, i tram sono sospesi tra piazzale Lagosta e Bicocca . Tra Ca’ Granda e Marche considerate il tram",
+      "startDate": "2026-06-25T08:17:54.000Z",
       "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
+      "affectedServices": [],
       "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus68,78,Q78,90eNM1deviazione.aspx",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram31dal1°lugliosonosospeselecorsenotturneperLagosta.aspx",
       "guaranteedBands": null,
-      "id": "atm-2026-06-17-bus-68-78-q78-98-e-nm1-deviazioni"
+      "id": "atm-2026-06-25-tram-31-sono-sospese-le-corse-notturne-p"
     },
     {
       "source": "atm",
