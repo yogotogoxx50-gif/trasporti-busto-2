@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-03T09:48:28.373Z",
+  "lastUpdated": "2026-07-04T09:12:16.028Z",
   "windowDays": 14,
   "alerts": [
     {
       "source": "atm",
       "type": "works",
       "title": "Orari di luglio e agosto",
-      "description": "English Quando cambiano gli orari Bus, tram e filobus hanno cambiato orari dal 27 giugno Le linee M1, M2 e M3 cambiano orari dal 4 luglio Le linee M4 e M5 cambiano orari dal 3 agosto In questa pagina trovate maggiori informazioni sulle diverse linee. Le metropolitane M1, M2 e M3 seguono l’orario estivo dal 4 luglio al 6 settembre Seguono l’orario dei sabati anche dal lunedì al venerdì: M1 e M3 , dal 3 al 21 agosto M2 , dal 1° al 30 agosto (cambiamenti del servizio per lavori) M4 e M5 , dal 3 al ",
+      "description": "English Quando cambiano gli orari Bus, tram e filobus hanno cambiato orari dal 27 giugno Le linee M1, M2 e M3 cambiano orari dal 4 luglio Le linee M4 e M5 cambiano orari dal 3 agosto In questa pagina trovate maggiori informazioni sulle diverse linee. Gli orari di tutte le partenze alle diverse fermate sono sulla app, nel menu Info mobilità > Cerca linee. Le metropolitane M1, M2 e M3 seguono l’orario estivo dal 4 luglio al 6 settembre Seguono l’orario dei sabati anche dal lunedì al venerdì: M1 e ",
       "startDate": "2026-06-25T14:10:54.000Z",
       "endDate": "2026-09-06T23:59:59.000Z",
       "affectedServices": [
@@ -57,6 +57,21 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus322e323fermataspostata30_6.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-06-30-bus-322-e-323-fermata-spostata"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bus 700, 701 e 713: fermata sospesa",
+      "description": "La fermata via Garibaldi/via Fante D’Italia verso Sesto Fs M1 (linea 700), Sesto Rondò M1 (linea 701) e Bignami M5 (linea 713) è sospesa dalle 9 alle 19 dell'8 luglio . In alternativa, usate queste fermate: via Dante/via Garibaldi (per linea 701) via Fante d’Italia/via Cesare da Sesto (per linee 700 e 713)",
+      "startDate": "2026-07-03T09:53:58.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus700,.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-07-03-bus-700-701-e-713-fermata-sospesa"
     }
   ]
 }
