@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-06T11:21:02.735Z",
+  "lastUpdated": "2026-07-07T10:17:15.196Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -72,6 +72,36 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus700,.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-07-03-bus-700-701-e-713-fermata-sospesa"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 40: deviazione",
+      "description": "Sono in programma lavori stradali in via Cefalonia. I bus cambiano percorso dall’inizio del servizio di lunedì 20 fino alle 18 di mercoledì 22 luglio . Verso Niguarda (Parco Nord) i bus deviano e saltano le fermate di via Pareto e via Cefalonia. Fanno il normale percorso fino a piazzale Cimitero Maggiore. Poi non passano da viale Certosa, ma girano in via Sapri, dove, dopo via Cefalonia, riprendono il percorso consueto. Verso Bonola M1 i bus saltano le fermate di via Sapri, via Pareto e via Cefa",
+      "startDate": "2026-07-06T12:24:53.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus40cambiamentialservizio.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-07-06-bus-40-deviazione"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 44 e Q44: fermata sospesa",
+      "description": "Sono in corso lavori stradali in via Pirano. La fermata via Pirano (Gorla M1) verso Turro è sospesa. In alternativa, usate la fermata dopo, Gorla M1 in viale Monza.",
+      "startDate": "2026-07-06T13:54:32.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus44eQ44fermatasospesa.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-07-06-bus-44-e-q44-fermata-sospesa"
     }
   ]
 }
