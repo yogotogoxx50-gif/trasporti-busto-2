@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-07T10:17:15.196Z",
+  "lastUpdated": "2026-07-08T09:19:06.617Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -16,47 +16,6 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Oraridiluglioeagosto.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-06-25-orari-di-luglio-e-agosto"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Tram 31: sono sospese le corse notturne per Lagosta",
-      "description": "English Continuano i lavori del Comune di Milano e di MM per la costruzione della metrotranvia nord. Aggiorneremo questa pagina con i cambiamenti legati alle prossime fasi dei lavori. Fino al termine dei lavori in viale Fulvio Testi I tram verso Bicocca saltano la fermata Testi/Santa Marcellina (prima di via Santa Monica). Usate quella di fronte, in viale Testi prima di via Smith. Dopo la mezzanotte, i tram sono sospesi tra piazzale Lagosta e Bicocca . Tra Ca’ Granda e Marche considerate il tram",
-      "startDate": "2026-06-25T08:17:54.000Z",
-      "endDate": null,
-      "affectedServices": [],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram31dal1°lugliosonosospeselecorsenotturneperLagosta.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-06-25-tram-31-sono-sospese-le-corse-notturne-p"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Tram 4: cambiamenti del servizio",
-      "description": "English Continuano i lavori del Comune di Milano e di MM per costruire la nuova metrotranvia a nord della città. I tram della linea 4 sono deviati. Il 4 è sostituito dal bus B4 tra Niguarda e Parco Nord. Non passa da via Donatelli, via Graziano Imperatore e via Ornato (Parco Nord) – mappa del percorso I tram fanno servizio tra Cairoli e la fermata Ca’ Granda M5. Da qui, invece di girare a sinistra verso Bignami, girano a destra e fanno le fermate del 7 fino a piazzale Lagosta. Fermate del bus B4",
-      "startDate": "2026-06-26T07:19:47.000Z",
-      "endDate": null,
-      "affectedServices": [],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram4dal1°lugliocambialadeviazione.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-06-26-tram-4-cambiamenti-del-servizio"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Bus 322 e 323: fermata spostata",
-      "description": "Ci sono lavori in via Libertà a Cesano Boscone. La fermata via Libertà, verso Bisceglie M1, è sospesa. Usate la fermata provvisoria più indietro, in via Libertà, dopo via Trento.",
-      "startDate": "2026-06-30T14:17:31.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus322e323fermataspostata30_6.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-06-30-bus-322-e-323-fermata-spostata"
     },
     {
       "source": "atm",
