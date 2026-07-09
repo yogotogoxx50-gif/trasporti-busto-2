@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-08T09:19:06.617Z",
+  "lastUpdated": "2026-07-09T10:17:31.837Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -19,18 +19,18 @@
     },
     {
       "source": "atm",
-      "type": "disruption",
-      "title": "Bus 700, 701 e 713: fermata sospesa",
-      "description": "La fermata via Garibaldi/via Fante D’Italia verso Sesto Fs M1 (linea 700), Sesto Rondò M1 (linea 701) e Bignami M5 (linea 713) è sospesa dalle 9 alle 19 dell'8 luglio . In alternativa, usate queste fermate: via Dante/via Garibaldi (per linea 701) via Fante d’Italia/via Cesare da Sesto (per linee 700 e 713)",
-      "startDate": "2026-07-03T09:53:58.000Z",
+      "type": "works",
+      "title": "Bus 53 e 713: fermata sospesa",
+      "description": "Sono in programma lavori stradali a Sesto San Giovanni. Bus 53 La fermata via Marx/via Fratelli di Dio, verso Sesto Marelli M1, è sospesa. In alternativa usate le fermate prima o dopo: via Marx 495 via Pace/via Volontari del Sangue Bus 713 La fermata via Marx/via Fratelli di Dio, verso Bignami M5, è sospesa. Usate la fermata provvisoria in via Fratelli di Dio 64.",
+      "startDate": "2026-06-29T13:50:20.000Z",
       "endDate": null,
       "affectedServices": [
         "M1"
       ],
       "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus700,.aspx",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus53e713.aspx",
       "guaranteedBands": null,
-      "id": "atm-2026-07-03-bus-700-701-e-713-fermata-sospesa"
+      "id": "atm-2026-06-29-bus-53-e-713-fermata-sospesa"
     },
     {
       "source": "atm",
@@ -61,6 +61,19 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus44eQ44fermatasospesa.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-07-06-bus-44-e-q44-fermata-sospesa"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bus 47: deviazione",
+      "description": "È in programma la posa di una piattaforma in via Crollalanza. I bus cambiano percorso e fermate il 23 luglio, dalle 7 alle 18. I bus fanno capolinea provvisorio in viale Liguria all’altezza della fermata della metropolitana Romolo M2. Da qui ripartono verso Bisceglie passando in viale Cassala e via Schievano. Saltano la fermata di via Carlo Torre e il capolinea di Romolo.",
+      "startDate": "2026-07-08T13:11:43.000Z",
+      "endDate": null,
+      "affectedServices": [],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus47deviazione87.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-07-08-bus-47-deviazione"
     }
   ]
 }
