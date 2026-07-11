@@ -1,22 +1,7 @@
 {
-  "lastUpdated": "2026-07-10T10:13:20.738Z",
+  "lastUpdated": "2026-07-11T08:41:29.222Z",
   "windowDays": 14,
   "alerts": [
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Orari di luglio e agosto",
-      "description": "English Quando cambiano gli orari Bus, tram e filobus hanno cambiato orari dal 27 giugno Le linee M1, M2 e M3 cambiano orari dal 4 luglio Le linee M4 e M5 cambiano orari dal 3 agosto In questa pagina trovate maggiori informazioni sulle diverse linee. Gli orari di tutte le partenze alle diverse fermate sono sulla app, nel menu Info mobilità > Cerca linee. Le metropolitane M1, M2 e M3 seguono l’orario estivo dal 4 luglio al 6 settembre Seguono l’orario dei sabati anche dal lunedì al venerdì: M1 e ",
-      "startDate": "2026-06-25T14:10:54.000Z",
-      "endDate": "2026-09-06T23:59:59.000Z",
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "high",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Oraridiluglioeagosto.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-06-25-orari-di-luglio-e-agosto"
-    },
     {
       "source": "atm",
       "type": "works",
