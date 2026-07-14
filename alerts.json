@@ -1,22 +1,7 @@
 {
-  "lastUpdated": "2026-07-13T10:14:59.133Z",
+  "lastUpdated": "2026-07-14T08:57:57.139Z",
   "windowDays": 14,
   "alerts": [
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Bus 53 e 713: fermata sospesa",
-      "description": "Sono in programma lavori stradali a Sesto San Giovanni. Bus 53 La fermata via Marx/via Fratelli di Dio, verso Sesto Marelli M1, è sospesa. In alternativa usate le fermate prima o dopo: via Marx 495 via Pace/via Volontari del Sangue Bus 713 La fermata via Marx/via Fratelli di Dio, verso Bignami M5, è sospesa. Usate la fermata provvisoria in via Fratelli di Dio 64.",
-      "startDate": "2026-06-29T13:50:20.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus53e713.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-06-29-bus-53-e-713-fermata-sospesa"
-    },
     {
       "source": "atm",
       "type": "works",
@@ -34,36 +19,6 @@
     },
     {
       "source": "atm",
-      "type": "works",
-      "title": "Bus 40: deviazione",
-      "description": "Sono in programma lavori stradali in via Cefalonia. I bus cambiano percorso dall’inizio del servizio di lunedì 20 fino alle 18 di mercoledì 22 luglio . Verso Niguarda (Parco Nord) i bus deviano e saltano le fermate di via Pareto e via Cefalonia. Fanno il normale percorso fino a piazzale Cimitero Maggiore. Poi non passano da viale Certosa, ma girano in via Sapri, dove, dopo via Cefalonia, riprendono il percorso consueto. Verso Bonola M1 i bus saltano le fermate di via Sapri, via Pareto e via Cefa",
-      "startDate": "2026-07-06T12:24:53.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus40cambiamentialservizio.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-07-06-bus-40-deviazione"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Bus 44 e Q44: fermata sospesa",
-      "description": "Sono in corso lavori stradali in via Pirano. La fermata via Pirano (Gorla M1) verso Turro è sospesa. In alternativa, usate la fermata dopo, Gorla M1 in viale Monza.",
-      "startDate": "2026-07-06T13:54:32.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus44eQ44fermatasospesa.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-07-06-bus-44-e-q44-fermata-sospesa"
-    },
-    {
-      "source": "atm",
       "type": "disruption",
       "title": "Bus 47: deviazione",
       "description": "È in programma la posa di una piattaforma in via Crollalanza. I bus cambiano percorso e fermate il 23 luglio, dalle 7 alle 18. I bus fanno capolinea provvisorio in viale Liguria all’altezza della fermata della metropolitana Romolo M2. Da qui ripartono verso Bisceglie passando in viale Cassala e via Schievano. Saltano la fermata di via Carlo Torre e il capolinea di Romolo.",
@@ -74,6 +29,21 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus47deviazione87.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-07-08-bus-47-deviazione"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 64 e 69: deviazione",
+      "description": "Sono in programma lavori di asfaltatura in via Cilea. I bus cambiano percorso e saltano una fermata dalle 9 alle 18 di giovedì 23 luglio. Verso Bonola (64) e verso piazza Firenze (69) saltano la fermata di via Cilea/via Bacchelli. Dopo via Mafalda di Savoia (64) e via Cilea (69), passano da via Fichera e via Falck. Riprendono il normale percorso da via Falck, all’altezza di via Cilea. Verso Lorenteggio e Molino Dorino il percorso non cambia.",
+      "startDate": "2026-07-14T07:04:22.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus64e69deviazione14_7.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-07-14-bus-64-e-69-deviazione"
     }
   ]
 }
