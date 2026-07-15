@@ -1,22 +1,7 @@
 {
-  "lastUpdated": "2026-07-14T08:57:57.139Z",
+  "lastUpdated": "2026-07-15T09:03:56.062Z",
   "windowDays": 14,
   "alerts": [
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Bus 322 e 323: fermata spostata",
-      "description": "Ci sono lavori in via Libertà a Cesano Boscone. Fino alle 9 del 15 luglio, la fermata di via Libertà, verso Bisceglie M1, è sospesa. Usate la fermata provvisoria più indietro, in via Libertà, dopo via Trento.",
-      "startDate": "2026-06-30T14:17:31.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus322e323fermataspostata30_6.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-06-30-bus-322-e-323-fermata-spostata"
-    },
     {
       "source": "atm",
       "type": "disruption",
