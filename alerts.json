@@ -1,20 +1,7 @@
 {
-  "lastUpdated": "2026-07-15T09:03:56.062Z",
+  "lastUpdated": "2026-07-16T09:07:10.422Z",
   "windowDays": 14,
   "alerts": [
-    {
-      "source": "atm",
-      "type": "disruption",
-      "title": "Bus 47: deviazione",
-      "description": "È in programma la posa di una piattaforma in via Crollalanza. I bus cambiano percorso e fermate il 23 luglio, dalle 7 alle 18. I bus fanno capolinea provvisorio in viale Liguria all’altezza della fermata della metropolitana Romolo M2. Da qui ripartono verso Bisceglie passando in viale Cassala e via Schievano. Saltano la fermata di via Carlo Torre e il capolinea di Romolo.",
-      "startDate": "2026-07-08T13:11:43.000Z",
-      "endDate": null,
-      "affectedServices": [],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus47deviazione87.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-07-08-bus-47-deviazione"
-    },
     {
       "source": "atm",
       "type": "works",
