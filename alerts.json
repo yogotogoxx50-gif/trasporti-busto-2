@@ -1,7 +1,22 @@
 {
-  "lastUpdated": "2026-07-16T09:07:10.422Z",
+  "lastUpdated": "2026-07-17T09:02:09.887Z",
   "windowDays": 14,
   "alerts": [
+    {
+      "source": "trenord",
+      "type": "strike",
+      "title": "Sciopero Nazionale 23-24 Luglio",
+      "description": "sciopero Nazionale dalle ore 21.00 del 23 luglio alle ore 20:59 del 24 luglio 2026 che potrà generare ripercussioni sulla circolazione ferroviaria in Lombardia.",
+      "startDate": "2026-07-23T19:00:00.000Z",
+      "endDate": "2026-07-24T18:59:00.000Z",
+      "affectedServices": [
+        "Trenord"
+      ],
+      "severity": "high",
+      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
+      "guaranteedBands": "06:00-09:00, 18:00-21:00",
+      "id": "trenord-2026-07-24-sciopero-nazionale-dalle-ore-21-00-del-2"
+    },
     {
       "source": "atm",
       "type": "works",
