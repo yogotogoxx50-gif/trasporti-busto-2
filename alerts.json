@@ -1,7 +1,22 @@
 {
-  "lastUpdated": "2026-07-21T09:21:40.080Z",
+  "lastUpdated": "2026-07-22T09:20:47.389Z",
   "windowDays": 14,
   "alerts": [
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Orari di luglio e agosto",
+      "description": "English In questa pagina trovate maggiori informazioni sulle diverse linee. Gli orari di tutte le partenze alle diverse fermate sono sulla app, nel menu Info mobilità > Cerca linee. Le metropolitane M1, M2 e M3 seguono l’orario estivo fino al 6 settembre Seguono l’orario dei sabati anche dal lunedì al venerdì: M1 e M3 , dal 3 al 21 agosto M2 , dal 1° al 30 agosto (cambiamenti del servizio per lavori) M4 e M5 , dal 3 al 28 agosto Le linee M4 e M5 cambiano orari dal 3 agosto. I tram seguono l’orar",
+      "startDate": "2026-06-25T14:10:54.000Z",
+      "endDate": "2026-08-30T23:59:59.000Z",
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "high",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Oraridiluglioeagosto.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-06-25-orari-di-luglio-e-agosto"
+    },
     {
       "source": "trenord",
       "type": "strike",
@@ -16,6 +31,36 @@
       "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
       "guaranteedBands": "06:00-09:00, 18:00-21:00",
       "id": "trenord-2026-07-24-sciopero-nazionale-dalle-ore-21-00-del-2"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 69: fermata spostata",
+      "description": "Sono in programma lavori stradali in viale Certosa. La feramta viale Certosa/viale Serra, verso Molino Dorino M1/Gallaratese , è sospesa martedì 4 agosto dalla 7 alle 18 . I bus fermano 70 metri più avanti, all’altezza del numero civico 38.",
+      "startDate": "2026-07-21T10:39:25.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/us69fermataspostata.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-07-21-bus-69-fermata-spostata"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bus 96: deviazione",
+      "description": "È in programma la posa di un’autogrù in via dei Giardini. I bus cambiano percorso e fermate dalle 7 alle 14 di sabato 8 agosto . Solo verso Sforza/Policlinico M4 deviano e saltano le fermate di via Cusani, via Monte di Pietà/via Verdi e Montenapoleone M3. Fanno il normale percorso fino a Cairoli M1. Poi passano da Foro Buonaparte, viale Gadio, via Legnano, piazza Lega Lombarda, via Moscova, via Statuto, largo Treves, via Balzan, via Montebello, via De Marchi e via Fatebenefratelli, dove riprendo",
+      "startDate": "2026-07-21T15:31:20.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus96deviazione.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-07-21-bus-96-deviazione"
     }
   ]
 }
