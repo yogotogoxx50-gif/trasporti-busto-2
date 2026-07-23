@@ -1,7 +1,24 @@
 {
-  "lastUpdated": "2026-07-22T09:20:47.389Z",
+  "lastUpdated": "2026-07-23T09:17:02.332Z",
   "windowDays": 14,
   "alerts": [
+    {
+      "source": "trenord",
+      "type": "strike",
+      "title": "sciopero nazionale.",
+      "description": "sciopero nazionale.",
+      "startDate": null,
+      "endDate": null,
+      "affectedServices": [
+        "Trenord",
+        "ATM",
+        "Movibus"
+      ],
+      "severity": "high",
+      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
+      "guaranteedBands": "06:00-09:00, 18:00-21:00",
+      "id": "trenord-unknown-sciopero-nazionale-"
+    },
     {
       "source": "atm",
       "type": "works",
@@ -31,6 +48,21 @@
       "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
       "guaranteedBands": "06:00-09:00, 18:00-21:00",
       "id": "trenord-2026-07-24-sciopero-nazionale-dalle-ore-21-00-del-2"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 64 e 69: deviazione",
+      "description": "Sono in programma lavori di asfaltatura in via Cilea. I bus cambiano percorso e saltano una fermata dalle 7 alle 18 di lunedì 27 luglio. Verso Bonola (64) e verso piazza Firenze (69) saltano la fermata di via Cilea/via Bacchelli. Dopo via Mafalda di Savoia (64) e via Cilea (69), passano da via Fichera e via Falck. Riprendono il normale percorso da via Falck, all’altezza di via Cilea. Verso Lorenteggio e Molino Dorino il percorso non cambia.",
+      "startDate": "2026-07-14T07:04:22.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus64e69deviazione14_7.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-07-14-bus-64-e-69-deviazione"
     },
     {
       "source": "atm",
