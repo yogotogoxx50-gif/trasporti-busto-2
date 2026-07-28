@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-27T10:31:08.097Z",
+  "lastUpdated": "2026-07-28T09:29:43.192Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -16,36 +16,6 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Oraridiluglioeagosto.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-06-25-orari-di-luglio-e-agosto"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Bus 64 e 69: deviazione",
-      "description": "Sono in programma lavori di asfaltatura in via Cilea. I bus cambiano percorso e saltano una fermata dalle 7 alle 18 di lunedì 27 luglio. Verso Bonola (64) e verso piazza Firenze (69) saltano la fermata di via Cilea/via Bacchelli. Dopo via Mafalda di Savoia (64) e via Cilea (69), passano da via Fichera e via Falck. Riprendono il normale percorso da via Falck, all’altezza di via Cilea. Verso Lorenteggio e Molino Dorino il percorso non cambia.",
-      "startDate": "2026-07-14T07:04:22.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus64e69deviazione14_7.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-07-14-bus-64-e-69-deviazione"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Bus 69: fermata spostata",
-      "description": "Sono in programma lavori stradali in viale Certosa. La feramta viale Certosa/viale Serra, verso Molino Dorino M1/Gallaratese , è sospesa martedì 4 agosto dalla 7 alle 18 . I bus fermano 70 metri più avanti, all’altezza del numero civico 38.",
-      "startDate": "2026-07-21T10:39:25.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/us69fermataspostata.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-07-21-bus-69-fermata-spostata"
     },
     {
       "source": "atm",
