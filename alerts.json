@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-02T09:04:09.341Z",
+  "lastUpdated": "2026-08-03T10:31:12.911Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -61,6 +61,21 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus424e431fermatasospesa.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-07-31-bus-424-e-431-fermata-sospesa"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bus 44: deviazione",
+      "description": "È in programma la posa di una piattaforma in via Valtorta. Venerdì 7 agosto, dalle 6:30 alle 18:30, i bus verso Cascina Gobba deviano e saltano le fermate di via Valtorta/via Stamira D’Ancona e Turro M1. Passano e fermano in via Stamira D’Ancona e via Petrocchi. Verso Quartiere Turro il percorso non cambia.",
+      "startDate": "2026-08-03T10:11:08.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus44deviazione826.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-08-03-bus-44-deviazione"
     }
   ]
 }
