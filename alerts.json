@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-05T09:29:11.361Z",
+  "lastUpdated": "2026-08-06T09:33:31.873Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -16,6 +16,21 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/M2_8e9agosto.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-07-29-m2-chiude-tra-cadorna-e-centrale-l-8-e-i"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bus 58, 63, 67 e NM1: fermata spostata",
+      "description": "I bus 58 ( verso Baggio ), 63 ( verso Muggiano ), 67 ( verso Baracca ) e NM1 ( verso Molino Dorino ) fanno la fermata di Inganni M1 (in via Zurigo) 40 metri più avanti.",
+      "startDate": "2026-07-29T10:11:24.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus58,63,67eNM1fermataspostata.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-07-29-bus-58-63-67-e-nm1-fermata-spostata"
     },
     {
       "source": "atm",
