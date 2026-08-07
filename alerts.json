@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-06T09:33:31.873Z",
+  "lastUpdated": "2026-08-07T08:04:37.649Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -20,36 +20,6 @@
     {
       "source": "atm",
       "type": "disruption",
-      "title": "Bus 58, 63, 67 e NM1: fermata spostata",
-      "description": "I bus 58 ( verso Baggio ), 63 ( verso Muggiano ), 67 ( verso Baracca ) e NM1 ( verso Molino Dorino ) fanno la fermata di Inganni M1 (in via Zurigo) 40 metri più avanti.",
-      "startDate": "2026-07-29T10:11:24.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus58,63,67eNM1fermataspostata.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-07-29-bus-58-63-67-e-nm1-fermata-spostata"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Bus 424 e 431: fermata sospesa",
-      "description": "Sono in programma lavori stradali in via Milano, nel Comune di Cornaredo. Dalle 9:30 di mercoledì 5 agosto per 40 giorni circa la fermata di via Milano/via Garibaldi, verso Molino Dorino (424) e Rho Passirana (431), è sospesa. In alternativa, usate la fermata via Milano/via San Siro.",
-      "startDate": "2026-07-31T09:49:32.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus424e431fermatasospesa.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-07-31-bus-424-e-431-fermata-sospesa"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
       "title": "Bus 44: deviazione",
       "description": "È in programma la posa di una piattaforma in via Valtorta. Venerdì 7 agosto, dalle 6:30 alle 18:30, i bus verso Cascina Gobba deviano e saltano le fermate di via Valtorta/via Stamira D’Ancona e Turro M1. Passano e fermano in via Stamira D’Ancona e via Petrocchi. Verso Quartiere Turro il percorso non cambia.",
       "startDate": "2026-08-03T10:11:08.000Z",
@@ -61,6 +31,19 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus44deviazione826.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-08-03-bus-44-deviazione"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bus 96, 97, NM2 e NM4: cambiamenti dal 22 agosto",
+      "description": "È in programma la riqualificazione di strada e binari all’incrocio tra via De Amicis e corso Genova. Queste linee cambiano servizio dal 22 agosto al 2 ottobre. Bus 96 e 97 Le linee sono sospese nelle due direzioni nella tratta Cadorna-S. Ambrogio-De Amicis-Vetra- Sforza Policlinico. In alternativa usate la metropolitana M4. La tratta Cadorna-Cavour– Senato-Sforza Policlinico è servita nelle due direzioni dalla linea 96: Da Cadorna verso Sforza Policlinico i bus fanno le solite fermate fino a via",
+      "startDate": "2026-08-07T07:34:02.000Z",
+      "endDate": "2026-10-02T23:59:59.000Z",
+      "affectedServices": [],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/DeAmicisGenova.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-08-07-bus-96-97-nm2-e-nm4-cambiamenti-dal-22-a"
     }
   ]
 }
