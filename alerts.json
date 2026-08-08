@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-07T08:04:37.649Z",
+  "lastUpdated": "2026-08-08T07:39:31.788Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -20,23 +20,8 @@
     {
       "source": "atm",
       "type": "disruption",
-      "title": "Bus 44: deviazione",
-      "description": "È in programma la posa di una piattaforma in via Valtorta. Venerdì 7 agosto, dalle 6:30 alle 18:30, i bus verso Cascina Gobba deviano e saltano le fermate di via Valtorta/via Stamira D’Ancona e Turro M1. Passano e fermano in via Stamira D’Ancona e via Petrocchi. Verso Quartiere Turro il percorso non cambia.",
-      "startDate": "2026-08-03T10:11:08.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus44deviazione826.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-08-03-bus-44-deviazione"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
       "title": "Bus 96, 97, NM2 e NM4: cambiamenti dal 22 agosto",
-      "description": "È in programma la riqualificazione di strada e binari all’incrocio tra via De Amicis e corso Genova. Queste linee cambiano servizio dal 22 agosto al 2 ottobre. Bus 96 e 97 Le linee sono sospese nelle due direzioni nella tratta Cadorna-S. Ambrogio-De Amicis-Vetra- Sforza Policlinico. In alternativa usate la metropolitana M4. La tratta Cadorna-Cavour– Senato-Sforza Policlinico è servita nelle due direzioni dalla linea 96: Da Cadorna verso Sforza Policlinico i bus fanno le solite fermate fino a via",
+      "description": "English È in programma la riqualificazione di strada e binari all’incrocio tra via De Amicis e corso Genova. Queste linee cambiano servizio dal 22 agosto al 2 ottobre. Bus 96 e 97 Le linee sono sospese nelle due direzioni nella tratta Cadorna-S. Ambrogio-De Amicis-Vetra- Sforza Policlinico. In alternativa usate la metropolitana M4. La tratta Cadorna-Cavour– Senato-Sforza Policlinico è servita nelle due direzioni dalla linea 96: Da Cadorna verso Sforza Policlinico i bus fanno le solite fermate fi",
       "startDate": "2026-08-07T07:34:02.000Z",
       "endDate": "2026-10-02T23:59:59.000Z",
       "affectedServices": [],
@@ -44,6 +29,21 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/DeAmicisGenova.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-08-07-bus-96-97-nm2-e-nm4-cambiamenti-dal-22-a"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 44, Q44 e 174: fermate sospese",
+      "description": "In questa pagina trovate tutti i cambiamenti alle fermate dovuti ai lavori stradali lungo il percorso. Bus 44 - Cambiamenti alla viabilità in via Padova La fermata via Padova/via Rizzoli, verso Cascina Gobba , è sospesa. Usate le fermate prima o dopo: Via Padova 353 Cascina Gobba M2 Bus 44/Q44 - Lavori stradali in via Pirano La fermata via Pirano (Gorla M1), verso quartiere Turro , è sospesa. In alternativa, usate la fermata dopo, Gorla M1 in viale Monza. Bus 44/Q44 e 174 - Lavori stradali in vi",
+      "startDate": "2026-08-07T16:10:15.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus44,Q44e174fermatesospese.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-08-07-bus-44-q44-e-174-fermate-sospese"
     }
   ]
 }
