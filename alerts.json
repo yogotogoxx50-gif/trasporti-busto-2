@@ -1,22 +1,7 @@
 {
-  "lastUpdated": "2026-08-09T07:43:20.033Z",
+  "lastUpdated": "2026-08-10T08:19:55.184Z",
   "windowDays": 14,
   "alerts": [
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "M2 chiude tra Cadorna e Centrale l’8 e il 9 agosto. M5 è potenziata",
-      "description": "English version Sabato 8 e domenica 9 agosto sono in programma le prove di carico infrastrutturali del nuovo piazzale della stazione ferroviaria di Porta Garibaldi dopo i lavori di riqualificazione realizzati da Rfi in accordo con il Comune di Milano. I lavori si svolgeranno solo sul piazzale pedonale e di interscambio davanti alla stazione ferroviaria di Milano Porta Garibaldi ma per lo svolgimento delle prove in una cornice di estrema sicurezza deve chiudere la stazione metropolitana e la gall",
-      "startDate": "2026-07-29T07:11:41.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/M2_8e9agosto.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-07-29-m2-chiude-tra-cadorna-e-centrale-l-8-e-i"
-    },
     {
       "source": "atm",
       "type": "disruption",
