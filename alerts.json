@@ -1,5 +1,21 @@
 {
-  "lastUpdated": "2026-08-15T07:20:34.940Z",
+  "lastUpdated": "2026-08-16T07:21:50.585Z",
   "windowDays": 14,
-  "alerts": []
+  "alerts": [
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 44, Q44 e 174: fermate sospese",
+      "description": "In questa pagina trovate tutti i cambiamenti alle fermate dovuti ai lavori stradali lungo il percorso. Bus 44 - Cambiamenti alla viabilità in via Padova La fermata via Padova/via Rizzoli, verso Cascina Gobba , è sospesa. Usate le fermate prima o dopo: Via Padova 353 Cascina Gobba M2 Bus 44/Q44 - Lavori stradali in via Pirano La fermata via Pirano (Gorla M1), verso quartiere Turro , è sospesa. In alternativa, usate la fermata dopo, Gorla M1 in viale Monza. Bus 44/Q44 e 174 - Lavori stradali in vi",
+      "startDate": "2026-08-07T16:10:15.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus44,Q44e174fermatesospese.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-08-07-bus-44-q44-e-174-fermate-sospese"
+    }
+  ]
 }
