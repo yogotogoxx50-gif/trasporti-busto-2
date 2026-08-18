@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-17T07:41:53.321Z",
+  "lastUpdated": "2026-08-18T07:27:39.618Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -16,6 +16,21 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus44,Q44e174fermatesospese.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-08-07-bus-44-q44-e-174-fermate-sospese"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 40 e 69: cambiamenti al servizio",
+      "description": "Lavori stradali in via Ugo Betti Bus 40 Verso Bonola, i bus deviano e saltano le fermate via Cechov/via Betti e via Cechov/via Bacchelli. Dopo la fermata via Omodeo/via Cechov, passano in via Betti e fanno capolinea alla fermata Bonola M1 della linea 69. Da qui ripartono verso Parco Nord. Bus 69 La fermata piazza Firenze, verso Bonola M1, è sospesa. Usate la fermata provvisoria 40 metri più avanti.",
+      "startDate": "2026-08-17T14:59:49.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus40e69cambiamentialservizio.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-08-17-bus-40-e-69-cambiamenti-al-servizio"
     }
   ]
 }
