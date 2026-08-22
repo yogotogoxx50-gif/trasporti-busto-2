@@ -1,21 +1,19 @@
 {
-  "lastUpdated": "2026-08-21T07:33:44.204Z",
+  "lastUpdated": "2026-08-22T07:21:50.292Z",
   "windowDays": 14,
   "alerts": [
     {
       "source": "atm",
       "type": "works",
-      "title": "Bus 44, Q44 e 174: fermate sospese",
-      "description": "In questa pagina trovate tutti i cambiamenti alle fermate dovuti ai lavori stradali lungo il percorso. Bus 44 - Cambiamenti alla viabilità in via Padova La fermata via Padova/via Rizzoli, verso Cascina Gobba , è sospesa. Usate le fermate prima o dopo: Via Padova 353 Cascina Gobba M2 Bus 44/Q44 - Lavori stradali in via Pirano La fermata via Pirano (Gorla M1), verso quartiere Turro , è sospesa. In alternativa, usate la fermata dopo, Gorla M1 in viale Monza.",
-      "startDate": "2026-08-07T16:10:15.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
+      "title": "Cantiere serale: il tram 2 cambia servizio dopo le 20",
+      "description": "Lavori per costruire la nuova metrotranvia a nord della città I tram cambiano percorso e fermate: giovedì 27, dalle 20 venerdì 28, dalle 21 Fanno servizio tra piazzale Negrelli e la fermata via Farini/via Stelvio . Continuano in via Farini e fanno capolinea in Maciachini M3. Da qui, ripartono al contrario verso piazzale Negrelli. I tram saltano queste fermate: - via Bernina - Lancetti - piazzale Nigra - via Imbriani/via Scalvini - Bausan - Bausan (capolinea) Lavori al ponte ferroviario di via Lo",
+      "startDate": "2026-08-12T07:43:58.000Z",
+      "endDate": "2026-09-04T23:59:59.000Z",
+      "affectedServices": [],
       "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus44,Q44e174fermatesospese.aspx",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram2lavoriinviaLodovicoilMoro.aspx",
       "guaranteedBands": null,
-      "id": "atm-2026-08-07-bus-44-q44-e-174-fermate-sospese"
+      "id": "atm-2026-08-12-cantiere-serale-il-tram-2-cambia-servizi"
     },
     {
       "source": "atm",
