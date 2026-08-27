@@ -1,19 +1,5 @@
 {
-  "lastUpdated": "2026-08-26T07:36:10.212Z",
+  "lastUpdated": "2026-08-27T17:57:34.318Z",
   "windowDays": 14,
-  "alerts": [
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Cantiere serale: il tram 2 cambia servizio dopo le 20",
-      "description": "Lavori per costruire la nuova metrotranvia a nord della città I tram cambiano percorso e fermate: giovedì 27, dalle 20 venerdì 28, dalle 21 Fanno servizio tra piazzale Negrelli e la fermata via Farini/via Stelvio . Continuano in via Farini e fanno capolinea in Maciachini M3. Da qui, ripartono al contrario verso piazzale Negrelli. I tram saltano queste fermate: - via Bernina - Lancetti - piazzale Nigra - via Imbriani/via Scalvini - Bausan - Bausan (capolinea) Lavori al ponte ferroviario di via Lo",
-      "startDate": "2026-08-12T07:43:58.000Z",
-      "endDate": "2026-09-04T23:59:59.000Z",
-      "affectedServices": [],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram2lavoriinviaLodovicoilMoro.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-08-12-cantiere-serale-il-tram-2-cambia-servizi"
-    }
-  ]
+  "alerts": []
 }
