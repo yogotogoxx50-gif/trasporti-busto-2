@@ -1,5 +1,34 @@
 {
-  "lastUpdated": "2026-08-27T17:57:34.318Z",
+  "lastUpdated": "2026-08-28T19:07:37.807Z",
   "windowDays": 14,
-  "alerts": []
+  "alerts": [
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bus 60: capolinea spostato",
+      "description": "È in programma il posizionamento di una gru. Venerdì 18 settembre dalle 7 alle 15 il capolinea di Duomo M1 M3 viene sospeso. I bus fermano in in via Baracchini al civico 10, dopo piazza Diaz.",
+      "startDate": "2026-08-28T11:51:52.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "high",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/bus60capolinoduomo.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-08-28-bus-60-capolinea-spostato"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bus 96, 97, NM2 e NM4: cambiamenti dal 22 agosto",
+      "description": "English È in programma la riqualificazione di strada e binari all’incrocio tra via De Amicis e corso Genova. Queste linee cambiano servizio dal 22 agosto al 2 ottobre. Bus 96 e 97 Le linee sono sospese nelle due direzioni nella tratta Cadorna-S. Ambrogio-De Amicis-Vetra- Sforza Policlinico. In alternativa usate la metropolitana M4. La tratta Cadorna-Cavour– Senato-Sforza Policlinico è servita nelle due direzioni dalla linea 96: Da Cadorna verso Sforza Policlinico i bus fanno le solite fermate fi",
+      "startDate": "2026-08-07T07:34:02.000Z",
+      "endDate": "2026-10-02T23:59:59.000Z",
+      "affectedServices": [],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/DeAmicisGenova.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-08-07-bus-96-97-nm2-e-nm4-cambiamenti-dal-22-a"
+    }
+  ]
 }
