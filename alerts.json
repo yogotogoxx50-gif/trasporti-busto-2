@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-01T12:12:13.583Z",
+  "lastUpdated": "2026-09-02T11:49:07.882Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -16,6 +16,40 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/bus60capolinoduomo.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-08-28-bus-60-capolinea-spostato"
+    },
+    {
+      "source": "trenord",
+      "type": "strike",
+      "title": "Sciopero nazionale del 7 e 8 settembre 2026",
+      "description": "Sciopero nazionale del 7 e 8 settembre 2026",
+      "startDate": "2026-09-08T00:00:00.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "Trenord",
+        "ATM",
+        "Movibus"
+      ],
+      "severity": "high",
+      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
+      "guaranteedBands": "06:00-09:00, 18:00-21:00",
+      "id": "trenord-2026-09-08-sciopero-nazionale-del-7-e-8-settembre-2"
+    },
+    {
+      "source": "trenord",
+      "type": "strike",
+      "title": "sciopero nazionale dalle ore 21:18 del 7 settembre fino alle ore 21:00 dell’8 settembre 2026 che pot",
+      "description": "sciopero nazionale dalle ore 21:18 del 7 settembre fino alle ore 21:00 dell’8 settembre 2026 che potrà generare ripercussioni sulla circolazione ferroviaria in Lombardia.",
+      "startDate": "2026-09-08T00:00:00.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "Trenord",
+        "ATM",
+        "Movibus"
+      ],
+      "severity": "high",
+      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
+      "guaranteedBands": "06:00-09:00, 18:00-21:00",
+      "id": "trenord-2026-09-08-sciopero-nazionale-dalle-ore-21-18-del-7"
     }
   ]
 }
