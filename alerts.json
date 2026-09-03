@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-02T11:49:07.882Z",
+  "lastUpdated": "2026-09-03T11:48:53.810Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -50,6 +50,19 @@
       "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
       "guaranteedBands": "06:00-09:00, 18:00-21:00",
       "id": "trenord-2026-09-08-sciopero-nazionale-dalle-ore-21-18-del-7"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bus 201 e 328: deviazione a Rozzano",
+      "description": "È in programma la chiusura di viale Lombardia a Rozzano. I bus cambiano percorso domenica 20 settembre. Bus 201 Verso Rozzano (via Alberelle), i bus saltano le fermate di viale Lombardia. Partono dal capolinea di via Milano (Rozzano) e arrivano fino a viale Lombardia. Poi deviano: passano per via Torino, via Gramsci, via Roma, viale Lazio, via Cabrini e viale Romagna. Da qui tornano su viale Romagna e da viale Lazio riprendono il percorso di sempre. Verso Rozzano (via Milano) il percorso non cam",
+      "startDate": "2026-09-02T14:36:59.000Z",
+      "endDate": null,
+      "affectedServices": [],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus201e328deviazione29.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-09-02-bus-201-e-328-deviazione-a-rozzano"
     }
   ]
 }
