@@ -1,22 +1,7 @@
 {
-  "lastUpdated": "2026-09-03T11:48:53.810Z",
+  "lastUpdated": "2026-09-04T11:51:06.764Z",
   "windowDays": 14,
   "alerts": [
-    {
-      "source": "atm",
-      "type": "disruption",
-      "title": "Bus 60: capolinea spostato",
-      "description": "È in programma il posizionamento di una gru. Venerdì 18 settembre dalle 7 alle 15 il capolinea di Duomo M1 M3 viene sospeso. I bus fermano in in via Baracchini al civico 10, dopo piazza Diaz.",
-      "startDate": "2026-08-28T11:51:52.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "high",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/bus60capolinoduomo.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-08-28-bus-60-capolinea-spostato"
-    },
     {
       "source": "trenord",
       "type": "strike",
