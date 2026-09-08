@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-07T13:06:15.734Z",
+  "lastUpdated": "2026-09-08T11:51:36.838Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -39,19 +39,6 @@
     {
       "source": "atm",
       "type": "disruption",
-      "title": "Bus 201 e 328: deviazione a Rozzano",
-      "description": "È in programma la chiusura di viale Lombardia a Rozzano. I bus cambiano percorso domenica 20 settembre. Bus 201 Verso Rozzano (via Alberelle), i bus saltano le fermate di viale Lombardia. Partono dal capolinea di via Milano (Rozzano) e arrivano fino a viale Lombardia. Poi deviano: passano per via Torino, via Gramsci, via Roma, viale Lazio, via Cabrini e viale Romagna. Da qui tornano su viale Romagna e da viale Lazio riprendono il percorso di sempre. Verso Rozzano (via Milano) il percorso non cam",
-      "startDate": "2026-09-02T14:36:59.000Z",
-      "endDate": null,
-      "affectedServices": [],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus201e328deviazione29.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-09-02-bus-201-e-328-deviazione-a-rozzano"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
       "title": "Arena Shuttle per Unipol Dome: fermate, orari e biglietti",
       "description": "L’Arena Shuttle è una navetta che collega la stazione di Rogoredo e l’Unipol Dome Santa Giulia. La navetta è in servizio solo nei giorni dei concerti e degli spettacoli in programma all’arena. Orari Da Rogoredo. In servizio da 3 ore prima dell’inizio dell’evento Da Arena. In servizio nell’ora e mezza dopo la fine dell’evento Fermate Consultate la mappa. Come pagare Sulle navette vale lo stesso biglietto di metro, tram e bus. Si può pagare anche con carta di credito, telefoni o orologi smart . Va",
       "startDate": "2026-09-04T08:29:13.000Z",
@@ -61,6 +48,19 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/ArenaShuttle.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-09-04-arena-shuttle-per-unipol-dome-fermate-or"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bus 201 e 328: deviano a Rozzano",
+      "description": "È in programma la chiusura al traffico di viale Lombardia. Domenica 20 (da inizio a fine servizio) e sabato 26 settembre (dalle 13 fino al termine del servizio) , i bus cambiano percorso e fermate. Bus 201 Verso Rozzano (via Alberelle) , i bus saltano le fermate di viale Lombardia. Dal capolinea di via Milano, deviano e passano da via Torino, via Gramsci e via Roma. Poi fermano in viale Lazio e via Cabrini (alle stesse fermate della 201 nella direzione opposta). Riprendono il percorso di sempre ",
+      "startDate": "2026-09-08T10:05:18.000Z",
+      "endDate": null,
+      "affectedServices": [],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus201e328devianoaRozzano.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-09-08-bus-201-e-328-deviano-a-rozzano"
     }
   ]
 }
