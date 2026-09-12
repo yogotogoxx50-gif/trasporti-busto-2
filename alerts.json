@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-11T11:55:08.641Z",
+  "lastUpdated": "2026-09-12T11:21:38.073Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -27,6 +27,21 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus201e328devianoaRozzano.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-09-08-bus-201-e-328-deviano-a-rozzano"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 50: fermata spostata",
+      "description": "Sono in programma lavori stradali in via Soderini. La fermata via Soderini/viale San Gimignano, verso Cairoli M1, è sospesa da martedì 15 settembre. Usate la fermata più avanti, di 30 metri circa.",
+      "startDate": "2026-09-11T13:09:41.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus50fermataspostata15settembre.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-09-11-bus-50-fermata-spostata"
     }
   ]
 }
