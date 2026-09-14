@@ -1,20 +1,7 @@
 {
-  "lastUpdated": "2026-09-13T12:25:12.365Z",
+  "lastUpdated": "2026-09-14T13:27:38.661Z",
   "windowDays": 14,
   "alerts": [
-    {
-      "source": "atm",
-      "type": "disruption",
-      "title": "Arena Shuttle per Unipol Dome: fermate, orari e biglietti",
-      "description": "L’Arena Shuttle è una navetta che collega la stazione di Rogoredo e l’Unipol Dome Santa Giulia. La navetta è in servizio solo nei giorni dei concerti e degli spettacoli in programma all’arena. Orari Da Rogoredo. In servizio da 3 ore prima dell’inizio dell’evento Da Arena. In servizio nell’ora e mezza dopo la fine dell’evento Fermate Consultate la mappa. Come pagare Sulle navette vale lo stesso biglietto di metro, tram e bus. Si può pagare anche con carta di credito, telefoni o orologi smart . Va",
-      "startDate": "2026-09-04T08:29:13.000Z",
-      "endDate": null,
-      "affectedServices": [],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/ArenaShuttle.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-09-04-arena-shuttle-per-unipol-dome-fermate-or"
-    },
     {
       "source": "atm",
       "type": "disruption",
