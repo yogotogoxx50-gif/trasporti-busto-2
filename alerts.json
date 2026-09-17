@@ -1,21 +1,19 @@
 {
-  "lastUpdated": "2026-09-16T12:17:18.981Z",
+  "lastUpdated": "2026-09-17T12:16:58.820Z",
   "windowDays": 14,
   "alerts": [
     {
       "source": "atm",
-      "type": "works",
-      "title": "Bus 50: fermata spostata",
-      "description": "Sono in programma lavori stradali in via Soderini. La fermata via Soderini/viale San Gimignano, verso Cairoli M1, è sospesa da martedì 15 settembre. Usate la fermata più avanti, di 30 metri circa.",
-      "startDate": "2026-09-11T13:09:41.000Z",
+      "type": "disruption",
+      "title": "Bus 201 e 328: deviano a Rozzano",
+      "description": "È in programma la chiusura al traffico di viale Lombardia. Domenica 20 (da inizio a fine servizio) e sabato 26 settembre (dalle 12 fino al termine del servizio) i bus cambiano percorso e fermate. Domenica 20 settembre Bus 201 Verso Rozzano (via Alberelle) , i bus saltano le fermate di viale Lombardia. Dal capolinea di via Milano, deviano e passano da via Torino, via Gramsci e via Roma. Poi fermano in viale Lazio e via Cabrini (alle stesse fermate della 201 nella direzione opposta). Riprendono il",
+      "startDate": "2026-09-08T10:05:18.000Z",
       "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
+      "affectedServices": [],
       "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus50fermataspostata15settembre.aspx",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus201e328devianoaRozzano.aspx",
       "guaranteedBands": null,
-      "id": "atm-2026-09-11-bus-50-fermata-spostata"
+      "id": "atm-2026-09-08-bus-201-e-328-deviano-a-rozzano"
     }
   ]
 }
