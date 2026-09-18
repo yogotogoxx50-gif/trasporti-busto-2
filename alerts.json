@@ -1,7 +1,20 @@
 {
-  "lastUpdated": "2026-09-17T12:16:58.820Z",
+  "lastUpdated": "2026-09-18T11:57:33.347Z",
   "windowDays": 14,
   "alerts": [
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Gara di corsa: tram e bus deviano domenica 20 settembre",
+      "description": "Domenica 20 settembre c’è la Salomon Running Milano. In mattinata cambiamo il servizio di queste linee. TRAM 1 Nelle due direzioni devia e salta le fermate tra p.za Firenze e Cordusio. Passa in via Cenisio, Monumentale, via Bramante, via Legnano, Lanza e Ponte Vetero. Non passa in c.so Sempione, Arco della Pace, Quinto Alpini, p.za Virgilio e Cadorna. TRAM 2 Fa servizio nelle tratte Bausan-via Cusani e San Siro Stadio-p.le Negrelli. Non passa in via Ariosto, via Monti, via Boccaccio, Cadorna e F",
+      "startDate": "2026-09-17T14:27:45.000Z",
+      "endDate": null,
+      "affectedServices": [],
+      "severity": "high",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Garadicorsatramebusdevianodomenica20settembre.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-09-17-gara-di-corsa-tram-e-bus-deviano-domenic"
+    },
     {
       "source": "atm",
       "type": "disruption",
@@ -14,6 +27,21 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus201e328devianoaRozzano.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-09-08-bus-201-e-328-deviano-a-rozzano"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 67, 98 e NM1: cambiamenti al servizio",
+      "description": "Sono in programma lavori di asfaltatura in viale Caterina da Forlì e piazzale Bande Nere. I bus 67, 98 e NM1 cambiano percorso e fermate. Bus 67 - Dal 23 al 25 settembre, dalle 20 alle 6 Nelle due direzioni , devia e salta le fermate tra piazzale Tripoli e via Forze Armate/viale Pisa. Non ferma in viale Caterina da Forlì e Bande Nere. Quando devia, ferma in via Anguissola (alla fermata Gambara della NM1). Solo verso Baggio, ferma anche in via Forze Armate 14. Bus NM1 - Dal 24 al 25 settembre, fi",
+      "startDate": "2026-09-17T13:39:50.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus67,98eNM1cambiamentialservizio.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-09-17-bus-67-98-e-nm1-cambiamenti-al-servizio"
     }
   ]
 }
