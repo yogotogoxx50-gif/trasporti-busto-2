@@ -1,25 +1,12 @@
 {
-  "lastUpdated": "2026-09-20T11:54:11.210Z",
+  "lastUpdated": "2026-09-21T13:26:48.016Z",
   "windowDays": 14,
   "alerts": [
     {
       "source": "atm",
       "type": "disruption",
-      "title": "Gara di corsa: tram e bus deviano domenica 20 settembre",
-      "description": "Domenica 20 settembre c’è la Salomon Running Milano. In mattinata cambiamo il servizio di queste linee. TRAM 1 Nelle due direzioni devia e salta le fermate tra p.za Firenze e Cordusio. Passa in via Cenisio, Monumentale, via Bramante, via Legnano, Lanza e Ponte Vetero. Non passa in c.so Sempione, Arco della Pace, Quinto Alpini, p.za Virgilio e Cadorna. TRAM 2 Fa servizio nelle tratte Bausan-via Cusani e San Siro Stadio-p.le Negrelli. Non passa in via Ariosto, via Monti, via Boccaccio, Cadorna e F",
-      "startDate": "2026-09-17T14:27:45.000Z",
-      "endDate": null,
-      "affectedServices": [],
-      "severity": "high",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Garadicorsatramebusdevianodomenica20settembre.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-09-17-gara-di-corsa-tram-e-bus-deviano-domenic"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
       "title": "Bus 201 e 328: deviano a Rozzano",
-      "description": "È in programma la chiusura al traffico di viale Lombardia. Domenica 20 (da inizio a fine servizio) e sabato 26 settembre (dalle 12 fino al termine del servizio) i bus cambiano percorso e fermate. Domenica 20 settembre Bus 201 Verso Rozzano (via Alberelle) , i bus saltano le fermate di viale Lombardia. Dal capolinea di via Milano, deviano e passano da via Torino, via Gramsci e via Roma. Poi fermano in viale Lazio e via Cabrini (alle stesse fermate della 201 nella direzione opposta). Riprendono il",
+      "description": "È in programma la chiusura al traffico di viale Lombardia. Sabato 26 settembre (dalle 12 fino al termine del servizio) i bus cambiano percorso e fermate. Bus 201 Verso Rozzano (via Alberelle), i bus saltano le fermate di viale Lombardia. Dal capolinea di via Milano, deviano e passano in via Torino, via Gramsci e via Roma. Poi fermano in viale Lazio e via Cabrini (alle stesse fermate della 201 nella direzione opposta). Riprendono il percorso di sempre dalla fermata di viale Romagna. Verso Rozzano",
       "startDate": "2026-09-08T10:05:18.000Z",
       "endDate": null,
       "affectedServices": [],
@@ -42,6 +29,21 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus67,98eNM1cambiamentialservizio.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-09-17-bus-67-98-e-nm1-cambiamenti-al-servizio"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bus 700 e 702: deviazione",
+      "description": "È in programma una festa di quartiere in via Grandi a Sesto San Giovanni. Le linee cambiano percorso e fermate domenica 27 settembre. Linea 700 I bus, nelle due direzioni , deviano e saltano le fermate in via Marx, via Volontari del Sangue, via Grandi e via Cantore. Quando deviano passano in viale Edison, dove fanno due fermate provvisorie, di fronte al numero civico 450 (verso Sesto FS M1) e dopo via Marx (verso Sesto Cimitero). Linea 702 I bus, nelle due direzioni, deviano tra via dei Partigia",
+      "startDate": "2026-09-21T11:54:01.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus700e702deviazione27sett.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-09-21-bus-700-e-702-deviazione"
     }
   ]
 }
