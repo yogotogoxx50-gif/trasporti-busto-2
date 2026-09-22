@@ -1,20 +1,7 @@
 {
-  "lastUpdated": "2026-09-21T13:26:48.016Z",
+  "lastUpdated": "2026-09-22T12:11:11.572Z",
   "windowDays": 14,
   "alerts": [
-    {
-      "source": "atm",
-      "type": "disruption",
-      "title": "Bus 201 e 328: deviano a Rozzano",
-      "description": "È in programma la chiusura al traffico di viale Lombardia. Sabato 26 settembre (dalle 12 fino al termine del servizio) i bus cambiano percorso e fermate. Bus 201 Verso Rozzano (via Alberelle), i bus saltano le fermate di viale Lombardia. Dal capolinea di via Milano, deviano e passano in via Torino, via Gramsci e via Roma. Poi fermano in viale Lazio e via Cabrini (alle stesse fermate della 201 nella direzione opposta). Riprendono il percorso di sempre dalla fermata di viale Romagna. Verso Rozzano",
-      "startDate": "2026-09-08T10:05:18.000Z",
-      "endDate": null,
-      "affectedServices": [],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus201e328devianoaRozzano.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-09-08-bus-201-e-328-deviano-a-rozzano"
-    },
     {
       "source": "atm",
       "type": "works",
@@ -44,6 +31,21 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus700e702deviazione27sett.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-09-21-bus-700-e-702-deviazione"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Martedì 22 settembre evento in Galleria: chiude la stazione M1 di Duomo. Il tram 1 devia",
+      "description": "Martedì 22 settembre è in programma un evento in Galleria. In questa pagina trovate i cambiamenti al servizio. Duomo M1 chiude dalle 16 alle 22. Usate le stazioni vicine I treni della M1 saltano la stazione su disposizione della Questura. I treni della M3 si fermano come al solito. Per raggiungere piazza Duomo usate M3. Se usate M1, scendete a Cordusio o San Babila . Mappa della metro. L’ATM Point di Duomo chiude dalle 15:30 . In alternativa considerate gli sportelli di Cadorna e Centrale. Sono ",
+      "startDate": "2026-09-21T15:41:26.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Martedì22settembreeventoinGalleriachiudelastazioneM1diDuomoIltram1devia.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-09-21-marted-22-settembre-evento-in-galleria-c"
     }
   ]
 }
