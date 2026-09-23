@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-22T12:11:11.572Z",
+  "lastUpdated": "2026-09-23T12:23:33.009Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -35,17 +35,17 @@
     {
       "source": "atm",
       "type": "disruption",
-      "title": "Martedì 22 settembre evento in Galleria: chiude la stazione M1 di Duomo. Il tram 1 devia",
-      "description": "Martedì 22 settembre è in programma un evento in Galleria. In questa pagina trovate i cambiamenti al servizio. Duomo M1 chiude dalle 16 alle 22. Usate le stazioni vicine I treni della M1 saltano la stazione su disposizione della Questura. I treni della M3 si fermano come al solito. Per raggiungere piazza Duomo usate M3. Se usate M1, scendete a Cordusio o San Babila . Mappa della metro. L’ATM Point di Duomo chiude dalle 15:30 . In alternativa considerate gli sportelli di Cadorna e Centrale. Sono ",
-      "startDate": "2026-09-21T15:41:26.000Z",
+      "title": "Bus 44: deviazione",
+      "description": "È in programma lo smontaggio di una gru in via Asiago. I bus cambiano percorso e fermate sabato 3 ottobre dalle 7 alle 18 . Verso Gobba fanno normale servizio fino a viale Monza. Poi non vanno in via Monte San Gabriele ma continuano su viale Monza. Poi girano in via Don Guanella e in via Pompeo Mariani. Da via Ponte Nuovo riprendono il percorso di sempre. Verso Turro il percorso non cambia. Sono sospese queste fermate : via San Gabriele (Gorla M1). I bus fermano in viale Monza, dopo via Pirano, ",
+      "startDate": "2026-09-22T14:04:24.000Z",
       "endDate": null,
       "affectedServices": [
         "M1"
       ],
       "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Martedì22settembreeventoinGalleriachiudelastazioneM1diDuomoIltram1devia.aspx",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus44deviazione22_9.aspx",
       "guaranteedBands": null,
-      "id": "atm-2026-09-21-marted-22-settembre-evento-in-galleria-c"
+      "id": "atm-2026-09-22-bus-44-deviazione"
     }
   ]
 }
