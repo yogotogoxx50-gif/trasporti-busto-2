@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-09-23T12:23:33.009Z",
+  "lastUpdated": "2026-09-24T12:23:14.310Z",
   "windowDays": 14,
   "alerts": [
     {
       "source": "atm",
-      "type": "works",
-      "title": "Bus 67, 98 e NM1: cambiamenti al servizio",
-      "description": "Sono in programma lavori di asfaltatura in viale Caterina da Forlì e piazzale Bande Nere. I bus 67, 98 e NM1 cambiano percorso e fermate. Bus 67 - Dal 23 al 25 settembre, dalle 20 alle 6 Nelle due direzioni , devia e salta le fermate tra piazzale Tripoli e via Forze Armate/viale Pisa. Non ferma in viale Caterina da Forlì e Bande Nere. Quando devia, ferma in via Anguissola (alla fermata Gambara della NM1). Solo verso Baggio, ferma anche in via Forze Armate 14. Bus NM1 - Dal 24 al 25 settembre, fi",
-      "startDate": "2026-09-17T13:39:50.000Z",
+      "type": "disruption",
+      "title": "Bus 60: capolinea sospeso",
+      "description": "È in programma il posizionamento di una gru. Il capolinea Duomo M1 M3 è sospeso venerdì 2 ottobre, dalle 7 alle 15. I bus fermano in via Baracchini, al civico 10, dopo piazza Diaz.",
+      "startDate": "2026-09-23T14:15:59.000Z",
       "endDate": null,
       "affectedServices": [
         "M1"
       ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus67,98eNM1cambiamentialservizio.aspx",
+      "severity": "high",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus60capolineasospeso.aspx",
       "guaranteedBands": null,
-      "id": "atm-2026-09-17-bus-67-98-e-nm1-cambiamenti-al-servizio"
+      "id": "atm-2026-09-23-bus-60-capolinea-sospeso"
     },
     {
       "source": "atm",
