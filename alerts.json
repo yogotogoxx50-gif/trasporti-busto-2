@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-27T12:33:37.035Z",
+  "lastUpdated": "2026-09-28T14:40:29.411Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -54,21 +54,6 @@
     {
       "source": "atm",
       "type": "disruption",
-      "title": "Bus 700 e 702: deviazione",
-      "description": "È in programma una festa di quartiere in via Grandi a Sesto San Giovanni. Le linee cambiano percorso e fermate domenica 27 settembre. Linea 700 I bus, nelle due direzioni , deviano e saltano le fermate in via Marx, via Volontari del Sangue, via Grandi e via Cantore. Quando deviano passano in viale Edison, dove fanno due fermate provvisorie, di fronte al numero civico 450 (verso Sesto FS M1) e dopo via Marx (verso Sesto Cimitero). Linea 702 I bus, nelle due direzioni, deviano tra via dei Partigia",
-      "startDate": "2026-09-21T11:54:01.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus700e702deviazione27sett.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-09-21-bus-700-e-702-deviazione"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
       "title": "Bus 44: deviazione",
       "description": "È in programma lo smontaggio di una gru in via Asiago. I bus cambiano percorso e fermate sabato 3 ottobre dalle 7 alle 18 . Verso Gobba fanno normale servizio fino a viale Monza. Poi non vanno in via Monte San Gabriele ma continuano su viale Monza. Poi girano in via Don Guanella e in via Pompeo Mariani. Da via Ponte Nuovo riprendono il percorso di sempre. Verso Turro il percorso non cambia. Sono sospese queste fermate : via San Gabriele (Gorla M1). I bus fermano in viale Monza, dopo via Pirano, ",
       "startDate": "2026-09-22T14:04:24.000Z",
@@ -80,6 +65,21 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus44deviazione22_9.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-09-22-bus-44-deviazione"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 63: fermata sospesa",
+      "description": "Sono in programma lavori stradali in via Jemolo. La fermata via Jemolo/via Moltoni è sospesa dalle 9 dell'1 alle 8 del 2 ottobre. Verso Muggiano in alternativa fermate prima o dopo: via Mosca/via Val Cavallina Muggiano Verso De Angeli M1 in alternativa usate le fermate prima o dopo: via Muggiano/via Jemolo via Mosca/via Val Cavallina",
+      "startDate": "2026-09-28T10:29:14.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus63fermatasospesa.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-09-28-bus-63-fermata-sospesa"
     }
   ]
 }
