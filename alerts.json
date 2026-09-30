@@ -1,22 +1,7 @@
 {
-  "lastUpdated": "2026-09-29T13:31:05.305Z",
+  "lastUpdated": "2026-09-30T13:07:24.420Z",
   "windowDays": 14,
   "alerts": [
-    {
-      "source": "atm",
-      "type": "disruption",
-      "title": "Bus 60: capolinea sospeso",
-      "description": "È in programma il posizionamento di una gru. Il capolinea Duomo M1 M3 è sospeso venerdì 2 ottobre, dalle 7 alle 15. I bus fermano in via Baracchini, al civico 10, dopo piazza Diaz.",
-      "startDate": "2026-09-23T14:15:59.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "high",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus60capolineasospeso.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-09-23-bus-60-capolinea-sospeso"
-    },
     {
       "source": "trenord",
       "type": "strike",
@@ -50,6 +35,21 @@
       "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
       "guaranteedBands": "06:00-09:00, 18:00-21:00",
       "id": "trenord-2026-10-02-sciopero-nazionale-di-tutti-i-settori-pu"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bus 44: deviazione",
+      "description": "Smontaggio di una gru in via Asiago. I bus cambiano percorso e fermate sabato 3 ottobre dalle 7 alle 18 . Verso Gobba fanno normale servizio fino a viale Monza. Poi non vanno in via Monte San Gabriele ma continuano su viale Monza. Poi girano in via Don Guanella e in via Pompeo Mariani. Da via Ponte Nuovo riprendono il percorso di sempre. Verso Turro il percorso non cambia. Sono sospese queste fermate : via San Gabriele (Gorla M1). I bus fermano in viale Monza, dopo via Pirano, alla fermata del b",
+      "startDate": "2026-09-22T14:04:24.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus44deviazione22_9.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-09-22-bus-44-deviazione"
     },
     {
       "source": "atm",
