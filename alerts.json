@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-30T13:07:24.420Z",
+  "lastUpdated": "2026-10-01T13:59:41.784Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -39,6 +39,21 @@
     {
       "source": "atm",
       "type": "disruption",
+      "title": "Dalì e la Moda",
+      "description": "Per gli abbonati annuali ATM e un accompagnatore, uno sconto del 30% sul biglietto d'ingresso della mostra a Milano. DALÍ E LA MODA Un viaggio inedito nell’universo di Salvador Dalí attraverso il linguaggio della moda, tra surrealismo, identità e immaginario contemporaneo. La mostra riunisce oltre 200 opere e documenti - dipinti, disegni, fotografie, abiti, filmati, gioielli e oggetti - dedicati per la prima volta all’influenza di Salvador Dalí sul mondo della moda e al ruolo decisivo che quest’",
+      "startDate": "2026-09-24T00:00:00.000Z",
+      "endDate": "2027-01-31T23:59:59.000Z",
+      "affectedServices": [
+        "ATM"
+      ],
+      "severity": "medium",
+      "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/DalìelaModa.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-09-24-dal-e-la-moda"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
       "title": "Bus 44: deviazione",
       "description": "Smontaggio di una gru in via Asiago. I bus cambiano percorso e fermate sabato 3 ottobre dalle 7 alle 18 . Verso Gobba fanno normale servizio fino a viale Monza. Poi non vanno in via Monte San Gabriele ma continuano su viale Monza. Poi girano in via Don Guanella e in via Pompeo Mariani. Da via Ponte Nuovo riprendono il percorso di sempre. Verso Turro il percorso non cambia. Sono sospese queste fermate : via San Gabriele (Gorla M1). I bus fermano in viale Monza, dopo via Pirano, alla fermata del b",
       "startDate": "2026-09-22T14:04:24.000Z",
@@ -55,7 +70,7 @@
       "source": "atm",
       "type": "works",
       "title": "Linee 4, B4, 42, 51, 52, 83, 166 e 172: deviano dal 6 ottobre",
-      "description": "English version È in programma la riqualificazione di via Ornato (rinnovo strada, acquedotto, fognature e binari del tram). Dal 6 ottobre: deviano le linee 4, 42, 51, 52, 83, 166 e 172 i bus B4 cambiano percorso introduciamo la linea circolare 162 nel quartiere di Niguarda, con fermate e itinerari che possono servire da alternativa alle linee deviate durante i lavori Cambiamenti del servizio dal 6 ottobre ad aprile 2027 Tram 4. È sostituito dal bus B4 tra Niguarda e Parco Nord. Incontra le metro",
+      "description": "English version È in programma la riqualificazione di via Ornato (rinnovo strada, acquedotto, fognature e binari del tram). Dal 6 ottobre: deviano le linee 4, 42, 51, 52, 83, 166 e 172 i bus B4 cambiano percorso introduciamo la linea circolare 162 nel quartiere di Niguarda, con fermate e itinerari che possono servire da alternativa alle linee deviate durante i lavori CAMBIAMENTI DAL 6 OTTOBRE AD APRILE 2027 - MAPPA Tram 4. È sostituito dal bus B4 tra Niguarda e Parco Nord. Incontra le metropolit",
       "startDate": "2026-09-28T09:14:16.000Z",
       "endDate": null,
       "affectedServices": [],
@@ -83,7 +98,7 @@
       "source": "atm",
       "type": "disruption",
       "title": "Bus 56: deviazione",
-      "description": "È in programma l’asfaltatura di via Padova. La linea cambia percorso e fermate dal 5 al 7 ottobre dalle 20:30 alle 5. Verso quartiere Adriano, i bus fanno normale servizio fino alla fermata via Padova/via Esterle. Poi deviano e riprendono il loro percorso dalla fermata via Padova/via De La Salle. Verso Loreto M1 M2, il percorso non cambia. I bus, quando deviano, fanno queste fermate: via Anacreonte, dopo via Tarabella via Palmanova, prima di via Oropa (dove ferma la linea 53) via Palmanova prima",
+      "description": "È in programma l’asfaltatura di via Padova. La linea cambia percorso e fermate dal 5 al 7 ottobre dalle 20:30 alle 5. Verso quartiere Adriano, i bus fanno normale servizio fino alla fermata via Padova/via Esterle. Poi deviano e riprendono il loro percorso dalla fermata via San Mamete/via Adriano. Verso Loreto M1 M2, il percorso non cambia. I bus, quando deviano, fanno queste fermate: via Anacreonte, dopo via Tarabella via Palmanova, prima di via Oropa (dove ferma la linea 53) via Palmanova prima",
       "startDate": "2026-09-29T09:37:19.000Z",
       "endDate": null,
       "affectedServices": [
