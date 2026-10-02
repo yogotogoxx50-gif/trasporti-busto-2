@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-01T13:59:41.784Z",
+  "lastUpdated": "2026-10-02T13:18:06.731Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -78,21 +78,6 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/RiqualificazioneOrnato.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-09-28-linee-4-b4-42-51-52-83-166-e-172-deviano"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Bus 63: fermata sospesa",
-      "description": "Sono in programma lavori stradali in via Jemolo. La fermata via Jemolo/via Moltoni è sospesa dalle 9 dell'1 alle 8 del 2 ottobre. Verso Muggiano in alternativa fermate prima o dopo: via Mosca/via Val Cavallina Muggiano Verso De Angeli M1 in alternativa usate le fermate prima o dopo: via Muggiano/via Jemolo via Mosca/via Val Cavallina",
-      "startDate": "2026-09-28T10:29:14.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus63fermatasospesa.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-09-28-bus-63-fermata-sospesa"
     },
     {
       "source": "atm",
