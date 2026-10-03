@@ -1,41 +1,7 @@
 {
-  "lastUpdated": "2026-10-02T13:18:06.731Z",
+  "lastUpdated": "2026-10-03T12:07:38.231Z",
   "windowDays": 14,
   "alerts": [
-    {
-      "source": "trenord",
-      "type": "strike",
-      "title": "Sciopero nazionale del 2 ottobre 2026",
-      "description": "Sciopero nazionale del 2 ottobre 2026",
-      "startDate": "2026-10-02T00:00:00.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "Trenord",
-        "ATM",
-        "Movibus"
-      ],
-      "severity": "high",
-      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
-      "guaranteedBands": "06:00-09:00, 18:00-21:00",
-      "id": "trenord-2026-10-02-sciopero-nazionale-del-2-ottobre-2026"
-    },
-    {
-      "source": "trenord",
-      "type": "strike",
-      "title": "sciopero nazionale di tutti i settori pubblici e privati che, per il settore ferroviario, si effettu",
-      "description": "sciopero nazionale di tutti i settori pubblici e privati che, per il settore ferroviario, si effettuerà dalle ore 11.00 alle ore 14:00 del 2 ottobre 2026 che potrà generare ripercussioni sulla circolazio",
-      "startDate": "2026-10-02T00:00:00.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "Trenord",
-        "ATM",
-        "Movibus"
-      ],
-      "severity": "high",
-      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
-      "guaranteedBands": "06:00-09:00, 18:00-21:00",
-      "id": "trenord-2026-10-02-sciopero-nazionale-di-tutti-i-settori-pu"
-    },
     {
       "source": "atm",
       "type": "disruption",
