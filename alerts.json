@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-03T12:07:38.231Z",
+  "lastUpdated": "2026-10-04T12:55:46.868Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -16,21 +16,6 @@
       "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/DalìelaModa.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-09-24-dal-e-la-moda"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
-      "title": "Bus 44: deviazione",
-      "description": "Smontaggio di una gru in via Asiago. I bus cambiano percorso e fermate sabato 3 ottobre dalle 7 alle 18 . Verso Gobba fanno normale servizio fino a viale Monza. Poi non vanno in via Monte San Gabriele ma continuano su viale Monza. Poi girano in via Don Guanella e in via Pompeo Mariani. Da via Ponte Nuovo riprendono il percorso di sempre. Verso Turro il percorso non cambia. Sono sospese queste fermate : via San Gabriele (Gorla M1). I bus fermano in viale Monza, dopo via Pirano, alla fermata del b",
-      "startDate": "2026-09-22T14:04:24.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus44deviazione22_9.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-09-22-bus-44-deviazione"
     },
     {
       "source": "atm",
