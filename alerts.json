@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-05T15:22:26.459Z",
+  "lastUpdated": "2026-10-06T13:44:28.493Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -31,34 +31,6 @@
       "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/DalìelaModa.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-09-24-dal-e-la-moda"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Linee 4, B4, 42, 51, 52, 83, 166 e 172: deviano dal 6 ottobre",
-      "description": "English version È in programma la riqualificazione di via Ornato (rinnovo strada, acquedotto, fognature e binari del tram). Dal 6 ottobre: deviano le linee 4, 42, 51, 52, 83, 166 e 172 i bus B4 cambiano percorso introduciamo la linea circolare 162 nel quartiere di Niguarda, con fermate e itinerari che possono servire da alternativa alle linee deviate durante i lavori CAMBIAMENTI DAL 6 OTTOBRE AD APRILE 2027 - MAPPA Tram 4. È sostituito dal bus B4 tra Niguarda e Parco Nord. Incontra le metropolit",
-      "startDate": "2026-09-28T09:14:16.000Z",
-      "endDate": null,
-      "affectedServices": [],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/RiqualificazioneOrnato.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-09-28-linee-4-b4-42-51-52-83-166-e-172-deviano"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
-      "title": "Bus 56: deviazione",
-      "description": "È in programma l’asfaltatura di via Padova. La linea cambia percorso e fermate dal 5 al 7 ottobre dalle 20:30 alle 5. Verso quartiere Adriano, i bus fanno normale servizio fino alla fermata via Padova/via Esterle. Poi deviano e riprendono il loro percorso dalla fermata via San Mamete/via Adriano. Verso Crescenzago, i bus fanno lo stesso percorso di quelli per il Quartiere Adriano ma fanno capolinea in via Rovigo. Verso Loreto M1 M2, il percorso non cambia. I bus per Quartiere Adriano e Crescenza",
-      "startDate": "2026-09-29T09:37:19.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus56deviazione.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-09-29-bus-56-deviazione"
     }
   ]
 }
