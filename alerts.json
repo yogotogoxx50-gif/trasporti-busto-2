@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-06T13:44:28.493Z",
+  "lastUpdated": "2026-10-07T14:02:15.141Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -31,6 +31,36 @@
       "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/DalìelaModa.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-09-24-dal-e-la-moda"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bus 44: deviazione",
+      "description": "È in programma la posa di una piattaforma aerea in via Monte San Gabriele. Le vetture cambiano percorso e fermate sabato 31 ottobre dalle 7 alle 18. Verso Gobba , i bus fanno normale servizio fino a viale Monza. Poi non vanno in via Monte San Gabriele, ma continuano su viale Monza. Poi girano in via Don Guanella e in via Pompeo Mariani. Da via Ponte Nuovo riprendono il percorso di sempre. Verso Turro , il percorso non cambia. Sono sospese queste fermate: via San Gabriele (Gorla M1). I bus ferman",
+      "startDate": "2026-10-06T13:55:50.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus44.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-10-06-bus-44-deviazione"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 424 e 431: fermate spostate",
+      "description": "Continuano i lavori stradali in via Milano. Dalle 10 di martedì 13 ottobre. La fermata di via Milano 27, verso Molino Dorino e Passirana , è spostata.Usate le fermate provvisorie: 424: in via Milano, dopo via Merendi, di fronte al civico 58 431: in via Garibaldi, al civico 219 La fermata di via Milano 70, verso Bareggio, è spostata. I bus fermano qualche metro più avanti, in via Milano,al civico 74.",
+      "startDate": "2026-10-06T14:05:31.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/gggggg.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-10-06-bus-424-e-431-fermate-spostate"
     }
   ]
 }
