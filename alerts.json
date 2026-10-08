@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-07T14:02:15.141Z",
+  "lastUpdated": "2026-10-08T14:08:44.962Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -16,21 +16,6 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Sciopero9ottobre.aspx",
       "guaranteedBands": "inizio servizio-08:45, 15:00-18:00",
       "id": "atm-2026-10-04-sciopero-annunciato-da-al-cobas-e-confia"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
-      "title": "Dalì e la Moda",
-      "description": "Per gli abbonati annuali ATM e un accompagnatore, uno sconto del 30% sul biglietto d'ingresso della mostra a Milano. DALÍ E LA MODA Un viaggio inedito nell’universo di Salvador Dalí attraverso il linguaggio della moda, tra surrealismo, identità e immaginario contemporaneo. La mostra riunisce oltre 200 opere e documenti - dipinti, disegni, fotografie, abiti, filmati, gioielli e oggetti - dedicati per la prima volta all’influenza di Salvador Dalí sul mondo della moda e al ruolo decisivo che quest’",
-      "startDate": "2026-09-24T00:00:00.000Z",
-      "endDate": "2027-01-31T23:59:59.000Z",
-      "affectedServices": [
-        "ATM"
-      ],
-      "severity": "medium",
-      "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/DalìelaModa.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-09-24-dal-e-la-moda"
     },
     {
       "source": "atm",
