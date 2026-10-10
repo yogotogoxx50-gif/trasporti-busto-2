@@ -1,22 +1,7 @@
 {
-  "lastUpdated": "2026-10-09T13:57:15.604Z",
+  "lastUpdated": "2026-10-10T13:08:02.315Z",
   "windowDays": 14,
   "alerts": [
-    {
-      "source": "atm",
-      "type": "strike",
-      "title": "Sciopero annunciato da AL Cobas e Confial Trasporti venerdì 9 ottobre",
-      "description": "Venerdì 9 ottobre i sindacati AL Cobas e Confial Trasporti hanno proclamato uno sciopero che potrebbe avere conseguenze sul servizio delle nostre linee. Linee ATM a Milano Le nostre linee potrebbero non essere garantite dalle 8:45 alle 15 e dopo le 18, fino al termine del servizio . Funicolare Como-Brunate Il servizio potrebbe non essere garantito dalle 8:30 alle 16:30 e dopo le 19:30, fino al termine del servizio . Motivazioni dei sindacati che hanno proclamato lo sciopero Lo sciopero è stato p",
-      "startDate": "2026-10-04T12:50:08.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "ATM"
-      ],
-      "severity": "high",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Sciopero9ottobre.aspx",
-      "guaranteedBands": "inizio servizio-08:45, 15:00-18:00",
-      "id": "atm-2026-10-04-sciopero-annunciato-da-al-cobas-e-confia"
-    },
     {
       "source": "atm",
       "type": "disruption",
