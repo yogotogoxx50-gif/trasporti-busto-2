@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-15T12:14:15.168Z",
+  "lastUpdated": "2026-10-16T11:59:00.006Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -16,6 +16,34 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus56deviazione1110.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-10-11-bus-56-deviazione"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bus 47: deviazione",
+      "description": "È in programma la posa di una piattaforma aerea in via Binda. Le vetture cambiano percorso e fermate giovedì 29 ottobre, dalle 7 alle 18. Verso Romolo M2, i bus saltano le fermate di piazza Ohm, via Watt/piazza Ohm e via Watt/via Tosi. Fanno normale servizio fino a via Santa Rita da Cascia, poi deviano in via Ponti, dove fanno una fermata all’altezza del civico 47. Dopo l’incrocio con via Binda riprendono il normale percorso. Verso Bisceglie M1 , il percorso non cambia.",
+      "startDate": "2026-10-15T12:18:46.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus47.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-10-15-bus-47-deviazione"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bus 321: devia a Buccinasco",
+      "description": "Domenica 1° novembre è prevista la chiusura al traffico di via Emilia. Dall'inizio del servizio fino alle 20:30 , i bus saltano le fermate di via della Resistenza e via Emilia, nelle due direzioni . Dopo via Lario (verso Assago) e piazza San Biagio (verso Milano), deviano: fermano in via Don Minzoni e in viale Lombardia (alla fermata del bus 351).",
+      "startDate": "2026-10-15T13:51:12.000Z",
+      "endDate": null,
+      "affectedServices": [],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus321deviaaBuccinasco0111.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-10-15-bus-321-devia-a-buccinasco"
     }
   ]
 }
