@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-16T11:59:00.006Z",
+  "lastUpdated": "2026-10-17T11:14:32.211Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -44,6 +44,34 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus321deviaaBuccinasco0111.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-10-15-bus-321-devia-a-buccinasco"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Tram 10: cambiamenti al servizio",
+      "description": "Ci sono lavori stradali in viale Coni Zugna. Il 10 devia ed è in parte sostituito da bus. Il 10 fa servizio nelle due direzioni tra Lunigiana-Quinto Alpini-Cairoli Da viale Lunigiana i tram arrivano alla fermata di largo Quinto Alpini. Poi girano a sinistra in via Monti, via Boccaccio, Cadorna, Foro Buonaparte, via Tivoli, via Mercato, via Ponte Vetero. Fanno capolinea in via Cusani alla stessa fermata del tram 1, vicino alla stazione M1 di Cairoli. Da lì il servizio verso piazzale Cantore conti",
+      "startDate": "2026-10-15T17:45:35.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram10dev215ottobre.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-10-15-tram-10-cambiamenti-al-servizio"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 50: fermata sospesa",
+      "description": "Sono in programma lavori stradali in via Soderini. La fermata via Soderini/via Neri verso Cairoli è spostata dalle 9 del 21 ottobre . I bus fermano qualche metro più indietro.",
+      "startDate": "2026-10-16T13:13:41.000Z",
+      "endDate": null,
+      "affectedServices": [],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus50fermatasospesa1610.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-10-16-bus-50-fermata-sospesa"
     }
   ]
 }
