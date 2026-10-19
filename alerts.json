@@ -1,22 +1,7 @@
 {
-  "lastUpdated": "2026-10-18T11:51:12.549Z",
+  "lastUpdated": "2026-10-19T14:08:11.431Z",
   "windowDays": 14,
   "alerts": [
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Bus 56: deviazione",
-      "description": "Sono in corso lavori stradali in via Padova. Verso Quartiere Adriano/Crescenzago i bus dal capolinea di piazzale Loreto non proseguono per via Padova ma girano in via Costa. Passano in piazza Durante, via Leoncavallo, piazza Sire Raul e via Clitumno. Dalla fermata via Padova/via Esterle riprendono il loro solito percorso. I bus, quando deviano, fermano: in via Costa 20/A, in piazza Durante e in via Leoncavallo (dove ferma la linea 62). Verso Loreto M1 M2 il percorso non cambia.",
-      "startDate": "2026-10-11T15:09:56.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus56deviazione1110.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-10-11-bus-56-deviazione"
-    },
     {
       "source": "atm",
       "type": "disruption",
