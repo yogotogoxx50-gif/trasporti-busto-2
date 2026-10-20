@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-19T14:08:11.431Z",
+  "lastUpdated": "2026-10-20T12:21:54.731Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -57,6 +57,36 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus50fermatasospesa1610.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-10-16-bus-50-fermata-sospesa"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bus 60: capolinea spostato",
+      "description": "È in programma il posizionamento di una piattaforma aerea. Martedì 3 novembre , dalle 7 alle 19 , la fermata di capolinea Duomo M1 M3 è sospesa. I bus fermano in via Baracchini, al civico 10, dopo piazza Diaz.",
+      "startDate": "2026-10-20T06:46:45.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus60capolineaspostato.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-10-20-bus-60-capolinea-spostato"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 700: fermata sospesa",
+      "description": "Sono in programma lavori di riqualificazione della fermata. Dalle 9 di giovedì 22 ottobre, i bus verso Sesto FS M1 deviano e saltano la fermata piazza Hiroshima. Usate la fermata provvisoria qualche metro più avanti.",
+      "startDate": "2026-10-20T07:38:57.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus700fermatasospesa1026.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-10-20-bus-700-fermata-sospesa"
     }
   ]
 }
