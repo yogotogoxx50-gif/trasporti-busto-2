@@ -1,7 +1,56 @@
 {
-  "lastUpdated": "2026-10-22T12:36:00.313Z",
+  "lastUpdated": "2026-10-23T12:14:50.097Z",
   "windowDays": 14,
   "alerts": [
+    {
+      "source": "trenord",
+      "type": "strike",
+      "title": "Sciopero nazionale del 29-30 ottobre 2026",
+      "description": "Sciopero nazionale del 29-30 ottobre 2026",
+      "startDate": "2026-10-30T00:00:00.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "Trenord",
+        "ATM",
+        "Movibus"
+      ],
+      "severity": "high",
+      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
+      "guaranteedBands": "06:00-09:00, 18:00-21:00",
+      "id": "trenord-2026-10-30-sciopero-nazionale-del-29-30-ottobre-202"
+    },
+    {
+      "source": "trenord",
+      "type": "strike",
+      "title": "sciopero Nazionale di tutti i settori pubblici e privati che, per il settore ferroviario, si effettu",
+      "description": "sciopero Nazionale di tutti i settori pubblici e privati che, per il settore ferroviario, si effettuerà dalle ore 21:00 del 29 ottobre fino alle ore 20:59 del 30 ottobre 2026 e che potrà generare ri",
+      "startDate": "2026-10-30T00:00:00.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "Trenord",
+        "ATM",
+        "Movibus"
+      ],
+      "severity": "high",
+      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
+      "guaranteedBands": "06:00-09:00, 18:00-21:00",
+      "id": "trenord-2026-10-30-sciopero-nazionale-di-tutti-i-settori-pu"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bus 47: deviazione",
+      "description": "È in programma la posa di una piattaforma aerea in via Binda. Le vetture cambiano percorso e fermate giovedì 29 ottobre, dalle 7 alle 18. Verso Romolo M2, i bus saltano le fermate di piazza Ohm, via Watt/piazza Ohm e via Watt/via Tosi. Fanno normale servizio fino a via Santa Rita da Cascia, poi deviano in via Ponti, dove fanno una fermata all’altezza del civico 47. Dopo l’incrocio con via Binda riprendono il normale percorso. Verso Bisceglie M1 , il percorso non cambia. È in programma la posa di",
+      "startDate": "2026-10-15T12:18:46.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus47.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-10-15-bus-47-deviazione"
+    },
     {
       "source": "atm",
       "type": "works",
@@ -16,19 +65,6 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram10dev215ottobre.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-10-15-tram-10-cambiamenti-al-servizio"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Bus 50: fermata sospesa",
-      "description": "Sono in programma lavori stradali in via Soderini. La fermata via Soderini/via Neri verso Cairoli è spostata dalle 9 del 21 ottobre . I bus fermano qualche metro più indietro.",
-      "startDate": "2026-10-16T13:13:41.000Z",
-      "endDate": null,
-      "affectedServices": [],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus50fermatasospesa1610.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-10-16-bus-50-fermata-sospesa"
     },
     {
       "source": "atm",
@@ -74,6 +110,21 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/bsu5581aspro.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-10-22-bus-55-q55-e-81-fermata-spostata"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 44: fermata sospesa",
+      "description": "Sono in programma lavori stradali. Dalle 8 del 3 alle 20 del 13 novembre, i bus verso Cascina Gobba M2 deviano e saltano la fermata Gorla M1. Usate la fermata provvisoria 40 metri dopo, in via San Gabriele all’altezza del numero civico 10.",
+      "startDate": "2026-10-23T08:32:34.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus44fermatasospesa1026.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-10-23-bus-44-fermata-sospesa"
     }
   ]
 }
