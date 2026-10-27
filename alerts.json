@@ -1,7 +1,22 @@
 {
-  "lastUpdated": "2026-10-26T13:41:15.172Z",
+  "lastUpdated": "2026-10-27T12:50:02.933Z",
   "windowDays": 14,
   "alerts": [
+    {
+      "source": "atm",
+      "type": "strike",
+      "title": "Sciopero generale nazionale venerdì 30 ottobre",
+      "description": "Milano, 26 ottobre 2026 - Per venerdì 30 ottobre la Confederazione nazionale Unione Sindacale di base (USB), ha proclamato uno sciopero nazionale generale di 24 ore che interesserà i lavoratori di Atm SpA. A Milano l’agitazione del personale viaggiante e di esercizio delle linee di superficie e metropolitane sarà possibile dalle 8.45 alle 15 e dalle 18 fino al termine del servizio. La Commissione di Garanzia e il Ministero stanno valutando eventuali interventi. Seguiranno aggiornamenti. Lo sciop",
+      "startDate": "2026-10-26T00:00:00.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "ATM"
+      ],
+      "severity": "high",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Sciopero.aspx",
+      "guaranteedBands": "inizio servizio-08:45, 15:00-18:00",
+      "id": "atm-2026-10-26-sciopero-generale-nazionale-venerd-30-ot"
+    },
     {
       "source": "trenord",
       "type": "strike",
@@ -69,36 +84,6 @@
     {
       "source": "atm",
       "type": "disruption",
-      "title": "Bus 60: capolinea spostato",
-      "description": "È in programma il posizionamento di una piattaforma aerea. Martedì 3 novembre , dalle 7 alle 19 , la fermata di capolinea Duomo M1 M3 è sospesa. I bus fermano in via Baracchini, al civico 10, dopo piazza Diaz.",
-      "startDate": "2026-10-20T06:46:45.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus60capolineaspostato.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-10-20-bus-60-capolinea-spostato"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Bus 700: fermata sospesa",
-      "description": "Sono in programma lavori di riqualificazione della fermata. Dalle 9 di giovedì 22 ottobre, i bus verso Sesto FS M1 deviano e saltano la fermata piazza Hiroshima. Usate la fermata provvisoria qualche metro più avanti.",
-      "startDate": "2026-10-20T07:38:57.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus700fermatasospesa1026.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-10-20-bus-700-fermata-sospesa"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
       "title": "Bus 55, Q55 e 81: fermata spostata",
       "description": "È prevista la posa di un ponteggio. Da lunedì 2 novembre per circa 5 mesi, la fermata di piazza Aspromonte verso Loreto (linea 55), Quartiere Feltre (linea Q55) e Sesto Marelli M1 (linea 81) viene spostata indietro in via Lulli, 7.",
       "startDate": "2026-10-22T09:35:42.000Z",
@@ -155,6 +140,34 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram4cambiamentialservizio29ottobre.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-10-23-tram-4-cambiamenti-al-servizio"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 53 e 713: fermata sospesa",
+      "description": "Sono in programma lavori alla fermata. La fermata via Crescenzago/via Lombardia in direzione Lambrate (bus 53) e Sesto-via Rimembranze (bus 713) è sospesa dalle 9 del 28 ottobre. Usate le fermate prima o dopo: via Marx/via Livorno Quartiere Adriano (bus 53) via Crescenzago/Cimitero (bus 713)",
+      "startDate": "2026-10-27T07:53:51.000Z",
+      "endDate": null,
+      "affectedServices": [],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus53e713.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-10-27-bus-53-e-713-fermata-sospesa"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Rinnoviamo gratis la vostra tessera in scadenza",
+      "description": "Scade entro il 31/03/2027? Ecco come rinnovarla di un altro anno, senza costi Se è una tessera ordinaria, senior, studenti o in convenzione potete rinnovarla senza costi ancora per un anno. La vostra tessera ha un profilo studenti? Appoggiatela ai totem in una delle stazioni della metropolitana. Si rinnova automaticamente . Rinnovando la tessera si rinnova anche il profilo. E ci potete caricare per altri 12 mesi abbonamenti under 26 (interurbani) o under 27 (abbonamenti agevolati urbani del Comu",
+      "startDate": "2027-03-31T00:00:00.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "ATM"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/prorogascadenzatessera2025.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2027-03-31-rinnoviamo-gratis-la-vostra-tessera-in-s"
     }
   ]
 }
