@@ -1,21 +1,23 @@
 {
-  "lastUpdated": "2026-10-27T12:50:02.933Z",
+  "lastUpdated": "2026-10-28T13:38:41.177Z",
   "windowDays": 14,
   "alerts": [
     {
       "source": "atm",
       "type": "strike",
-      "title": "Sciopero generale nazionale venerdì 30 ottobre",
-      "description": "Milano, 26 ottobre 2026 - Per venerdì 30 ottobre la Confederazione nazionale Unione Sindacale di base (USB), ha proclamato uno sciopero nazionale generale di 24 ore che interesserà i lavoratori di Atm SpA. A Milano l’agitazione del personale viaggiante e di esercizio delle linee di superficie e metropolitane sarà possibile dalle 8.45 alle 15 e dalle 18 fino al termine del servizio. La Commissione di Garanzia e il Ministero stanno valutando eventuali interventi. Seguiranno aggiornamenti. Lo sciop",
-      "startDate": "2026-10-26T00:00:00.000Z",
+      "title": "Sciopero di venerdì 30 ottobre rimandato dal Ministero dei Trasporti",
+      "description": "Il Ministero dei Trasporti con l’ordinanza di ieri ha rimandato lo sciopero generale nazionale di venerdì 30 ottobre proclamato dal sindacato USB, per quanto riguarda il settore del trasporto pubblico. Il Ministero ha ordinato ai lavoratori di svolgere i loro turni di lavoro previsti.",
+      "startDate": "2026-10-26T16:28:38.000Z",
       "endDate": null,
       "affectedServices": [
-        "ATM"
+        "Trenord",
+        "ATM",
+        "Movibus"
       ],
       "severity": "high",
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Sciopero.aspx",
       "guaranteedBands": "inizio servizio-08:45, 15:00-18:00",
-      "id": "atm-2026-10-26-sciopero-generale-nazionale-venerd-30-ot"
+      "id": "atm-2026-10-26-sciopero-di-venerd-30-ottobre-rimandato-"
     },
     {
       "source": "trenord",
@@ -37,8 +39,8 @@
     {
       "source": "trenord",
       "type": "strike",
-      "title": "sciopero Nazionale di tutti i settori pubblici e privati che, per il settore ferroviario, si effettu",
-      "description": "sciopero Nazionale di tutti i settori pubblici e privati che, per il settore ferroviario, si effettuerà dalle ore 21:00 del 29 ottobre fino alle ore 20:59 del 30 ottobre 2026 e che potrà generare ri",
+      "title": "sciopero nazionale indetto dal sindacato USB dalle ore 21:00 del 29 ottobre alle ore 20:59 del 30 ot",
+      "description": "sciopero nazionale indetto dal sindacato USB dalle ore 21:00 del 29 ottobre alle ore 20:59 del 30 ottobre 2026 è stato differito ad altra data per il trasporto ferroviario, a seguito di precettazione del Mini",
       "startDate": "2026-10-30T00:00:00.000Z",
       "endDate": null,
       "affectedServices": [
@@ -49,7 +51,22 @@
       "severity": "high",
       "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
       "guaranteedBands": "06:00-09:00, 18:00-21:00",
-      "id": "trenord-2026-10-30-sciopero-nazionale-di-tutti-i-settori-pu"
+      "id": "trenord-2026-10-30-sciopero-nazionale-indetto-dal-sindacato"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Dalì e la Moda",
+      "description": "Per gli abbonati annuali ATM e un accompagnatore, uno sconto del 30% sul biglietto d'ingresso della mostra a Milano. DALÍ E LA MODA Un viaggio inedito nell’universo di Salvador Dalí attraverso il linguaggio della moda, tra surrealismo, identità e immaginario contemporaneo. La mostra riunisce oltre 200 opere e documenti - dipinti, disegni, fotografie, abiti, filmati, gioielli e oggetti - dedicati per la prima volta all’influenza di Salvador Dalí sul mondo della moda e al ruolo decisivo che quest’",
+      "startDate": "2026-09-24T00:00:00.000Z",
+      "endDate": "2027-01-31T23:59:59.000Z",
+      "affectedServices": [
+        "ATM"
+      ],
+      "severity": "medium",
+      "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/DalìelaModa.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-09-24-dal-e-la-moda"
     },
     {
       "source": "atm",
@@ -80,6 +97,36 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram10dev215ottobre.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-10-15-tram-10-cambiamenti-al-servizio"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bus 60: capolinea spostato",
+      "description": "È in programma il posizionamento di una piattaforma aerea. Mercoledì novembre , dalle 7 alle 19 , la fermata di capolinea Duomo M1 M3 è sospesa. I bus fermano in via Baracchini, al numero civico 10, dopo piazza Diaz.",
+      "startDate": "2026-10-20T06:46:45.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus60capolineaspostato.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-10-20-bus-60-capolinea-spostato"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 700: fermata sospesa",
+      "description": "Ci sono lavori di riqualificazione della fermata. I bus verso Sesto FS M1 deviano e saltano la fermata piazza Hiroshima. Usate la fermata provvisoria qualche metro più avanti.",
+      "startDate": "2026-10-20T07:38:57.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus700fermatasospesa1026.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-10-20-bus-700-fermata-sospesa"
     },
     {
       "source": "atm",
