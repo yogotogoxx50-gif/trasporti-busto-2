@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-10-28T13:38:41.177Z",
+  "lastUpdated": "2026-10-29T13:48:02.701Z",
   "windowDays": 14,
   "alerts": [
     {
       "source": "atm",
       "type": "strike",
-      "title": "Sciopero di venerdì 30 ottobre rimandato dal Ministero dei Trasporti",
-      "description": "Il Ministero dei Trasporti con l’ordinanza di ieri ha rimandato lo sciopero generale nazionale di venerdì 30 ottobre proclamato dal sindacato USB, per quanto riguarda il settore del trasporto pubblico. Il Ministero ha ordinato ai lavoratori di svolgere i loro turni di lavoro previsti.",
+      "title": "Venerdì 30 non c'è sciopero sulle nostre linee",
+      "description": "Con l'ordinanza di martedì 27, il Ministero dei Trasporti ha rimandato lo sciopero generale nazionale annunciato dal sindacato USB nel settore del trasporto pubblico per venerdì 30 ottobre. Il Ministero ha ordinato ai lavoratori di svolgere i loro turni di lavoro previsti.",
       "startDate": "2026-10-26T16:28:38.000Z",
       "endDate": null,
       "affectedServices": [
@@ -17,7 +17,7 @@
       "severity": "high",
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Sciopero.aspx",
       "guaranteedBands": "inizio servizio-08:45, 15:00-18:00",
-      "id": "atm-2026-10-26-sciopero-di-venerd-30-ottobre-rimandato-"
+      "id": "atm-2026-10-26-venerd-30-non-c-sciopero-sulle-nostre-li"
     },
     {
       "source": "trenord",
@@ -70,21 +70,6 @@
     },
     {
       "source": "atm",
-      "type": "disruption",
-      "title": "Bus 47: deviazione",
-      "description": "È in programma la posa di una piattaforma aerea in via Binda. Le vetture cambiano percorso e fermate giovedì 29 ottobre, dalle 7 alle 18. Verso Romolo M2, i bus saltano le fermate di piazza Ohm, via Watt/piazza Ohm e via Watt/via Tosi. Fanno normale servizio fino a via Santa Rita da Cascia, poi deviano in via Ponti, dove fanno una fermata all’altezza del civico 47. Dopo l’incrocio con via Binda riprendono il normale percorso. Verso Bisceglie M1 , il percorso non cambia. È in programma la posa di",
-      "startDate": "2026-10-15T12:18:46.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus47.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-10-15-bus-47-deviazione"
-    },
-    {
-      "source": "atm",
       "type": "works",
       "title": "Tram 10: cambiamenti al servizio",
       "description": "Ci sono lavori stradali in viale Coni Zugna. Il 10 devia ed è in parte sostituito da bus. Il 10 fa servizio nelle due direzioni tra Lunigiana-Quinto Alpini-Cairoli Da viale Lunigiana i tram arrivano alla fermata di largo Quinto Alpini. Poi girano a sinistra in via Monti, via Boccaccio, Cadorna, Foro Buonaparte, via Tivoli, via Mercato, via Ponte Vetero. Fanno capolinea in via Cusani alla stessa fermata del tram 1, vicino alla stazione M1 di Cairoli. Da lì il servizio verso piazzale Cantore conti",
@@ -127,21 +112,6 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus700fermatasospesa1026.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-10-20-bus-700-fermata-sospesa"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
-      "title": "Bus 55, Q55 e 81: fermata spostata",
-      "description": "È prevista la posa di un ponteggio. Da lunedì 2 novembre per circa 5 mesi, la fermata di piazza Aspromonte verso Loreto (linea 55), Quartiere Feltre (linea Q55) e Sesto Marelli M1 (linea 81) viene spostata indietro in via Lulli, 7.",
-      "startDate": "2026-10-22T09:35:42.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/bsu5581aspro.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-10-22-bus-55-q55-e-81-fermata-spostata"
     },
     {
       "source": "atm",
