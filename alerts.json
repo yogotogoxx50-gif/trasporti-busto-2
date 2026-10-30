@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-29T13:48:02.701Z",
+  "lastUpdated": "2026-10-30T13:41:41.328Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -18,6 +18,19 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Sciopero.aspx",
       "guaranteedBands": "inizio servizio-08:45, 15:00-18:00",
       "id": "atm-2026-10-26-venerd-30-non-c-sciopero-sulle-nostre-li"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Tram 2, 4, 12 e 14: cambiano servizio dopo le 21",
+      "description": "Dal 3 al 5 novembre sono in programma lavori in via Bramante e interventi ai binari in via Legnano. Dopo le 21 , i tram 2, 4, 12 e 14 sono sostituiti dal bus B14 in una tratta. Tram 2 È interrotto tra Cairoli e Baiamonti. Fa servizio su due tratte separate: Negrelli-Cairoli (via Cusani) Bausan-Baiamonti Tram 4 Fa servizio tra Lagosta e Baiamonti. Da questa fermata gira e termina a Cenisio. È interrotto tra Baiamonti e Cairoli. Tram 12 È interrotto tra Cairoli e Monumentale. Fa servizio su due tr",
+      "startDate": "2026-10-29T20:26:56.000Z",
+      "endDate": null,
+      "affectedServices": [],
+      "severity": "high",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram2,4,12e14.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-10-29-tram-2-4-12-e-14-cambiano-servizio-dopo-"
     },
     {
       "source": "trenord",
@@ -70,21 +83,6 @@
     },
     {
       "source": "atm",
-      "type": "works",
-      "title": "Tram 10: cambiamenti al servizio",
-      "description": "Ci sono lavori stradali in viale Coni Zugna. Il 10 devia ed è in parte sostituito da bus. Il 10 fa servizio nelle due direzioni tra Lunigiana-Quinto Alpini-Cairoli Da viale Lunigiana i tram arrivano alla fermata di largo Quinto Alpini. Poi girano a sinistra in via Monti, via Boccaccio, Cadorna, Foro Buonaparte, via Tivoli, via Mercato, via Ponte Vetero. Fanno capolinea in via Cusani alla stessa fermata del tram 1, vicino alla stazione M1 di Cairoli. Da lì il servizio verso piazzale Cantore conti",
-      "startDate": "2026-10-15T17:45:35.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram10dev215ottobre.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-10-15-tram-10-cambiamenti-al-servizio"
-    },
-    {
-      "source": "atm",
       "type": "disruption",
       "title": "Bus 60: capolinea spostato",
       "description": "È in programma il posizionamento di una piattaforma aerea. Mercoledì novembre , dalle 7 alle 19 , la fermata di capolinea Duomo M1 M3 è sospesa. I bus fermano in via Baracchini, al numero civico 10, dopo piazza Diaz.",
@@ -112,51 +110,6 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus700fermatasospesa1026.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-10-20-bus-700-fermata-sospesa"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Bus 44: fermata sospesa",
-      "description": "Sono in programma lavori stradali. Dalle 8 del 3 alle 20 del 13 novembre, i bus verso Cascina Gobba M2 deviano e saltano la fermata Gorla M1. Usate la fermata provvisoria 40 metri dopo, in via San Gabriele all’altezza del numero civico 10.",
-      "startDate": "2026-10-23T08:32:34.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus44fermatasospesa1026.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-10-23-bus-44-fermata-sospesa"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Bus 51, 81 e NM1: fermata sospesa",
-      "description": "Sono in programma lavori stradali. La fermata viale Monza/via Empedocle in direzione Zara (bus 51), in direzione Sesto Marelli (bus 81) e in direzione Sesto FS (bus NM1) è sospesa dalle 7 di giovedì 5 novembre. Usate la fermata 30 metri indietro, in viale Monza 296.",
-      "startDate": "2026-10-23T13:04:49.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus51,81eNM1fermatasospesa.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-10-23-bus-51-81-e-nm1-fermata-sospesa"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
-      "title": "Tram 4: cambiamenti al servizio",
-      "description": "È in programma un evento in piazza Castello. La linea cambia servizio giovedì 29 ottobre, dalle 17 alle 23:30. I tram fanno servizio tra piazzale Lagosta e la fermata Lanza M2. Poi proseguono per via Tivoli, via Mercato, via Ponte Vetero e terminano la corsa in via Cusani. Da lì ripartono al contrario. Salta le fermate di piazza Castello/Cairoli M1 e Ricasoli.",
-      "startDate": "2026-10-23T15:09:21.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram4cambiamentialservizio29ottobre.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-10-23-tram-4-cambiamenti-al-servizio"
     },
     {
       "source": "atm",
