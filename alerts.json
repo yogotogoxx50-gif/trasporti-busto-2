@@ -1,24 +1,7 @@
 {
-  "lastUpdated": "2026-10-30T13:41:41.328Z",
+  "lastUpdated": "2026-10-31T13:10:09.519Z",
   "windowDays": 14,
   "alerts": [
-    {
-      "source": "atm",
-      "type": "strike",
-      "title": "Venerdì 30 non c'è sciopero sulle nostre linee",
-      "description": "Con l'ordinanza di martedì 27, il Ministero dei Trasporti ha rimandato lo sciopero generale nazionale annunciato dal sindacato USB nel settore del trasporto pubblico per venerdì 30 ottobre. Il Ministero ha ordinato ai lavoratori di svolgere i loro turni di lavoro previsti.",
-      "startDate": "2026-10-26T16:28:38.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "Trenord",
-        "ATM",
-        "Movibus"
-      ],
-      "severity": "high",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Sciopero.aspx",
-      "guaranteedBands": "inizio servizio-08:45, 15:00-18:00",
-      "id": "atm-2026-10-26-venerd-30-non-c-sciopero-sulle-nostre-li"
-    },
     {
       "source": "atm",
       "type": "works",
@@ -31,40 +14,6 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram2,4,12e14.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-10-29-tram-2-4-12-e-14-cambiano-servizio-dopo-"
-    },
-    {
-      "source": "trenord",
-      "type": "strike",
-      "title": "Sciopero nazionale del 29-30 ottobre 2026",
-      "description": "Sciopero nazionale del 29-30 ottobre 2026",
-      "startDate": "2026-10-30T00:00:00.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "Trenord",
-        "ATM",
-        "Movibus"
-      ],
-      "severity": "high",
-      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
-      "guaranteedBands": "06:00-09:00, 18:00-21:00",
-      "id": "trenord-2026-10-30-sciopero-nazionale-del-29-30-ottobre-202"
-    },
-    {
-      "source": "trenord",
-      "type": "strike",
-      "title": "sciopero nazionale indetto dal sindacato USB dalle ore 21:00 del 29 ottobre alle ore 20:59 del 30 ot",
-      "description": "sciopero nazionale indetto dal sindacato USB dalle ore 21:00 del 29 ottobre alle ore 20:59 del 30 ottobre 2026 è stato differito ad altra data per il trasporto ferroviario, a seguito di precettazione del Mini",
-      "startDate": "2026-10-30T00:00:00.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "Trenord",
-        "ATM",
-        "Movibus"
-      ],
-      "severity": "high",
-      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
-      "guaranteedBands": "06:00-09:00, 18:00-21:00",
-      "id": "trenord-2026-10-30-sciopero-nazionale-indetto-dal-sindacato"
     },
     {
       "source": "atm",
