@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-01T13:53:39.754Z",
+  "lastUpdated": "2026-11-02T16:39:15.980Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -72,6 +72,36 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus53e713.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-10-27-bus-53-e-713-fermata-sospesa"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "App ATM: avviso di aggiornamento",
+      "description": "English version Mercoledì 18 novembre sarà disponibile un aggiornamento importante dell’app . La versione aggiornata presenterà una homepage e un menu di navigazione migliorati. Qui sotto trovate le cose da fare e da sapere. Tenete a portata di mano email e password per fare l’accesso dopo l’aggiornamento Se siete registrati, il 18 novembre dovrete rifare l’accesso per entrare nel vostro account . Se avete dimenticato la password , recuperatela . Il 17 novembre, dalle ore 20 Fino alla mattina de",
+      "startDate": "2026-11-02T07:56:05.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "ATM"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/AppATMavvisodiaggiornamento.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-11-02-app-atm-avviso-di-aggiornamento"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 49 e 78: fermata sospesa",
+      "description": "Sono in programma lavori agli alberi in via Olivieri. La fermata via Venegoni/via Olivieri verso San Cristoforo M4 (Bus 49) e verso Bisceglie M1 (Bus 78) è sospesa il 10 novembre dalle 10 alle 12. Usate le fermate prima o dopo: via San Giusto/Ospedale San Carlo (bus 49) via Venegoni/via San Pio II (bus 78) via Olivieri 12 (bus 49 e 78)",
+      "startDate": "2026-11-02T13:47:29.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus49e78fermatasospesa.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-11-02-bus-49-e-78-fermata-sospesa"
     },
     {
       "source": "atm",
