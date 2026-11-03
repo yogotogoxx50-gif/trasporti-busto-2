@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-02T16:39:15.980Z",
+  "lastUpdated": "2026-11-03T14:43:50.569Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -33,49 +33,6 @@
     {
       "source": "atm",
       "type": "disruption",
-      "title": "Bus 60: capolinea spostato",
-      "description": "È in programma il posizionamento di una piattaforma aerea. Mercoledì novembre , dalle 7 alle 19 , la fermata di capolinea Duomo M1 M3 è sospesa. I bus fermano in via Baracchini, al numero civico 10, dopo piazza Diaz.",
-      "startDate": "2026-10-20T06:46:45.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus60capolineaspostato.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-10-20-bus-60-capolinea-spostato"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Bus 700: fermata sospesa",
-      "description": "Ci sono lavori di riqualificazione della fermata. I bus verso Sesto FS M1 deviano e saltano la fermata piazza Hiroshima. Usate la fermata provvisoria qualche metro più avanti.",
-      "startDate": "2026-10-20T07:38:57.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus700fermatasospesa1026.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-10-20-bus-700-fermata-sospesa"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Bus 53 e 713: fermata sospesa",
-      "description": "Sono in programma lavori alla fermata. La fermata via Crescenzago/via Lombardia in direzione Lambrate (bus 53) e Sesto-via Rimembranze (bus 713) è sospesa dalle 9 del 28 ottobre. Usate le fermate prima o dopo: via Marx/via Livorno Quartiere Adriano (bus 53) via Crescenzago/Cimitero (bus 713)",
-      "startDate": "2026-10-27T07:53:51.000Z",
-      "endDate": null,
-      "affectedServices": [],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus53e713.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-10-27-bus-53-e-713-fermata-sospesa"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
       "title": "App ATM: avviso di aggiornamento",
       "description": "English version Mercoledì 18 novembre sarà disponibile un aggiornamento importante dell’app . La versione aggiornata presenterà una homepage e un menu di navigazione migliorati. Qui sotto trovate le cose da fare e da sapere. Tenete a portata di mano email e password per fare l’accesso dopo l’aggiornamento Se siete registrati, il 18 novembre dovrete rifare l’accesso per entrare nel vostro account . Se avete dimenticato la password , recuperatela . Il 17 novembre, dalle ore 20 Fino alla mattina de",
       "startDate": "2026-11-02T07:56:05.000Z",
@@ -102,21 +59,6 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus49e78fermatasospesa.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-11-02-bus-49-e-78-fermata-sospesa"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
-      "title": "Rinnoviamo gratis la vostra tessera in scadenza",
-      "description": "Scade entro il 31/03/2027? Ecco come rinnovarla di un altro anno, senza costi Se è una tessera ordinaria, senior, studenti o in convenzione potete rinnovarla senza costi ancora per un anno. La vostra tessera ha un profilo studenti? Appoggiatela ai totem in una delle stazioni della metropolitana. Si rinnova automaticamente . Rinnovando la tessera si rinnova anche il profilo. E ci potete caricare per altri 12 mesi abbonamenti under 26 (interurbani) o under 27 (abbonamenti agevolati urbani del Comu",
-      "startDate": "2027-03-31T00:00:00.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "ATM"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/prorogascadenzatessera2025.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2027-03-31-rinnoviamo-gratis-la-vostra-tessera-in-s"
     }
   ]
 }
