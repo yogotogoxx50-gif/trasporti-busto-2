@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-03T14:43:50.569Z",
+  "lastUpdated": "2026-11-04T14:55:59.793Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -17,18 +17,18 @@
     },
     {
       "source": "atm",
-      "type": "disruption",
-      "title": "Dalì e la Moda",
-      "description": "Per gli abbonati annuali ATM e un accompagnatore, uno sconto del 30% sul biglietto d'ingresso della mostra a Milano. DALÍ E LA MODA Un viaggio inedito nell’universo di Salvador Dalí attraverso il linguaggio della moda, tra surrealismo, identità e immaginario contemporaneo. La mostra riunisce oltre 200 opere e documenti - dipinti, disegni, fotografie, abiti, filmati, gioielli e oggetti - dedicati per la prima volta all’influenza di Salvador Dalí sul mondo della moda e al ruolo decisivo che quest’",
-      "startDate": "2026-09-24T00:00:00.000Z",
-      "endDate": "2027-01-31T23:59:59.000Z",
+      "type": "works",
+      "title": "Bus 51, 81 e NM1: fermata sospesa",
+      "description": "Sono in programma lavori stradali. La fermata viale Monza/via Empedocle in direzione Zara (bus 51), in direzione Sesto Marelli (bus 81) e in direzione Sesto FS (bus NM1) è sospesa dalle 7 di giovedì 19 novembre. Usate la fermata 30 metri indietro, in viale Monza 296.",
+      "startDate": "2026-10-23T13:04:49.000Z",
+      "endDate": null,
       "affectedServices": [
-        "ATM"
+        "M1"
       ],
-      "severity": "medium",
-      "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/DalìelaModa.aspx",
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus51,81eNM1fermatasospesa.aspx",
       "guaranteedBands": null,
-      "id": "atm-2026-09-24-dal-e-la-moda"
+      "id": "atm-2026-10-23-bus-51-81-e-nm1-fermata-sospesa"
     },
     {
       "source": "atm",
@@ -59,6 +59,36 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus49e78fermatasospesa.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-11-02-bus-49-e-78-fermata-sospesa"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bus 61 e 93: deviazione",
+      "description": "È in programma la posa di una piattaforma aerea in piazzale Gorini, il 21 e il 22 novembre, dalle 7 alle 19. Bus 61 Verso Duomo M1 M3 , i bus deviano e saltano le fermate di via Strambio/Ist. dei Tumori e piazzale Gorini/Ist. dei Tumori. Dopo largo Murani, non vanno in via Strambio, ma passano in via Golgi, via Celoria e via Ponzio. Riprendono il solito percorso da via Botticelli. Verso largo Murani il percorso non cambia. Filobus 93 Verso Lambrate Fs , i bus deviano e saltano la fermata via Cel",
+      "startDate": "2026-11-03T12:42:27.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus61e93deviazione.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-11-03-bus-61-e-93-deviazione"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 57: fermata sospesa",
+      "description": "Sono in programma lavori stradali in via Traversi. La fermata via Satta/via Traversi verso Cairoli M1 è sospesa dal 9 al 22 novembre, dopo le 21. Usate le fermate prima o dopo: via Satta/via Pascarella via Satta/via Lessona",
+      "startDate": "2026-11-03T12:43:23.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus57fermatasospesa311.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-11-03-bus-57-fermata-sospesa"
     }
   ]
 }
