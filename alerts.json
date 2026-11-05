@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-04T14:55:59.793Z",
+  "lastUpdated": "2026-11-05T15:00:52.270Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -18,8 +18,8 @@
     {
       "source": "atm",
       "type": "works",
-      "title": "Bus 51, 81 e NM1: fermata sospesa",
-      "description": "Sono in programma lavori stradali. La fermata viale Monza/via Empedocle in direzione Zara (bus 51), in direzione Sesto Marelli (bus 81) e in direzione Sesto FS (bus NM1) è sospesa dalle 7 di giovedì 19 novembre. Usate la fermata 30 metri indietro, in viale Monza 296.",
+      "title": "Bus 51 e NM1: fermata spostata",
+      "description": "Sono in programma lavori stradali. La fermata viale Monza/via Empedocle, verso Zara (bus 51) e Sesto FS (bus NM1), è sospesa dalle 7 del 19 novembre . Usate la fermata 30 metri più indietro, in viale Monza 296.",
       "startDate": "2026-10-23T13:04:49.000Z",
       "endDate": null,
       "affectedServices": [
@@ -28,7 +28,7 @@
       "severity": "low",
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus51,81eNM1fermatasospesa.aspx",
       "guaranteedBands": null,
-      "id": "atm-2026-10-23-bus-51-81-e-nm1-fermata-sospesa"
+      "id": "atm-2026-10-23-bus-51-e-nm1-fermata-spostata"
     },
     {
       "source": "atm",
@@ -77,18 +77,33 @@
     },
     {
       "source": "atm",
-      "type": "works",
-      "title": "Bus 57: fermata sospesa",
-      "description": "Sono in programma lavori stradali in via Traversi. La fermata via Satta/via Traversi verso Cairoli M1 è sospesa dal 9 al 22 novembre, dopo le 21. Usate le fermate prima o dopo: via Satta/via Pascarella via Satta/via Lessona",
-      "startDate": "2026-11-03T12:43:23.000Z",
+      "type": "disruption",
+      "title": "Bus 81: cambiamenti alle fermate",
+      "description": "In questa pagina trovate tutti i cambiamenti alle fermate dovuti ai cantieri stradali lungo la linea. Posa di un ponteggio in piazza Aspromonte Da lunedì 2 novembre , per circa 5 mesi , la fermata di piazza Aspromonte, verso Sesto Marelli M1 , è spostata più indietro, al numero 7 di via Lulli. Cantiere stradale in via Porpora Dalle 8:30 del 10 novembre , per circa 2 settimane , la fermata di via Porpora/via Teodosio, verso Sesto Marelli M1 , è spostata. I bus fermano in via Porpora 125. Anche la",
+      "startDate": "2026-11-04T16:50:53.000Z",
       "endDate": null,
       "affectedServices": [
         "M1"
       ],
       "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus57fermatasospesa311.aspx",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus81cambiamentiallefermate.aspx",
       "guaranteedBands": null,
-      "id": "atm-2026-11-03-bus-57-fermata-sospesa"
+      "id": "atm-2026-11-04-bus-81-cambiamenti-alle-fermate"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Filobus 90 e 91: fermate spostate",
+      "description": "Sono in programma lavori stradali. I filobus viaggiano sulla corsia laterale tra piazzale Zavattari e piazza Stuparich nelle notti dal 9 al 13 novembre, dalle 21 alle 6. Filobus 90 Il capolinea Lotto M1 M5 è spostato in viale Migliara, prima di piazzale Lotto. La fermata piazza Stuparich, verso Lodi M3 , è spostata sulla corsia laterale, dove fermano i bus della linea 48. Filobus 91 Fa capolinea provvisorio in viale Migliara 9 anziché in piazzale Lotto.",
+      "startDate": "2026-11-04T17:57:40.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Filobus90e91fermatespostate9nove.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-11-04-filobus-90-e-91-fermate-spostate"
     }
   ]
 }
