@@ -1,35 +1,7 @@
 {
-  "lastUpdated": "2026-11-05T15:00:52.270Z",
+  "lastUpdated": "2026-11-06T14:40:40.692Z",
   "windowDays": 14,
   "alerts": [
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Tram 2, 4, 12 e 14: cambiano servizio dopo le 21",
-      "description": "Dal 3 al 5 novembre sono in programma lavori in via Bramante e interventi ai binari in via Legnano. Dopo le 21 , i tram 2, 4, 12 e 14 sono sostituiti dal bus B14 in una tratta. Tram 2 È interrotto tra Cairoli e Baiamonti. Fa servizio su due tratte separate: Negrelli-Cairoli (via Cusani) Bausan-Baiamonti Tram 4 Fa servizio tra Lagosta e Baiamonti. Da questa fermata gira e termina a Cenisio. È interrotto tra Baiamonti e Cairoli. Tram 12 È interrotto tra Cairoli e Monumentale. Fa servizio su due tr",
-      "startDate": "2026-10-29T20:26:56.000Z",
-      "endDate": null,
-      "affectedServices": [],
-      "severity": "high",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram2,4,12e14.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-10-29-tram-2-4-12-e-14-cambiano-servizio-dopo-"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Bus 51 e NM1: fermata spostata",
-      "description": "Sono in programma lavori stradali. La fermata viale Monza/via Empedocle, verso Zara (bus 51) e Sesto FS (bus NM1), è sospesa dalle 7 del 19 novembre . Usate la fermata 30 metri più indietro, in viale Monza 296.",
-      "startDate": "2026-10-23T13:04:49.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus51,81eNM1fermatasospesa.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-10-23-bus-51-e-nm1-fermata-spostata"
-    },
     {
       "source": "atm",
       "type": "disruption",
@@ -93,17 +65,15 @@
     {
       "source": "atm",
       "type": "works",
-      "title": "Filobus 90 e 91: fermate spostate",
-      "description": "Sono in programma lavori stradali. I filobus viaggiano sulla corsia laterale tra piazzale Zavattari e piazza Stuparich nelle notti dal 9 al 13 novembre, dalle 21 alle 6. Filobus 90 Il capolinea Lotto M1 M5 è spostato in viale Migliara, prima di piazzale Lotto. La fermata piazza Stuparich, verso Lodi M3 , è spostata sulla corsia laterale, dove fermano i bus della linea 48. Filobus 91 Fa capolinea provvisorio in viale Migliara 9 anziché in piazzale Lotto.",
-      "startDate": "2026-11-04T17:57:40.000Z",
+      "title": "Tram 5: fermata spostata",
+      "description": "Sono in programma lavori stradali. La fermata via Beato Angelico/via Colombo, verso Niguarda , è sospesa da lunedì 9 novembre. Usate la fermata provvisoria qualche metro più avanti, in via Beato Angelico 11.",
+      "startDate": "2026-11-05T15:13:58.000Z",
       "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
+      "affectedServices": [],
       "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Filobus90e91fermatespostate9nove.aspx",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram5fermataspostata5_11.aspx",
       "guaranteedBands": null,
-      "id": "atm-2026-11-04-filobus-90-e-91-fermate-spostate"
+      "id": "atm-2026-11-05-tram-5-fermata-spostata"
     }
   ]
 }
