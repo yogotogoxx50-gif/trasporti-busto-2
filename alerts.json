@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-09T16:57:09.309Z",
+  "lastUpdated": "2026-11-10T15:17:26.357Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -20,6 +20,21 @@
     {
       "source": "atm",
       "type": "disruption",
+      "title": "Cleopatra: The Truth",
+      "description": "Per gli abbonati annuali ATM e un accompagnatore, uno sconto del 30% sul biglietto d'ingresso della mostra a Milano. Cleopatra: The Truth è una mostra immersiva che racconta la vera storia di Cleopatra VII , intrecciando ricerca archeologica, tecnologia e narrazione visiva per restituire al pubblico il ritratto autentico di una delle figure più affascinanti e influenti della storia , oltre i miti e gli stereotipi che ne hanno plasmato l’immagine nel corso dei secoli. Attraverso un percorso che c",
+      "startDate": "2026-11-12T00:00:00.000Z",
+      "endDate": "2027-01-28T23:59:59.000Z",
+      "affectedServices": [
+        "ATM"
+      ],
+      "severity": "medium",
+      "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/CleopatraTheTruth.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-11-12-cleopatra-the-truth"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
       "title": "App ATM: avviso di aggiornamento",
       "description": "English version Mercoledì 18 novembre sarà disponibile un aggiornamento importante dell’app . La versione aggiornata presenterà una homepage e un menu di navigazione migliorati. Qui sotto trovate le cose da fare e da sapere. Tenete a portata di mano email e password per fare l’accesso dopo l’aggiornamento Se siete registrati, il 18 novembre dovrete rifare l’accesso per entrare nel vostro account . Se avete dimenticato la password , recuperatela . Il 17 novembre, dalle ore 20 Fino alla mattina de",
       "startDate": "2026-11-02T07:56:05.000Z",
@@ -31,21 +46,6 @@
       "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/AppATMavvisodiaggiornamento.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-11-02-app-atm-avviso-di-aggiornamento"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
-      "title": "Bus 61 e 93: deviazione",
-      "description": "È in programma la posa di una piattaforma aerea in piazzale Gorini, il 21 e il 22 novembre, dalle 7 alle 19. Bus 61 Verso Duomo M1 M3 , i bus deviano e saltano le fermate di via Strambio/Ist. dei Tumori e piazzale Gorini/Ist. dei Tumori. Dopo largo Murani, non vanno in via Strambio, ma passano in via Golgi, via Celoria e via Ponzio. Riprendono il solito percorso da via Botticelli. Verso largo Murani il percorso non cambia. Filobus 93 Verso Lambrate Fs , i bus deviano e saltano la fermata via Cel",
-      "startDate": "2026-11-03T12:42:27.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus61e93deviazione.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-11-03-bus-61-e-93-deviazione"
     },
     {
       "source": "atm",
@@ -74,6 +74,34 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram5fermataspostata5_11.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-11-05-tram-5-fermata-spostata"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 40: fermata sospesa",
+      "description": "Sono in programma lavori stradali sul cavalcavia Amoretti. La fermata Stazione Quarto Oggiaro è sospesa: mercoledì 18 novembre, dalle 20 alle 5, verso Niguarda (Parco Nord) venerdì 20 novembre, dalle 20 alle 5, verso Bonola M1 In alternativa, usate le fermate prima o dopo via Amoretti/via Pascarella via L. Modignani/via Bovisasca",
+      "startDate": "2026-11-10T09:42:39.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus40fermatesospese.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-11-10-bus-40-fermata-sospesa"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 35: fermata spostata",
+      "description": "Sono in programma lavori stradali in via Chiasserini. La fermata di via Chiasserini 15/2, verso Comasina M3 , è spostata il 16 novembre dalle 8 alle 18. Usate la fermata provvisoria qualche metro più avanti, al civico 13.",
+      "startDate": "2026-11-10T10:25:40.000Z",
+      "endDate": null,
+      "affectedServices": [],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus35fermataspostata10_11.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-11-10-bus-35-fermata-spostata"
     }
   ]
 }
