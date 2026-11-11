@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-10T15:17:26.357Z",
+  "lastUpdated": "2026-11-11T14:47:17.504Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -36,7 +36,7 @@
       "source": "atm",
       "type": "disruption",
       "title": "App ATM: avviso di aggiornamento",
-      "description": "English version Mercoledì 18 novembre sarà disponibile un aggiornamento importante dell’app . La versione aggiornata presenterà una homepage e un menu di navigazione migliorati. Qui sotto trovate le cose da fare e da sapere. Tenete a portata di mano email e password per fare l’accesso dopo l’aggiornamento Se siete registrati, il 18 novembre dovrete rifare l’accesso per entrare nel vostro account . Se avete dimenticato la password , recuperatela . Il 17 novembre, dalle ore 20 Fino alla mattina de",
+      "description": "English version Dal 18 novembre sarà disponibile un aggiornamento importante dell’app . La versione aggiornata presenterà una homepage e un menu di navigazione migliorati. Qui sotto trovate le cose da fare e da sapere. Tenete a portata di mano email e password per fare l’accesso dopo l’aggiornamento Se siete registrati, dal 18 novembre dovrete rifare l’accesso per entrare nel vostro account . Se avete dimenticato la password , recuperatela . Cosa fare dal 18 novembre Aggiornate l’app dal vostro ",
       "startDate": "2026-11-02T07:56:05.000Z",
       "endDate": null,
       "affectedServices": [
@@ -50,8 +50,8 @@
     {
       "source": "atm",
       "type": "disruption",
-      "title": "Bus 81: cambiamenti alle fermate",
-      "description": "In questa pagina trovate tutti i cambiamenti alle fermate dovuti ai cantieri stradali lungo la linea. Posa di un ponteggio in piazza Aspromonte Da lunedì 2 novembre , per circa 5 mesi , la fermata di piazza Aspromonte, verso Sesto Marelli M1 , è spostata più indietro, al numero 7 di via Lulli. Cantiere stradale in via Porpora Dalle 8:30 del 10 novembre , per circa 2 settimane , la fermata di via Porpora/via Teodosio, verso Sesto Marelli M1 , è spostata. I bus fermano in via Porpora 125. Anche la",
+      "title": "Bus 81: cambiamenti al servizio",
+      "description": "In questa pagina trovate tutti i cambiamenti al servizio dovuti ai cantieri stradali lungo la linea. Posa di un ponteggio in piazza Aspromonte Dal 2 novembre , per circa 5 mesi , la fermata di piazza Aspromonte, verso Sesto Marelli M1 , è spostata più indietro, al numero 7 di via Lulli. Cantiere stradale in via Porpora Dal 10 novembre , per circa 2 settimane , la fermata di via Porpora/via Teodosio, verso Sesto Marelli M1 , è spostata. I bus fermano in via Porpora 125. Anche la fermata via Porpo",
       "startDate": "2026-11-04T16:50:53.000Z",
       "endDate": null,
       "affectedServices": [
@@ -60,7 +60,7 @@
       "severity": "low",
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus81cambiamentiallefermate.aspx",
       "guaranteedBands": null,
-      "id": "atm-2026-11-04-bus-81-cambiamenti-alle-fermate"
+      "id": "atm-2026-11-04-bus-81-cambiamenti-al-servizio"
     },
     {
       "source": "atm",
