@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-11-12T15:39:38.200Z",
+  "lastUpdated": "2026-11-13T14:58:19.728Z",
   "windowDays": 14,
   "alerts": [
     {
       "source": "atm",
       "type": "strike",
       "title": "Sciopero annunciato da AL Cobas e CONFIAL Trasporti venerdì 13 novembre",
-      "description": "Venerdì 13 novembre i sindacati AL Cobas e CONFIAL Trasporti hanno proclamato uno sciopero. Il servizio delle nostre linee potrebbe non essere garantito dalle 8:45 alle 15 e dopo le 18, fino al termine del servizio. Motivazioni dei sindacati AL Cobas e CONFIAL Trasporti, che hanno proclamato lo sciopero Lo sciopero è stato proclamato “contro la liberalizzazione, privatizzazione, finanziarizzazione e gare d’appalto dei servizi attualmente gestiti dal Gruppo ATM, riattivazione del distanziamento t",
+      "description": "Venerdì 13 novembre i sindacati AL Cobas e CONFIAL Trasporti hanno proclamato uno sciopero. Stato del servizio nella prima fascia di sciopero (8:45-15) Tutte le linee metropolitane sono aperte. Bus, tram e filobus sono in servizio. Seconda fascia di sciopero (18 - fine servizio) Daremo aggiornamenti su questa pagina e sull'app. Motivazioni dei sindacati AL Cobas e CONFIAL Trasporti, che hanno proclamato lo sciopero Lo sciopero è stato proclamato “contro la liberalizzazione, privatizzazione, fina",
       "startDate": "2026-11-09T05:51:03.000Z",
       "endDate": null,
       "affectedServices": [
@@ -65,21 +65,6 @@
     {
       "source": "atm",
       "type": "works",
-      "title": "Bus 40: fermata sospesa",
-      "description": "Sono in programma lavori stradali sul cavalcavia Amoretti. La fermata Stazione Quarto Oggiaro è sospesa: mercoledì 18 novembre, dalle 20 alle 5, verso Niguarda (Parco Nord) venerdì 20 novembre, dalle 20 alle 5, verso Bonola M1 In alternativa, usate le fermate prima o dopo via Amoretti/via Pascarella via L. Modignani/via Bovisasca",
-      "startDate": "2026-11-10T09:42:39.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus40fermatesospese.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-11-10-bus-40-fermata-sospesa"
-    },
-    {
-      "source": "atm",
-      "type": "works",
       "title": "Bus 35: fermata spostata",
       "description": "Sono in programma lavori stradali in via Chiasserini. La fermata di via Chiasserini 15/2, verso Comasina M3 , è spostata il 16 novembre dalle 8 alle 18. Usate la fermata provvisoria qualche metro più avanti, al civico 13.",
       "startDate": "2026-11-10T10:25:40.000Z",
@@ -89,6 +74,36 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus35fermataspostata10_11.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-11-10-bus-35-fermata-spostata"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bus 86: deviazione",
+      "description": "E' in programma la posa di una piattaforma in via Rucellai. I bus cambiano percorso e fermate sabato 21 novembre, dalle 6:30 alle 19. Verso Crescenzago i bus saltano le fermate: via Breda/via Rucellai via Breda/via Pericle via Rucellai/via Solone via Rucellai/Precotto M1 Fanno il normale percorso fino a via Breda. Poi non girano in via Rucellai, ma continuano in via Breda e in via Vipacco, dove fermano alla stessa fermata del bus 81. Passano da viale Monza e fermano a Villa San Giovanni e a Prec",
+      "startDate": "2026-11-12T15:47:14.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/b86deviazpiattaforma.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-11-12-bus-86-deviazione"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 40: fermate sospese",
+      "description": "Sono in programma lavori stradali sul cavalcavia Amoretti. La fermata Stazione Quarto Oggiaro è sospesa: giovedì 19 novembre, dalle 20 alle 5, verso Niguarda (Parco Nord) lunedì 23 novembre, dalle 20 alle 5, verso Bonola M1 In alternativa, usate le fermate prima o dopo via Amoretti/via Pascarella via L. Modignani/via Bovisasca",
+      "startDate": "2026-11-13T14:01:19.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/bus40fermspososos.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-11-13-bus-40-fermate-sospese"
     }
   ]
 }
