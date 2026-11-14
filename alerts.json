@@ -1,21 +1,40 @@
 {
-  "lastUpdated": "2026-11-13T14:58:19.728Z",
+  "lastUpdated": "2026-11-14T13:50:48.519Z",
   "windowDays": 14,
   "alerts": [
     {
-      "source": "atm",
+      "source": "trenord",
       "type": "strike",
-      "title": "Sciopero annunciato da AL Cobas e CONFIAL Trasporti venerdì 13 novembre",
-      "description": "Venerdì 13 novembre i sindacati AL Cobas e CONFIAL Trasporti hanno proclamato uno sciopero. Stato del servizio nella prima fascia di sciopero (8:45-15) Tutte le linee metropolitane sono aperte. Bus, tram e filobus sono in servizio. Seconda fascia di sciopero (18 - fine servizio) Daremo aggiornamenti su questa pagina e sull'app. Motivazioni dei sindacati AL Cobas e CONFIAL Trasporti, che hanno proclamato lo sciopero Lo sciopero è stato proclamato “contro la liberalizzazione, privatizzazione, fina",
-      "startDate": "2026-11-09T05:51:03.000Z",
+      "title": "Sciopero nazionale del 20-21 novembre 2026",
+      "description": "Sciopero nazionale del 20-21 novembre 2026",
+      "startDate": "2026-11-21T00:00:00.000Z",
       "endDate": null,
       "affectedServices": [
-        "ATM"
+        "Trenord",
+        "ATM",
+        "Movibus"
       ],
       "severity": "high",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/ScioperoannunciatodaALCobaseCONFIALTrasportivenerdì13novembre.aspx",
-      "guaranteedBands": "inizio servizio-08:45, 15:00-18:00",
-      "id": "atm-2026-11-09-sciopero-annunciato-da-al-cobas-e-confia"
+      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
+      "guaranteedBands": "06:00-09:00, 18:00-21:00",
+      "id": "trenord-2026-11-21-sciopero-nazionale-del-20-21-novembre-20"
+    },
+    {
+      "source": "trenord",
+      "type": "strike",
+      "title": "sciopero Nazionale dalle ore 21:00 di venerdì 20 novembre fino alle ore 20:00 di sabato 21 novembre ",
+      "description": "sciopero Nazionale dalle ore 21:00 di venerdì 20 novembre fino alle ore 20:00 di sabato 21 novembre 2026 che potrà generare ripercussioni sulla circolazione ferroviaria in Lombardia.",
+      "startDate": "2026-11-21T00:00:00.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "Trenord",
+        "ATM",
+        "Movibus"
+      ],
+      "severity": "high",
+      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
+      "guaranteedBands": "06:00-09:00, 18:00-21:00",
+      "id": "trenord-2026-11-21-sciopero-nazionale-dalle-ore-21-00-di-ve"
     },
     {
       "source": "atm",
