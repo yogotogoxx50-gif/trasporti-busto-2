@@ -1,7 +1,22 @@
 {
-  "lastUpdated": "2026-11-15T14:24:22.943Z",
+  "lastUpdated": "2026-11-16T16:34:49.969Z",
   "windowDays": 14,
   "alerts": [
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bus 60: capolinea spostato",
+      "description": "Lunedì 30 novembre , dalle 7 alle 19, il capolinea Duomo M1 M3 è sospeso per il posizionamento di una piattaforma aerea in piazza Diaz. In alternativa, usate la fermata provvisoria, sempre in piazza Diaz, al civico 10.",
+      "startDate": "2026-11-16T15:52:43.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "high",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus60capolineaspostato30nov.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-11-16-bus-60-capolinea-spostato"
+    },
     {
       "source": "trenord",
       "type": "strike",
@@ -54,21 +69,6 @@
     {
       "source": "atm",
       "type": "disruption",
-      "title": "App ATM: avviso di aggiornamento",
-      "description": "English version Dal 18 novembre sarà disponibile un aggiornamento importante dell’app . La versione aggiornata presenterà una homepage e un menu di navigazione migliorati. Qui sotto trovate le cose da fare e da sapere. Tenete a portata di mano email e password per fare l’accesso dopo l’aggiornamento Se siete registrati, dal 18 novembre dovrete rifare l’accesso per entrare nel vostro account . Se avete dimenticato la password , recuperatela . Il 17 novembre, dalle ore 20 Fino alla mattina del 18 ",
-      "startDate": "2026-11-02T07:56:05.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "ATM"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/AppATMavvisodiaggiornamento.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-11-02-app-atm-avviso-di-aggiornamento"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
       "title": "Bus 81: cambiamenti alle fermate",
       "description": "In questa pagina trovate tutti i cambiamenti alle fermate dovuti ai cantieri stradali lungo la linea. Posa di un ponteggio in piazza Aspromonte Dal 2 novembre , per circa 5 mesi , la fermata di piazza Aspromonte, verso Sesto Marelli M1 , è spostata più indietro, al numero 7 di via Lulli. Cantiere stradale in via Porpora Dal 10 novembre , per circa 2 settimane , la fermata di via Porpora/via Teodosio, verso Sesto Marelli M1 , è spostata. I bus fermano in via Porpora 125. Anche la fermata via Porp",
       "startDate": "2026-11-04T16:50:53.000Z",
@@ -80,6 +80,34 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus81cambiamentiallefermate.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-11-04-bus-81-cambiamenti-alle-fermate"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 57: cambiamenti al servizio",
+      "description": "Lavori stradali in via Varesina Da sabato 7 novembre per circa 30 giorni Verso Quarto Oggiaro , i bus passano da via Varesina, ma saltano la fermata: via Varesina prima di via Palizzi Verso Cairoli M1 i bus saltano le fermate: via Varesina/via Palizzi via Varesina/via Monte Altissimo via Varesina/via Mola via Varesina/via Dal Re I bus fanno il normale percorso fino a via Palizzi, poi non vanno in via Varesina, ma deviano in viale Espinasse e fermano alle fermate del tram 1. Passano da via Grosot",
+      "startDate": "2026-11-05T12:48:19.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/buscinquanta7.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-11-05-bus-57-cambiamenti-al-servizio"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Tram 5: fermata spostata",
+      "description": "Sono in corso lavori stradali. La fermata via Beato Angelico/via Colombo, verso Niguarda , è sospesa . Usate la fermata provvisoria qualche metro più avanti, in via Beato Angelico 11.",
+      "startDate": "2026-11-05T15:13:58.000Z",
+      "endDate": null,
+      "affectedServices": [],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram5fermataspostata5_11.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-11-05-tram-5-fermata-spostata"
     },
     {
       "source": "atm",
