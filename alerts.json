@@ -1,21 +1,22 @@
 {
-  "lastUpdated": "2026-11-16T16:34:49.969Z",
+  "lastUpdated": "2026-11-17T16:32:50.246Z",
   "windowDays": 14,
   "alerts": [
     {
       "source": "atm",
-      "type": "disruption",
-      "title": "Bus 60: capolinea spostato",
-      "description": "Lunedì 30 novembre , dalle 7 alle 19, il capolinea Duomo M1 M3 è sospeso per il posizionamento di una piattaforma aerea in piazza Diaz. In alternativa, usate la fermata provvisoria, sempre in piazza Diaz, al civico 10.",
-      "startDate": "2026-11-16T15:52:43.000Z",
+      "type": "strike",
+      "title": "Possibile sciopero venerdì 20 novembre sulle linee di altri operatori",
+      "description": "Lo sciopero nazionale generale di venerdì 20 novembre non coinvolge le linee ATM, che saranno in normale servizio. Lo sciopero potrebbe coinvolgere linee gestite da altri operatori per conto di ATM: 201, 220, 230, 328, 423, 431, 433 e SmartBus (Autoguidovie). Informazioni a questa pagina 560, 561 e 566 (AirPullman). Informazioni a questa pagina 424 (Movibus). Informazioni a questa pagina 965 (Star Mobility). Informazioni a questa pagina 528 e 542 (Stie). Informazioni a questa pagina",
+      "startDate": "2026-11-17T15:49:38.000Z",
       "endDate": null,
       "affectedServices": [
-        "M1"
+        "Movibus",
+        "ATM"
       ],
       "severity": "high",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus60capolineaspostato30nov.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-11-16-bus-60-capolinea-spostato"
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Possibilescioperovenerdì20novembresullelineedialtrioperatori.aspx",
+      "guaranteedBands": "inizio servizio-08:45, 15:00-18:00",
+      "id": "atm-2026-11-17-possibile-sciopero-venerd-20-novembre-su"
     },
     {
       "source": "trenord",
@@ -54,21 +55,6 @@
     {
       "source": "atm",
       "type": "disruption",
-      "title": "Cleopatra: The Truth",
-      "description": "Per gli abbonati annuali ATM e un accompagnatore, uno sconto del 30% sul biglietto d'ingresso della mostra a Milano. Cleopatra: The Truth è una mostra immersiva che racconta la vera storia di Cleopatra VII , intrecciando ricerca archeologica, tecnologia e narrazione visiva per restituire al pubblico il ritratto autentico di una delle figure più affascinanti e influenti della storia , oltre i miti e gli stereotipi che ne hanno plasmato l’immagine nel corso dei secoli. Attraverso un percorso che c",
-      "startDate": "2026-11-12T00:00:00.000Z",
-      "endDate": "2027-01-28T23:59:59.000Z",
-      "affectedServices": [
-        "ATM"
-      ],
-      "severity": "medium",
-      "url": "https://www.atm.it/it/AtmNews/AtmInforma/Pagine/CleopatraTheTruth.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-11-12-cleopatra-the-truth"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
       "title": "Bus 81: cambiamenti alle fermate",
       "description": "In questa pagina trovate tutti i cambiamenti alle fermate dovuti ai cantieri stradali lungo la linea. Posa di un ponteggio in piazza Aspromonte Dal 2 novembre , per circa 5 mesi , la fermata di piazza Aspromonte, verso Sesto Marelli M1 , è spostata più indietro, al numero 7 di via Lulli. Cantiere stradale in via Porpora Dal 10 novembre , per circa 2 settimane , la fermata di via Porpora/via Teodosio, verso Sesto Marelli M1 , è spostata. I bus fermano in via Porpora 125. Anche la fermata via Porp",
       "startDate": "2026-11-04T16:50:53.000Z",
@@ -85,7 +71,7 @@
       "source": "atm",
       "type": "works",
       "title": "Bus 57: cambiamenti al servizio",
-      "description": "Lavori stradali in via Varesina Da sabato 7 novembre per circa 30 giorni Verso Quarto Oggiaro , i bus passano da via Varesina, ma saltano la fermata: via Varesina prima di via Palizzi Verso Cairoli M1 i bus saltano le fermate: via Varesina/via Palizzi via Varesina/via Monte Altissimo via Varesina/via Mola via Varesina/via Dal Re I bus fanno il normale percorso fino a via Palizzi, poi non vanno in via Varesina, ma deviano in viale Espinasse e fermano alle fermate del tram 1. Passano da via Grosot",
+      "description": "In questa pagina trovate tutti i cambiamenti al servizio dovuti ai cantieri lungo la linea. Lavori stradali in via Varesina - Da sabato 7 novembre per circa 30 giorni Verso Quarto Oggiaro , i bus passano da via Varesina, ma saltano la fermata: via Varesina prima di via Palizzi Verso Cairoli M1 i bus saltano le fermate: via Varesina/via Palizzi via Varesina/via Monte Altissimo via Varesina/via Mola via Varesina/via Dal Re I bus fanno il normale percorso fino a via Palizzi, poi non vanno in via Va",
       "startDate": "2026-11-05T12:48:19.000Z",
       "endDate": null,
       "affectedServices": [
@@ -108,19 +94,6 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram5fermataspostata5_11.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-11-05-tram-5-fermata-spostata"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Bus 35: fermata spostata",
-      "description": "Sono in programma lavori stradali in via Chiasserini. La fermata di via Chiasserini 15/2, verso Comasina M3 , è spostata il 16 novembre dalle 8 alle 18. Usate la fermata provvisoria qualche metro più avanti, al civico 13.",
-      "startDate": "2026-11-10T10:25:40.000Z",
-      "endDate": null,
-      "affectedServices": [],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus35fermataspostata10_11.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-11-10-bus-35-fermata-spostata"
     },
     {
       "source": "atm",
@@ -151,6 +124,34 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/bus40fermspososos.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-11-13-bus-40-fermate-sospese"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 39, 54 e 924: fermata spostata",
+      "description": "Ci sono lavori stradali in via Flaminio. La fermata via Console Flaminio/via dei Canzi verso via Pitteri (39), verso Dateo (54) e verso Cascina Burrona (924) è sospesa. In alternativa, usate la fermata provvisoria qualche metro più indietro, di fronte al civico 2.",
+      "startDate": "2026-11-15T17:35:37.000Z",
+      "endDate": null,
+      "affectedServices": [],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus39,54E924fermatasospesa.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-11-15-bus-39-54-e-924-fermata-spostata"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Filobus 91: fermata spostata",
+      "description": "Sono in programma lavori stradali in viale Renato Serra. La fermata viale Serra/via Traiano , verso Lotto M1 M5, è spostata dalle 10 di lunedì 23 novembre. Usate la fermata provvisoria qualche metro indietro, al numero civico 65.",
+      "startDate": "2026-11-17T09:32:00.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Filobus91fermataspostata.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-11-17-filobus-91-fermata-spostata"
     }
   ]
 }
