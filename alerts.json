@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-11-17T16:32:50.246Z",
+  "lastUpdated": "2026-11-18T16:01:28.649Z",
   "windowDays": 14,
   "alerts": [
     {
       "source": "atm",
       "type": "strike",
       "title": "Possibile sciopero venerdì 20 novembre sulle linee di altri operatori",
-      "description": "Lo sciopero nazionale generale di venerdì 20 novembre non coinvolge le linee ATM, che saranno in normale servizio. Lo sciopero potrebbe coinvolgere linee gestite da altri operatori per conto di ATM: 201, 220, 230, 328, 423, 431, 433 e SmartBus (Autoguidovie). Informazioni a questa pagina 560, 561 e 566 (AirPullman). Informazioni a questa pagina 424 (Movibus). Informazioni a questa pagina 965 (Star Mobility). Informazioni a questa pagina 528 e 542 (Stie). Informazioni a questa pagina",
+      "description": "Lo sciopero nazionale generale di venerdì 20 novembre non coinvolge le linee ATM, che saranno in normale servizio. Lo sciopero potrebbe coinvolgere linee gestite da altri operatori per conto di ATM: 201, 220, 222, 230, 328, 423, 431, 433 e SmartBus (Autoguidovie). Informazioni a questa pagina 560, 561 e 566 (AirPullman). Informazioni a questa pagina 424 (Movibus). Informazioni a questa pagina 965 (Star Mobility). Informazioni a questa pagina 528 e 542 (Stie). Informazioni a questa pagina",
       "startDate": "2026-11-17T15:49:38.000Z",
       "endDate": null,
       "affectedServices": [
@@ -51,21 +51,6 @@
       "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
       "guaranteedBands": "06:00-09:00, 18:00-21:00",
       "id": "trenord-2026-11-21-sciopero-nazionale-dalle-ore-21-00-di-ve"
-    },
-    {
-      "source": "atm",
-      "type": "disruption",
-      "title": "Bus 81: cambiamenti alle fermate",
-      "description": "In questa pagina trovate tutti i cambiamenti alle fermate dovuti ai cantieri stradali lungo la linea. Posa di un ponteggio in piazza Aspromonte Dal 2 novembre , per circa 5 mesi , la fermata di piazza Aspromonte, verso Sesto Marelli M1 , è spostata più indietro, al numero 7 di via Lulli. Cantiere stradale in via Porpora Dal 10 novembre , per circa 2 settimane , la fermata di via Porpora/via Teodosio, verso Sesto Marelli M1 , è spostata. I bus fermano in via Porpora 125. Anche la fermata via Porp",
-      "startDate": "2026-11-04T16:50:53.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus81cambiamentiallefermate.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-11-04-bus-81-cambiamenti-alle-fermate"
     },
     {
       "source": "atm",
