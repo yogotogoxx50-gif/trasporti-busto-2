@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-18T16:01:28.649Z",
+  "lastUpdated": "2026-11-19T16:08:25.777Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -54,34 +54,6 @@
     },
     {
       "source": "atm",
-      "type": "works",
-      "title": "Bus 57: cambiamenti al servizio",
-      "description": "In questa pagina trovate tutti i cambiamenti al servizio dovuti ai cantieri lungo la linea. Lavori stradali in via Varesina - Da sabato 7 novembre per circa 30 giorni Verso Quarto Oggiaro , i bus passano da via Varesina, ma saltano la fermata: via Varesina prima di via Palizzi Verso Cairoli M1 i bus saltano le fermate: via Varesina/via Palizzi via Varesina/via Monte Altissimo via Varesina/via Mola via Varesina/via Dal Re I bus fanno il normale percorso fino a via Palizzi, poi non vanno in via Va",
-      "startDate": "2026-11-05T12:48:19.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/buscinquanta7.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-11-05-bus-57-cambiamenti-al-servizio"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Tram 5: fermata spostata",
-      "description": "Sono in corso lavori stradali. La fermata via Beato Angelico/via Colombo, verso Niguarda , è sospesa . Usate la fermata provvisoria qualche metro più avanti, in via Beato Angelico 11.",
-      "startDate": "2026-11-05T15:13:58.000Z",
-      "endDate": null,
-      "affectedServices": [],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram5fermataspostata5_11.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-11-05-tram-5-fermata-spostata"
-    },
-    {
-      "source": "atm",
       "type": "disruption",
       "title": "Bus 86: deviazione",
       "description": "E' in programma la posa di una piattaforma in via Rucellai. I bus cambiano percorso e fermate sabato 21 novembre, dalle 6:30 alle 19. Verso Crescenzago i bus saltano le fermate: via Breda/via Rucellai via Breda/via Pericle via Rucellai/via Solone via Rucellai/Precotto M1 Fanno il normale percorso fino a via Breda. Poi non girano in via Rucellai, ma continuano in via Breda e in via Vipacco, dove fermano alla stessa fermata del bus 81. Passano da viale Monza e fermano a Villa San Giovanni e a Prec",
@@ -122,21 +94,6 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus39,54E924fermatasospesa.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-11-15-bus-39-54-e-924-fermata-spostata"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Filobus 91: fermata spostata",
-      "description": "Sono in programma lavori stradali in viale Renato Serra. La fermata viale Serra/via Traiano , verso Lotto M1 M5, è spostata dalle 10 di lunedì 23 novembre. Usate la fermata provvisoria qualche metro indietro, al numero civico 65.",
-      "startDate": "2026-11-17T09:32:00.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Filobus91fermataspostata.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-11-17-filobus-91-fermata-spostata"
     }
   ]
 }
