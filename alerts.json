@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-19T16:08:25.777Z",
+  "lastUpdated": "2026-11-20T15:49:04.280Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -54,24 +54,9 @@
     },
     {
       "source": "atm",
-      "type": "disruption",
-      "title": "Bus 86: deviazione",
-      "description": "E' in programma la posa di una piattaforma in via Rucellai. I bus cambiano percorso e fermate sabato 21 novembre, dalle 6:30 alle 19. Verso Crescenzago i bus saltano le fermate: via Breda/via Rucellai via Breda/via Pericle via Rucellai/via Solone via Rucellai/Precotto M1 Fanno il normale percorso fino a via Breda. Poi non girano in via Rucellai, ma continuano in via Breda e in via Vipacco, dove fermano alla stessa fermata del bus 81. Passano da viale Monza e fermano a Villa San Giovanni e a Prec",
-      "startDate": "2026-11-12T15:47:14.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "M1"
-      ],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/b86deviazpiattaforma.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-11-12-bus-86-deviazione"
-    },
-    {
-      "source": "atm",
       "type": "works",
       "title": "Bus 40: fermate sospese",
-      "description": "Sono in programma lavori stradali sul cavalcavia Amoretti. La fermata Stazione Quarto Oggiaro è sospesa: giovedì 19 novembre, dalle 20 alle 5, verso Niguarda (Parco Nord) lunedì 23 novembre, dalle 20 alle 5, verso Bonola M1 In alternativa, usate le fermate prima o dopo via Amoretti/via Pascarella via L. Modignani/via Bovisasca",
+      "description": "Sono in programma lavori stradali sul cavalcavia Amoretti. La fermata Stazione Quarto Oggiaro, verso Bonola M1, è sospesa lunedì 23 novembre, dalle 20 alle 5 . In alternativa, usate le fermate prima o dopo via Amoretti/via Pascarella via L. Modignani/via Bovisasca",
       "startDate": "2026-11-13T14:01:19.000Z",
       "endDate": null,
       "affectedServices": [
