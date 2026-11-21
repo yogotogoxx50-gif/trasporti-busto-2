@@ -1,23 +1,7 @@
 {
-  "lastUpdated": "2026-11-20T15:49:04.280Z",
+  "lastUpdated": "2026-11-21T14:59:04.511Z",
   "windowDays": 14,
   "alerts": [
-    {
-      "source": "atm",
-      "type": "strike",
-      "title": "Possibile sciopero venerdì 20 novembre sulle linee di altri operatori",
-      "description": "Lo sciopero nazionale generale di venerdì 20 novembre non coinvolge le linee ATM, che saranno in normale servizio. Lo sciopero potrebbe coinvolgere linee gestite da altri operatori per conto di ATM: 201, 220, 222, 230, 328, 423, 431, 433 e SmartBus (Autoguidovie). Informazioni a questa pagina 560, 561 e 566 (AirPullman). Informazioni a questa pagina 424 (Movibus). Informazioni a questa pagina 965 (Star Mobility). Informazioni a questa pagina 528 e 542 (Stie). Informazioni a questa pagina",
-      "startDate": "2026-11-17T15:49:38.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "Movibus",
-        "ATM"
-      ],
-      "severity": "high",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Possibilescioperovenerdì20novembresullelineedialtrioperatori.aspx",
-      "guaranteedBands": "inizio servizio-08:45, 15:00-18:00",
-      "id": "atm-2026-11-17-possibile-sciopero-venerd-20-novembre-su"
-    },
     {
       "source": "trenord",
       "type": "strike",
