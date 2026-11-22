@@ -1,41 +1,7 @@
 {
-  "lastUpdated": "2026-11-21T14:59:04.511Z",
+  "lastUpdated": "2026-11-22T14:57:14.840Z",
   "windowDays": 14,
   "alerts": [
-    {
-      "source": "trenord",
-      "type": "strike",
-      "title": "Sciopero nazionale del 20-21 novembre 2026",
-      "description": "Sciopero nazionale del 20-21 novembre 2026",
-      "startDate": "2026-11-21T00:00:00.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "Trenord",
-        "ATM",
-        "Movibus"
-      ],
-      "severity": "high",
-      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
-      "guaranteedBands": "06:00-09:00, 18:00-21:00",
-      "id": "trenord-2026-11-21-sciopero-nazionale-del-20-21-novembre-20"
-    },
-    {
-      "source": "trenord",
-      "type": "strike",
-      "title": "sciopero Nazionale dalle ore 21:00 di venerdì 20 novembre fino alle ore 20:00 di sabato 21 novembre ",
-      "description": "sciopero Nazionale dalle ore 21:00 di venerdì 20 novembre fino alle ore 20:00 di sabato 21 novembre 2026 che potrà generare ripercussioni sulla circolazione ferroviaria in Lombardia.",
-      "startDate": "2026-11-21T00:00:00.000Z",
-      "endDate": null,
-      "affectedServices": [
-        "Trenord",
-        "ATM",
-        "Movibus"
-      ],
-      "severity": "high",
-      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
-      "guaranteedBands": "06:00-09:00, 18:00-21:00",
-      "id": "trenord-2026-11-21-sciopero-nazionale-dalle-ore-21-00-di-ve"
-    },
     {
       "source": "atm",
       "type": "works",
