@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-22T14:57:14.840Z",
+  "lastUpdated": "2026-11-23T18:50:07.820Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -29,6 +29,36 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus39,54E924fermatasospesa.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-11-15-bus-39-54-e-924-fermata-spostata"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 44: fermata spostata",
+      "description": "Lavori a un edificio in via Monte San Gabriele. Verso Cascina Gobba M2 , la fermata Gorla M1 è sospesa. Usate la fermata provvisoria, qualche metro più avanti, in via Monte San Gabriele 6.",
+      "startDate": "2026-11-23T11:32:28.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/BUs44fermataspostata23nov.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-11-23-bus-44-fermata-spostata"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Tram 2, 12 e 14: fermata sospesa",
+      "description": "È in programma la posa di una piattaforma aerea. Martedi' 1 dicembre, dalle 13:30 alle 16:30, i tram verso piazzale Negrelli (tram 2), viale Molise (tram 12) e Lorenteggio (tram 14) deviano e saltano la fermata via Cusani. Usate le fermate prima o dopo: Lanza M2 Cordusio M1",
+      "startDate": "2026-11-23T15:35:32.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram2,12e14fermatasospesa1126.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-11-23-tram-2-12-e-14-fermata-sospesa"
     }
   ]
 }
