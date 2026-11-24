@@ -1,34 +1,21 @@
 {
-  "lastUpdated": "2026-11-23T18:50:07.820Z",
+  "lastUpdated": "2026-11-24T18:26:22.164Z",
   "windowDays": 14,
   "alerts": [
     {
       "source": "atm",
       "type": "works",
-      "title": "Bus 40: fermate sospese",
-      "description": "Sono in programma lavori stradali sul cavalcavia Amoretti. La fermata Stazione Quarto Oggiaro, verso Bonola M1, è sospesa lunedì 23 novembre, dalle 20 alle 5 . In alternativa, usate le fermate prima o dopo via Amoretti/via Pascarella via L. Modignani/via Bovisasca",
-      "startDate": "2026-11-13T14:01:19.000Z",
+      "title": "Bus 47 e 95: fermate spostate",
+      "description": "Lavori di asfaltatura in via Chiodi - Dalle 9 del 23 alle 18 del 27 novembre La fermata di via Chiodi/viale Faenza, nelle due direzioni (bus 47) e verso Rogoredo M3 (bus 95) è sospesa. Usate e fermate prima o dopo: viale Faenza/via Campari Quartiere Barona Posizionamento di una piattaforma aerea in via Tosi - Venerdì 11 dicembre, dalle 7 alle 19 Verso Bisceglie M1, i bus fanno normale servizio fino a via Schievano. Poi non girano in via Tosi, ma continuano in via Ettore Ponti, dove fermano ai ci",
+      "startDate": "2026-11-19T10:45:58.000Z",
       "endDate": null,
       "affectedServices": [
         "M1"
       ],
       "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/bus40fermspososos.aspx",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus47e95fermatespostate1126.aspx",
       "guaranteedBands": null,
-      "id": "atm-2026-11-13-bus-40-fermate-sospese"
-    },
-    {
-      "source": "atm",
-      "type": "works",
-      "title": "Bus 39, 54 e 924: fermata spostata",
-      "description": "Ci sono lavori stradali in via Flaminio. La fermata via Console Flaminio/via dei Canzi verso via Pitteri (39), verso Dateo (54) e verso Cascina Burrona (924) è sospesa. In alternativa, usate la fermata provvisoria qualche metro più indietro, di fronte al civico 2.",
-      "startDate": "2026-11-15T17:35:37.000Z",
-      "endDate": null,
-      "affectedServices": [],
-      "severity": "low",
-      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus39,54E924fermatasospesa.aspx",
-      "guaranteedBands": null,
-      "id": "atm-2026-11-15-bus-39-54-e-924-fermata-spostata"
+      "id": "atm-2026-11-19-bus-47-e-95-fermate-spostate"
     },
     {
       "source": "atm",
@@ -59,6 +46,21 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Tram2,12e14fermatasospesa1126.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-11-23-tram-2-12-e-14-fermata-sospesa"
+    },
+    {
+      "source": "atm",
+      "type": "works",
+      "title": "Bus 58, 76 e NM1: fermata sospesa",
+      "description": "Ci sono lavori stradali. I bus verso Baggio via Noale (bus 58), Quinto Rom ano (bus 76) e Cairoli (bus NM1) deviano e saltano la fermata via Bagarotti/via Da Rosciate. Usate la fermata provvisoria qualche metro più avanti.",
+      "startDate": "2026-11-24T11:04:18.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus58,76eNM1fermatasospesa1126.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-11-24-bus-58-76-e-nm1-fermata-sospesa"
     }
   ]
 }
