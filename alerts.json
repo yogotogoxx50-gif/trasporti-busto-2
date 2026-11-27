@@ -1,12 +1,59 @@
 {
-  "lastUpdated": "2026-11-26T17:24:08.728Z",
+  "lastUpdated": "2026-11-27T17:02:47.068Z",
   "windowDays": 14,
   "alerts": [
     {
       "source": "atm",
+      "type": "disruption",
+      "title": "Bus 47, 95, 321, 323, 324, 325 e 351: cambiamenti alle fermate",
+      "description": "Abbiamo riposizionato alcune fermate in via Lodovico il Moro e viale Resistenza, con l'obiettivo di migliorare la corrispondenza tra le linee. Da lunedì 30 novembre sposteremo altre fermate in via Martinelli e via Lodovico il Moro. Bus 47, 324 e 325 Dal 30 novembre, la fermata di San Cristoforo, verso Romolo , è spostata 40 metri più avanti, dopo l'incrocio. Bus 95 Dal 30 novembre: Il capolinea di San Cristoforo è spostato qualche metro più avanti, subito dopo l'incrocio. La fermata via Lodovico",
+      "startDate": "2026-11-26T20:19:31.000Z",
+      "endDate": null,
+      "affectedServices": [],
+      "severity": "high",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/FermateSanCristoforo.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-11-26-bus-47-95-321-323-324-325-e-351-cambiame"
+    },
+    {
+      "source": "trenord",
+      "type": "strike",
+      "title": "Sciopero nazionale del 3-4 dicembre 2026",
+      "description": "Sciopero nazionale del 3-4 dicembre 2026",
+      "startDate": "2026-12-04T00:00:00.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "Trenord",
+        "ATM",
+        "Movibus"
+      ],
+      "severity": "high",
+      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
+      "guaranteedBands": "06:00-09:00, 18:00-21:00",
+      "id": "trenord-2026-12-04-sciopero-nazionale-del-3-4-dicembre-2026"
+    },
+    {
+      "source": "trenord",
+      "type": "strike",
+      "title": "Sciopero Nazionale dalle ore 21.00 del 3 dicembre alle ore 21:00 del 4 dicembre 2026 che potrà gener",
+      "description": "Sciopero Nazionale dalle ore 21.00 del 3 dicembre alle ore 21:00 del 4 dicembre 2026 che potrà generare ripercussioni sulla circolazione ferroviaria in Lombardia.",
+      "startDate": "2026-12-04T00:00:00.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "Trenord",
+        "ATM",
+        "Movibus"
+      ],
+      "severity": "high",
+      "url": "https://www.trenord.it/news/trenord-informa/avvisi/sciopero",
+      "guaranteedBands": "06:00-09:00, 18:00-21:00",
+      "id": "trenord-2026-12-04-sciopero-nazionale-dalle-ore-21-00-del-3"
+    },
+    {
+      "source": "atm",
       "type": "works",
-      "title": "Bus 47 e 95: fermate spostate",
-      "description": "Lavori di asfaltatura in via Chiodi - Dalle 9 del 23 alle 18 del 27 novembre La fermata di via Chiodi/viale Faenza, nelle due direzioni (bus 47) e verso Rogoredo M3 (bus 95) è sospesa. Usate e fermate prima o dopo: viale Faenza/via Campari Quartiere Barona Posizionamento di una piattaforma aerea in via Tosi - Venerdì 11 dicembre, dalle 7 alle 19 Verso Bisceglie M1, i bus fanno normale servizio fino a via Schievano. Poi non girano in via Tosi, ma continuano in via Ettore Ponti, dove fermano ai ci",
+      "title": "Bus 47 e 95: deviazioni",
+      "description": "In questa pagina trovate tutti i cambiamenti al servizio dovuti ai cantieri stradali lungo il percorso. Bus 47 e 95 - Lavori di asfaltatura in via Chiodi dalle 9 del 23 alle 18 del 27 novembre La fermata di via Chiodi/viale Faenza, nelle due direzioni (bus 47) e verso Rogoredo M3 (bus 95) è sospesa. Usate e fermate prima o dopo: viale Faenza/via Campari o quartiere Barona. Bus 47 - Posizionamento di una piattaforma aerea in via Tosi venerdì 11 dicembre, dalle 7 alle 19 Verso Bisceglie M1, i bus ",
       "startDate": "2026-11-19T10:45:58.000Z",
       "endDate": null,
       "affectedServices": [
@@ -15,7 +62,7 @@
       "severity": "low",
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus47e95fermatespostate1126.aspx",
       "guaranteedBands": null,
-      "id": "atm-2026-11-19-bus-47-e-95-fermate-spostate"
+      "id": "atm-2026-11-19-bus-47-e-95-deviazioni"
     },
     {
       "source": "atm",
@@ -61,6 +108,34 @@
       "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus58,76eNM1fermatasospesa1126.aspx",
       "guaranteedBands": null,
       "id": "atm-2026-11-24-bus-58-76-e-nm1-fermata-sospesa"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Linee 2, 4 e 70: fermata sospesa",
+      "description": "È in programma la posa della pensilina alla fermata. La fermata piazza Baiamonti verso Negrelli (tram 2), verso Cairoli M1 (tram 4) e verso Monumentale M5 (bus 70) è sospesa il 2 dicembre, dopo le 22. Usate le fermate prima o dopo delle linee 2 e 4: via Farini/via Ferrari via Montello",
+      "startDate": "2026-11-26T19:56:55.000Z",
+      "endDate": null,
+      "affectedServices": [
+        "M1"
+      ],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Linee2,4e70fermatasospesa.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-11-26-linee-2-4-e-70-fermata-sospesa"
+    },
+    {
+      "source": "atm",
+      "type": "disruption",
+      "title": "Bus 201 e 328: deviazione",
+      "description": "Domenica 13 dicembre è in programma la chiusura di viale Lombardia. Le linee cambiano percorso e feramte a Rozzano. Bus 201 Solo verso Rozzano/via Alberelle, deviano e saltano le fermate in viale Lombardia. Passano e fermano in via Torino, via Gramsci, via Roma, viale Lazio, via Cabrini e viale Romagna. Bus 328 Verso Pieve Emanuele/Stazione, i bus deviano e saltano le fermate di via Roma e viale Lombardia. Passano e fermano in viale Lazio e viale Romagna. Verso Assago Forum M2, i bus deviano e s",
+      "startDate": "2026-11-27T11:09:38.000Z",
+      "endDate": null,
+      "affectedServices": [],
+      "severity": "low",
+      "url": "https://www.atm.it/it/ViaggiaConNoi/InfoTraffico/Pagine/Bus201e328deviazione13dicembre.aspx",
+      "guaranteedBands": null,
+      "id": "atm-2026-11-27-bus-201-e-328-deviazione"
     }
   ]
 }
