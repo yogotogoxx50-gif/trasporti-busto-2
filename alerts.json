@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-27T17:02:47.068Z",
+  "lastUpdated": "2026-11-28T15:52:32.056Z",
   "windowDays": 14,
   "alerts": [
     {
@@ -51,9 +51,9 @@
     },
     {
       "source": "atm",
-      "type": "works",
+      "type": "disruption",
       "title": "Bus 47 e 95: deviazioni",
-      "description": "In questa pagina trovate tutti i cambiamenti al servizio dovuti ai cantieri stradali lungo il percorso. Bus 47 e 95 - Lavori di asfaltatura in via Chiodi dalle 9 del 23 alle 18 del 27 novembre La fermata di via Chiodi/viale Faenza, nelle due direzioni (bus 47) e verso Rogoredo M3 (bus 95) è sospesa. Usate e fermate prima o dopo: viale Faenza/via Campari o quartiere Barona. Bus 47 - Posizionamento di una piattaforma aerea in via Tosi venerdì 11 dicembre, dalle 7 alle 19 Verso Bisceglie M1, i bus ",
+      "description": "Venerdì 11 dicembre, è prevista la posa di una piattaforma aerea in via Tosi. Dalle 7 alle 19 i bus verso Bisceglie M1 fanno normale servizio fino a via Schievano. Poi non girano in via Tosi, ma continuano in via Ettore Ponti, dove fermano ai civici 34 e 54. Riprendono il solito percorso da via Santa Rita da Cascia. Saltano le fermate: piazza Bilbao via Watt/via Tosi via Watt/piazza Ohm piazza Ohm. Verso Romolo M2, i bus non cambiano percorso.",
       "startDate": "2026-11-19T10:45:58.000Z",
       "endDate": null,
       "affectedServices": [
